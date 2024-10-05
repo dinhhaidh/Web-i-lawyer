@@ -22,7 +22,9 @@
 .nav__list{
     margin-bottom: 0px !important;
 }
-
+.nav__link{
+    font-family: "Space Grotesk", sans-serif !important;
+}
 
 .active-link{
     color: var(--primary-color00);
@@ -30,9 +32,18 @@
     padding: 0 0 3px 0;
     font-weight: 500;
     font-family: "Space Grotesk", sans-serif;
+    transition: color .3s, border-bottom .3s ease-in-out;
+    font-size: 16px;
+    
 }
 .shadow-header{
     box-shadow: 0 8px 16px -4px hsla(0, 0%, 0%, 0.1);
+}
+
+@media screen and (min-width: 1024px) {
+    .nav{
+        height: 5.5rem;
+    }
 }
 
 @media screen and (max-width: 1150px) {
@@ -75,10 +86,17 @@
     
    
 }
+@media screen and (max-width: 1023.98px) {
+    .nav{
+        height: 3.5rem;
+    }
+}
+
 @media screen and (max-width: 575px){
     .nav__menu{
         width: 80%;
     }
+    
 }
 
 

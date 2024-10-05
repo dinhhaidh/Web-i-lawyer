@@ -38,6 +38,11 @@
 .jobs__list{
     position: relative;
 }
+.jobs__list img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
  .criminal,
  .marriage, .jobs__subtitle {
     position: absolute;
@@ -269,4 +274,5 @@
 }
 .jobs__img{
     padding: 0 20px 0 20px;
+    width: 100%;
 }

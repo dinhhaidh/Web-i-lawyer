@@ -1,6 +1,6 @@
 .homepage{
     padding: 90px 0 80px;
-    background-image: url(./assets/images/homepage.png);
+    background-image: url(../images/homepage.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -55,7 +55,7 @@
 .homepage__form-input{
     display: flex;
     flex-direction: column;
-    row-gap: 13px;
+    row-gap: 1rem;
 }
 .homepage__textarea{
     border: none !important;
@@ -76,7 +76,7 @@
 .homepage__data{
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 1rem;
 }
 .homepage__specialized{
     position: relative;
@@ -86,6 +86,7 @@
     right: 1rem;
     top: 2.5rem;
 }
+
 .homepage-arrow-right{
     transform: translateX(0);
     transition: transform .3s;
@@ -94,34 +95,32 @@
     transform: translateX(.25rem);
 
 }
-form.homepage__form {
-    display: flex;
-    background-color: #fff;
-    column-gap: 22px;
-    margin: 0 auto;
+.homepage__button{
+    width: 173px;
+    display: flex !important;
+    column-gap: 1.3rem;
 }
-.form__control{
+
+/* .form__control{
     border: none;
 
-}
+} */
 .homepage__lawyer{
-    padding: 25px 10px 25px 60px;
+    padding: 13px 10px 13px 60px;
+    border: none !important;
 }
 .form__search{
     position: absolute;
     left: 1.5rem;
-    top: 1.25rem;
+    top: 0.5rem;
     color: var(--primary-color00);
     font-size: 1.4rem;
-
 }
 .homepage__form-img{
     width: 22px;
     height: 22px;
     position: absolute;
-    top: 1.6rem;
-    left: -1rem;
-
+    top: 0.8rem;
 }
 .form__specialized{
     display: flex;
@@ -156,10 +155,10 @@ form.homepage__form {
     .homepage__text {
         width: 397px !important;
     }
-    form.homepage__form {
+    /* form.homepage__form {
         width: 927px;
         height: 74px;
-    }
+    } */
 
 }
 @media screen and (max-width: 1024px) {
@@ -169,9 +168,9 @@ form.homepage__form {
 }
 
 @media screen and (min-width: 1150px) {
-    .homepage__data{
+    /* .homepage__data{
         width: 767px;
-    }
+    } */
     .homepage__form-control{
         width: 100%;
     }

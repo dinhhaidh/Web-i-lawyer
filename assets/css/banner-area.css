@@ -30,12 +30,11 @@
 
 .banner-content .info span {
     color: var(--primary-color);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 input.form-control::placeholder{
     color: #A3A3A3;
-
 }
 
 .banner-content .banner-form {
@@ -128,9 +127,6 @@ input.form-control::placeholder{
 }
 
 @media only screen and (max-width: 767px) {
-    .banner-area {
-        padding-top: 60px
-    }
 
     .banner-area .container-fluid {
         padding-left: calc(var(--bs-gutter-x) * .5);
@@ -196,7 +192,7 @@ input.form-control::placeholder{
     }
 
     .banner-content .features-list {
-        margin-top: 20px
+        margin-top: 30px;
     }
 
     .banner-image {
@@ -207,6 +203,43 @@ input.form-control::placeholder{
         box-shadow: unset
     }
 }
+@media screen and (max-width: 375px) {
+    .banner-area {
+        padding-top: 130px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .banner-content h1 br {
+       display: none;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .banner-area {
+        padding-top: 130px;
+    }
+   
+}
+@media screen and (min-width: 575px) {
+    .banner-content {
+        margin-bottom: 25px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .banner-area {
+        padding-top: 260px;
+    }
+   
+}
+@media screen and (min-width: 1150px) {
+    .banner-area {
+        padding-top: 300px;
+    }
+   
+}
+
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .banner-area .container-fluid {
@@ -215,10 +248,7 @@ input.form-control::placeholder{
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .banner-area {
-        padding-top: 80px
-    }
-
+    
     .banner-area .container-fluid {
         max-width: 720px;
         padding-left: calc(var(--bs-gutter-x) * .5);
@@ -279,6 +309,7 @@ input.form-control::placeholder{
         padding-left: 0;
         margin-top: 25px
     }
+   
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -290,7 +321,8 @@ input.form-control::placeholder{
 
     .banner-content {
         padding-right: 0;
-        top: 0
+        top: 0;
+        padding-bottom: 3rem;
     }
 
     .banner-content h1 {
@@ -316,11 +348,39 @@ input.form-control::placeholder{
         margin-top: 30px
     }
 }
+@media screen and (max-width: 1024px) {
+    .banner-content .features-list{
+        width: 100%;
+    }
+   
+}
+@media screen and (max-width: 420px) {
+    .banner-content .features-list {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
+@media screen and (min-width: 1023px) {
+    .banner-content .features-list{
+        width: 916px;
+        margin: 30px auto 0 auto ;
+    }
+}
+
+
+
 @media screen and (max-width: 1150px) {
     .banner-content .banner-form{
         width: 100%;
     }
+   
 }
+@media screen and (min-width: 1024px) {
+    .banner-content {
+        margin-bottom: 80px;
+    }
+}
+
 
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -339,7 +399,7 @@ input.form-control::placeholder{
     .banner-content h1 {
         font-size: 63px;
         margin-bottom: 30px;
-        margin-top: -12px
+        margin-top: 130px;
     }
 
     .banner-content .info {
@@ -367,6 +427,15 @@ input.form-control::placeholder{
         padding-left: 25px
     }
 }
+@media screen and (min-width: 1400px) {
+    .banner-content h1 {
+        margin-top: 15px;
+    }
+    .banner-area {
+        padding-top: 320px;
+    }
+}
+
 
 @media only screen and (min-width: 1600px) {
     .banner-area .container-fluid {
@@ -387,5 +456,8 @@ input.form-control::placeholder{
     .banner-image {
         padding-left: 50px
     }
+
+   
+    
 }
 

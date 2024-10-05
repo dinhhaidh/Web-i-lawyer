@@ -76,6 +76,9 @@ body {
     color: #2E2E3D;
     font-family: "Dm sans", sans-serif;
 }
+.nav__item a:hover{
+    color: var(--primary-color00) !important;
+}
 
 
 @media only screen and (max-width: 767px) {
