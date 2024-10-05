@@ -170,9 +170,7 @@
 }
 
 @media screen and (min-width: 1150px) {
-    .about-content {
-        width: 597px;
-    }
+   
     .about-image{
         width: 550px;
         height: 770px;
@@ -181,6 +179,12 @@
         width: 569px;
     }
 }
+@media screen and (min-width: 1280px) {
+    .about-content {
+        width: 597px;
+    }
+}
+
 
 @keyframes _ngcontent-ng-c1223694618_rotation {
     0% {
