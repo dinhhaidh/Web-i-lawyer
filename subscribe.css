@@ -1,0 +1,261 @@
+.subscribe{
+    background-color: #202037;
+}
+.subscribe-area.bg-color {
+    background-color: transparent;
+    position: relative;
+    padding-top: 0;
+    z-index: 2
+}
+.subscribe__data{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.subscribe__container{
+    padding-top: 100px;
+}
+
+.subscribe-area.bg-color:before {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 50%;
+    content: "";
+    position: absolute;
+    background-color: #325343
+}
+
+.subscribe-area.bg-black {
+    background-color: #202037 !important
+}
+
+.subscribe-area.bg-black .subscribe-content h2 {
+    color: var(--whiteColor)
+}
+
+.subscribe-area.bg-black .subscribe-content p {
+    color: #e0e6e9
+}
+
+.subscribe-image {
+    padding-right: 95px
+}
+
+.subscribe-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px
+}
+
+.subscribe-content form {
+    margin-top: 22px
+}
+
+.subscribe-content form .input-newsletter {
+    height: 55px;
+    border-radius: 5px;
+    font-size: var(--fontSize);
+    color: var(--headingColor);
+    background-color: var(--whiteColor);
+    border: 1px solid var(--borderColor);
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+.subscribe-content form .input-newsletter::placeholder {
+    color: var(--bodyColor);
+    transition: var(--transition)
+}
+
+.subscribe-content form .input-newsletter:focus::placeholder {
+    color: transparent
+}
+
+.subscribe-content form .default-btn {
+    margin-top: 20px
+}
+
+.subscribe-inner.style-two {
+    border-radius: 15px;
+    background-color: var(--secondaryColor);
+    padding-top: 25px;
+    padding-left: 70px;
+    padding-right: 70px
+}
+
+.subscribe-inner.style-two .subscribe-image {
+    padding-right: 0
+}
+
+.subscribe-inner.style-two .subscribe-content {
+    padding-left: 15px
+}
+
+.subscribe-inner.style-two .subscribe-content form {
+    position: relative
+}
+
+.subscribe-inner.style-two .subscribe-content form .default-btn {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 0;
+    position: absolute;
+    background-color: #325343
+}
+
+.subscribe-inner.style-two .subscribe-content form .default-btn:hover {
+    background-color: var(--primaryColor)
+}
+.subscribe__title{
+    color: #fff;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.25rem, 1.1842105263157894rem + 0.3289473684210526vw, 1.5rem) !important;
+    margin-bottom: 10px !important;
+    
+}
+.subscribe__desc{
+    color: #fff !important;
+    margin-bottom: 25px !important;
+}
+.subscribe-name::placeholder {
+    color: #a3a3a3;
+    font-weight: 400;
+    font-family: "DM sans", sans-serif;
+    font-size: 16px !important;
+}
+.subscribe__button{
+    margin-left: 30px !important;
+}
+
+@media screen and (min-width: 768px) {
+    .subscribe__data{
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .subscribe-image {
+        padding-right: 0;
+        margin-bottom: 25px
+    }
+
+    .subscribe-content h2 {
+        font-size: 18px;
+        margin-bottom: 10px
+    }
+
+    .subscribe-content form {
+        margin-top: 15px
+    }
+
+    .subscribe-content form .input-newsletter {
+        height: 49px;
+        font-size: 14px;
+        padding-left: 15px;
+        padding-right: 15px
+    }
+
+    .subscribe-content form .default-btn {
+        margin-top: 15px
+    }
+
+    .subscribe-inner.style-two {
+        border-radius: 5px;
+        padding: 25px 20px
+    }
+
+    .subscribe-inner.style-two .subscribe-content {
+        padding-left: 0
+    }
+
+    .subscribe-inner.style-two .subscribe-content form .default-btn {
+        margin-top: 15px;
+        position: relative
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .subscribe-inner.style-two .subscribe-content form .default-btn {
+        margin-top: 0;
+        position: absolute
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .subscribe-image {
+        margin-bottom: 25px;
+        padding-right: 0
+    }
+
+    .subscribe-content h2 {
+        font-size: 22px;
+        margin-bottom: 12px
+    }
+
+    .subscribe-content form {
+        margin-top: 18px
+    }
+
+    .subscribe-content form .input-newsletter {
+        height: 53px;
+        font-size: 15px;
+        padding-left: 17px;
+        padding-right: 17px
+    }
+
+    .subscribe-content form .default-btn {
+        margin-top: 15px
+    }
+
+    .subscribe-inner.style-two {
+        border-radius: 10px;
+        padding: 50px
+    }
+
+    .subscribe-inner.style-two .subscribe-content {
+        padding-left: 0
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .subscribe-image {
+        padding-right: 0
+    }
+
+    .subscribe-content h2 {
+        font-size: 23px;
+        margin-bottom: 12px
+    }
+
+    .subscribe-content form {
+        margin-top: 20px
+    }
+
+    .subscribe-inner.style-two {
+        padding-left: 25px;
+        padding-right: 25px
+    }
+
+    .subscribe-inner.style-two .subscribe-content {
+        padding-left: 0
+    }
+
+    .subscribe-inner.style-two .subscribe-content h2 {
+        font-size: 22px
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .subscribe-image {
+        padding-right: 25px
+    }
+
+    .subscribe-inner.style-two .subscribe-content h2 {
+        font-size: 23px
+    }
+}

@@ -1,0 +1,272 @@
+.company-box {
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    transition: var(--transition);
+    background-color: var(--whiteColor);
+    border: 1px solid var(--borderColor);
+}
+
+.company-box .company-logo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #f4f7fb;
+}
+
+.company-box .company-logo img {
+    left: 0;
+    right: 0;
+    top: 50%;
+    max-width: 80px;
+    position: absolute;
+    transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.company-box .content {
+    margin-left: 15px;
+}
+
+.company-box .content h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.company-box .location {
+    color: var(--primaryColor);
+}
+
+.company-box .link-btn {
+    border-radius: 10px;
+}
+
+.company-box:hover {
+    transform: translateY(-5px);
+    border-color: var(--primaryColor);
+}
+
+.company-content {
+    margin-bottom: 25px;
+    padding-right: 65px;
+}
+
+.company-content h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.company-content ul {
+    margin-top: 20px;
+}
+
+.company-content ul li {
+    margin-bottom: 15px;
+    color: var(--headingColor);
+}
+
+.company-content
+    ul
+    li
+    .icon {
+    width: 31px;
+    height: 31px;
+    display: flex;
+    margin-right: 12px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: var(--whiteColor);
+    background-color: var(--primaryColor);
+}
+
+.company-content ul li:last-child {
+    margin-right: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .company-box {
+        padding: 18px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .company-box .company-logo {
+        width: 90px;
+        height: 90px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .company-box .content {
+        margin-left: 0;
+        margin-top: 12px;
+    }
+
+    .company-box .content h3 {
+        font-size: 16px;
+        margin-bottom: 7px;
+    }
+
+    .company-box .location {
+        margin-top: 7px;
+    }
+
+    .company-box .link-btn {
+        border-radius: 5px;
+    }
+
+    .company-content {
+        padding-right: 0;
+    }
+
+    .company-content h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .company-content ul {
+        margin-top: 15px;
+    }
+
+    .company-content ul li {
+        margin-bottom: 12px;
+    }
+
+    .company-content
+        ul
+        li
+        .icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .company-box {
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .company-box .company-logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .company-box .content {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .company-box .content h3 {
+        margin-bottom: 7px;
+    }
+
+    .company-box .location {
+        margin-top: 7px;
+    }
+
+    .company-box .link-btn {
+        border-radius: 5px;
+    }
+
+    .company-content {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .company-content h2 {
+        font-size: 22px;
+    }
+
+    .company-content ul {
+        margin-top: 18px;
+    }
+
+    .company-content ul li {
+        justify-content: center;
+        margin-bottom: 12px;
+    }
+
+    .company-content
+        ul
+        li
+        .icon {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .company-box {
+        text-align: center;
+    }
+
+    .company-box .company-logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .company-box .content {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .company-box .content h3 {
+        margin-bottom: 7px;
+    }
+
+    .company-box .location {
+        margin-top: 7px;
+    }
+
+    .company-content {
+        padding-right: 0;
+    }
+
+    .company-content ul li {
+        margin-bottom: 12px;
+    }
+
+    .company-content
+        ul
+        li
+        .icon {
+        width: 26px;
+        height: 26px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .company-box {
+        text-align: center;
+    }
+
+    .company-box .company-logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .company-box .content {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .company-box .content h3 {
+        margin-bottom: 7px;
+    }
+
+    .company-box .location {
+        margin-top: 7px;
+    }
+
+    .company-content {
+        padding-right: 25px;
+    }
+}

@@ -1,0 +1,313 @@
+
+.footer-area {
+    background-color: #f5f9fc
+}
+
+.footer-area.bg-color {
+    z-index: 1;
+    position: relative;
+    background-color: #325343
+}
+
+.footer-area.bg-color .single-footer-widget .socials-link li a {
+    color: #d5d8dc
+}
+
+.footer-area.bg-color .single-footer-widget .socials-link li a:hover {
+    color: var(--secondaryColor)
+}
+
+.footer-area.bg-color .single-footer-widget h3 {
+    color: var(--whiteColor)
+}
+
+.footer-area.bg-color .single-footer-widget .custom-links li a {
+    color: #d5d8dc
+}
+
+.footer-area.bg-color .single-footer-widget .custom-links li a:hover {
+    color: var(--secondaryColor)
+}
+
+.footer-area.bg-color .single-footer-widget .contact-info li {
+    color: #d5d8dc
+}
+
+.footer-area.bg-color .single-footer-widget .contact-info li span {
+    color: var(--secondaryColor)
+}
+
+.footer-area.bg-color .single-footer-widget .contact-info li a {
+    color: #d5d8dc
+}
+
+.footer-area.bg-color .single-footer-widget .contact-info li a:hover {
+    color: var(--secondaryColor)
+}
+
+.footer-area.bg-color .copyright-area {
+    border-top-color: #ffffff0f
+}
+
+.footer-area.bg-color .copyright-area p {
+    color: #d5d8dc
+}
+
+.footer-area.bg-color .copyright-area p a {
+    color: var(--secondaryColor)
+}
+
+.footer-area.bg-color .copyright-area p a:hover {
+    color: var(--primaryColor)
+}
+
+.footer-area.bg-color .copyright-area .form-select {
+    filter: invert(1)
+}
+
+.footer-area.bg-color .shape {
+    display: inline-block
+}
+
+.footer-area .shape {
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    display: none;
+    position: absolute
+}
+
+.footer-area.bg-black {
+    background-color: #202037 !important
+}
+
+.footer-area.bg-black .single-footer-widget h3 {
+    color: var(--whiteColor)
+}
+
+.footer-area.bg-black .single-footer-widget .socials-link li a {
+    color: #e0e6e9
+}
+
+.footer-area.bg-black .single-footer-widget .socials-link li a:hover {
+    color: var(--primaryColor)
+}
+
+.footer-area.bg-black .single-footer-widget .custom-links li a {
+    color: #e0e6e9
+}
+
+.footer-area.bg-black .single-footer-widget .custom-links li a:hover {
+    color: var(--primaryColor)
+}
+
+.footer-area.bg-black .single-footer-widget .contact-info li {
+    color: #e0e6e9
+}
+
+.footer-area.bg-black .single-footer-widget .contact-info li span {
+    color: var(--primaryColor)
+}
+
+.footer-area.bg-black .single-footer-widget .contact-info li a {
+    color: #e0e6e9
+}
+
+.footer-area.bg-black .single-footer-widget .contact-info li a:hover {
+    color: var(--primaryColor)
+}
+
+.footer-area.bg-black .copyright-area p {
+    color: #e0e6e9
+}
+
+.footer-area.bg-black .copyright-area .form-select {
+    filter: invert(1)
+}
+
+.single-footer-widget {
+    margin-bottom: 25px
+}
+
+.single-footer-widget .logo {
+    margin-bottom: 30px
+}
+
+.single-footer-widget .socials-link li {
+    margin-bottom: 10px
+}
+
+.single-footer-widget .socials-link li a {
+    color: var(--bodyColor)
+}
+
+.single-footer-widget .socials-link li a span {
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: var(--whiteColor);
+    transition: var(--transition);
+    background-color: var(--primaryColor)
+}
+
+.single-footer-widget .socials-link li a.facebook span {
+    background-color: #1877f2
+}
+
+.single-footer-widget .socials-link li a.twitter span {
+    background-color: #000
+}
+
+.single-footer-widget .socials-link li a.linkedin span {
+    background-color: #0077b5
+}
+
+.single-footer-widget .socials-link li a:hover {
+    color: var(--primaryColor)
+}
+
+.single-footer-widget .socials-link li:last-child {
+    margin-bottom: 0
+}
+
+.single-footer-widget h3 {
+    font-size: 18px;
+    margin-bottom: 15px
+}
+
+.single-footer-widget .custom-links li {
+    margin-bottom: 12px
+}
+
+.single-footer-widget .custom-links li a {
+    color: var(--bodyColor)
+}
+
+.single-footer-widget .custom-links li a:hover {
+    color: var(--primaryColor)
+}
+
+.single-footer-widget .custom-links li:last-child {
+    margin-bottom: 0
+}
+
+.single-footer-widget .contact-info li {
+    margin-bottom: 15px;
+    color: var(--bodyColor)
+}
+
+.single-footer-widget .contact-info li span {
+    margin-bottom: 2px;
+    color: var(--primaryColor)
+}
+
+.single-footer-widget .contact-info li a {
+    color: var(--bodyColor)
+}
+
+.single-footer-widget .contact-info li a:hover {
+    color: var(--primaryColor)
+}
+
+.single-footer-widget .contact-info li:last-child {
+    margin-bottom: 0
+}
+
+.copyright-area {
+    margin-top: 75px;
+    border-top: 1px solid rgba(98, 100, 106, .2);
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+
+.copyright-area p a {
+    color: var(--primaryColor)
+}
+
+.copyright-area p a:hover {
+    color: var(--secondaryColor)
+}
+
+.copyright-area .form-select {
+    border: 0;
+    width: auto;
+    margin-left: auto;
+    box-shadow: unset;
+    padding: 0 35px 0 0;
+    font-size: var(--fontSize);
+    color: var(--headingColor);
+    background-color: transparent;
+    background-position: right 0 center
+}
+.support,
+.footer__desc{
+    color: #fff !important;
+    font-family: "Space Grotesk", sans-serif;
+}
+.footer__title{
+    font-family: "Space Grotesk", sans-serif;
+}
+.footer__item{
+    font-family: "DM sans", sans-serif;
+}
+.footer__item:hover{
+    color: var(--primary-color00) !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .single-footer-widget .logo {
+        margin-bottom: 20px
+    }
+
+    .single-footer-widget .socials-link li a span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px
+    }
+
+    .single-footer-widget h3 {
+        font-size: 16px;
+        margin-bottom: 15px
+    }
+
+    .single-footer-widget .custom-links li {
+        margin-bottom: 10px
+    }
+
+    .single-footer-widget .contact-info li {
+        margin-bottom: 12px
+    }
+
+    .copyright-area {
+        margin-top: 25px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px
+    }
+
+    .copyright-area .form-select {
+        font-size: 14px;
+        margin-top: 8px;
+        margin-left: auto;
+        margin-right: auto
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-footer-widget .logo {
+        margin-bottom: 25px
+    }
+
+    .copyright-area {
+        margin-top: 55px;
+        padding-top: 25px;
+        padding-bottom: 25px
+    }
+
+    .copyright-area .form-select {
+        font-size: 15px
+    }
+}

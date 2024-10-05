@@ -1,0 +1,261 @@
+.how-jove-works-area .row .col {
+    flex: 0 0 auto;
+    width: 20%;
+}
+
+.how-jove-works-area
+    .row
+    .col:last-child
+    .box:before {
+    display: none;
+}
+
+.how-jove-works-area
+    .row
+    .col:nth-child(2)
+    .box:before,
+.how-jove-works-area
+    .row
+    .col:nth-child(4)
+    .box:before {
+    transform: scaleY(-1);
+}
+
+.how-jove-works-area.bg-color {
+    background-color: #325343;
+}
+
+.how-jove-works-area.bg-color
+    .section-title
+    h2 {
+    color: var(--whiteColor);
+}
+
+.how-jove-works-area.bg-color
+    .box
+    .icon {
+    background-color: #3a7157;
+    border: none;
+}
+
+.how-jove-works-area.bg-color
+    .box
+    .number {
+    color: var(--headingColor);
+    background-color: var(--secondaryColor);
+}
+
+.how-jove-works-area.bg-color .box h3 {
+    color: var(--whiteColor);
+}
+
+.how-jove-works-area.bg-color .box:before {
+    background-image: url(right-arrow-2.3c3c5c53e39ae849.png);
+}
+
+.how-jove-works-area.bg-color
+    .box:hover
+    .icon {
+    background-color: var(--primaryColor);
+}
+
+.box {
+    margin-bottom: 25px;
+}
+
+.box .icon {
+    width: 146px;
+    height: 146px;
+    line-height: 140px;
+    border-radius: 50%;
+    transition: var(--transition);
+    background-color: var(--whiteColor);
+    border: 1px solid var(--borderColor);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box .number {
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    line-height: 50px;
+    border-radius: 50%;
+    color: var(--whiteColor);
+    background-color: var(--primaryColor);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box h3 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.box:before {
+    top: 75px;
+    content: "";
+    width: 102px;
+    height: 14px;
+    right: -63.8px;
+    position: absolute;
+    background-image: url(right-arrow.a48a3a05b296ffdc.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box:hover .icon {
+    border-color: var(--primaryColor);
+}
+.search{
+    background-color: #00c6c1 !important;
+    font-family: "DM sans", sans-serif;
+    font-weight: 700;
+    font-size: clamp(1rem, 0.9671052631578947rem + 0.1644736842105263vw, 1.125rem);
+}
+.how-jove-image img{
+    width: 102px !important;
+    height: 14px !important;
+}
+
+.how-jove__data{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.how-jove__content{
+    margin-bottom: 0px !important;
+}
+.how-jove-image {
+    margin-top: -60px;
+}
+
+@media screen and (max-width: 375px) {
+    .how-jove__data{
+        display: grid !important;
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}
+@media screen and (min-width: 375px) {
+    .how-jove__data{
+        display: grid !important;
+        grid-template-columns: repeat(2, max-content);
+        gap: 1.5rem;
+    }
+}
+@media screen and (min-width: 520px) {
+    .how-jove__data{
+        grid-template-columns: repeat(3, max-content);
+    }
+}
+@media screen and (min-width: 620px) {
+    .how-jove__data{
+        grid-template-columns: repeat(4, max-content);
+    }
+}
+@media screen and (min-width: 720px) {
+    .how-jove__data{
+        grid-template-columns: repeat(5, max-content);
+    }
+}
+@media screen and (min-width: 768px) {
+    .how-jove__data{
+        display: flex !important;
+        gap: 2rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .how-jove__data{
+        gap: 0px;
+        column-gap: 5px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .how-jove-image{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .how-jove-works-area .row .col {
+        width: 50%;
+    }
+
+    .box .icon {
+        width: 120px;
+        height: 120px;
+        line-height: 105px;
+    }
+
+    .box .number {
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        line-height: 40px;
+    }
+
+    .box h3 {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .box:before {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .how-jove-works-area .row .col {
+        width: 33.3333333333%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .box .icon {
+        width: 120px;
+        height: 120px;
+        line-height: 110px;
+    }
+
+    .box .number {
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        line-height: 40px;
+    }
+
+    .box h3 {
+        margin-top: 15px;
+    }
+
+    .box:before {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .box .icon {
+        width: 140px;
+        height: 140px;
+        line-height: 130px;
+    }
+
+    .box .number {
+        margin-top: -20px;
+    }
+
+    .box h3 {
+        margin-top: 18px;
+    }
+
+    .box:before {
+        display: none;
+    }
+}

@@ -1,0 +1,186 @@
+.homepage{
+    padding: 90px 0 80px;
+    background-image: url(./assets/images/homepage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.homepage__container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.home__title{
+    color: #00184b !important;
+}
+.homepage__text{
+    color:#2E2E3D;
+}
+.homepage__lable{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.homepage__lable label{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    padding: 0 0 0 15px;
+}
+
+.homepage__form-name label, .homepage__lable label{
+    color: #00184B;
+    font-weight: 400;
+    font-family: "DM sans", sans-serif;
+    font-size: 16px;
+}
+.homepage__lable input{
+    background-color: #fff;
+    padding: 10px 50px 10px 15px;
+    border: none;
+    border-radius: 6px;
+
+}
+.homepage__lable input::placeholder,
+.homepage__form-name input::placeholder {
+    color: #a3a3a3;
+    font-weight: 400;
+    font-family: "DM sans", sans-serif;
+    font-size: 16px !important;
+}
+.homepage__form-control{
+    display: flex;
+    column-gap: 1rem;
+}
+.homepage__form-input{
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+}
+.homepage__textarea{
+    border: none !important;
+    width: 100%;
+    resize: none !important;
+    border-radius: 6px;
+    padding: 10px 50px 10px 15px;
+    margin-bottom: 30px;
+}
+.homepage__form-name{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.homepage__form-name label{
+    padding: 0px 0px 0px 15px;
+}
+.homepage__data{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.homepage__specialized{
+    position: relative;
+}
+.homepage__arrow{
+    position: absolute;
+    right: 1rem;
+    top: 2.5rem;
+}
+.homepage-arrow-right{
+    transform: translateX(0);
+    transition: transform .3s;
+}
+.homepage-arrow-right:hover{
+    transform: translateX(.25rem);
+
+}
+form.homepage__form {
+    display: flex;
+    background-color: #fff;
+    column-gap: 22px;
+    margin: 0 auto;
+}
+.form__control{
+    border: none;
+
+}
+.homepage__lawyer{
+    padding: 25px 10px 25px 60px;
+}
+.form__search{
+    position: absolute;
+    left: 1.5rem;
+    top: 1.25rem;
+    color: var(--primary-color00);
+    font-size: 1.4rem;
+
+}
+.homepage__form-img{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 1.6rem;
+    left: -1rem;
+
+}
+.form__specialized{
+    display: flex;
+    column-gap: 10px;
+}
+
+@media screen and (max-width: 475px) {
+    .homepage__form-control{
+        column-gap: 3rem;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .homepage__form-control, .homepage__form-input {
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .homepage__form-control, .homepage__form-input {
+        width: 100%;
+    }
+   
+}
+
+@media screen and (min-width: 768px) {
+    .homepage__container{
+        column-gap: 3rem;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .homepage__text {
+        width: 397px !important;
+    }
+    form.homepage__form {
+        width: 927px;
+        height: 74px;
+    }
+
+}
+@media screen and (max-width: 1024px) {
+    form.homepage__form {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .homepage__data{
+        width: 767px;
+    }
+    .homepage__form-control{
+        width: 100%;
+    }
+    .homepage__lable input{
+        width: 100%;
+    }
+    .homepage__form-input {
+        width: 100%;
+    }
+}
+
+

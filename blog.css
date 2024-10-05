@@ -1,0 +1,122 @@
+.blog{
+    position: relative;
+}
+.blog__news{
+    font-size: clamp(1rem, 0.9671052631578947rem + 0.1644736842105263vw, 1.125rem) !important;
+}
+.outstanding{
+    margin-bottom: 4rem !important;
+}
+.blog__swiper{
+    padding-bottom: 5rem;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: "";
+}
+.swiper-button-prev img{
+   
+}
+.swiper-button-prev,
+.swiper-button-next{
+    border: 2px solid #E4E4E4;
+    border-radius: 50%;
+    padding: 2px 10px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+}
+
+.blog__container{
+    max-width:  1250px;
+    margin: 0 auto;
+}
+
+/* Căn chỉnh nút đốt */
+.blog .swiper-pagination-bullets{
+    /* bottom: -2.5rem; */
+    
+}
+/* Chỉnh nút đốt */
+.blog .swiper-pagination-bullet{
+    width: 1.5rem;
+    height: 0.25rem;
+    border-radius: 1rem;
+    background-color: #00C6C1;
+    transition: background-color .3s, opacity .3s;
+
+}
+.blog .swiper-slide-bullet-active{
+    background-color: #ccc !important;
+    width: 2.5rem;
+    height: 0.25rem;
+    border-radius: 1rem;
+}
+.blog__article {
+    border-radius: 4px !important;
+}
+.blog__news{
+    color: #1cbe72 !important;
+
+}
+.swiper__card{
+    padding: 25px 35px 30px 50px;
+}
+.blog__item{
+    font-size: 14px !important;
+    font-weight: 500;
+    font-family: "DM sans", sans-serif;
+    color: #707070;
+}
+.swiper__card h3{
+    font-size: clamp(1.25rem, 1.1842105263157894rem + 0.3289473684210526vw, 1.5rem) !important;
+    font-weight: 700;
+    font-family: "Space Grotesk", sans-serif;
+    color: #00184b;
+    line-height: 30px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #dedede;
+}
+.blog__article {
+    width: 371px;
+}
+.blog__read-more{
+    column-gap: 30px !important;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 1300px) {
+    .swiper-button-prev{
+        left: -4rem;
+        z-index: 3;
+    }
+    .swiper-button-next{
+        right: -4rem;
+        z-index: 3;
+    }
+    
+}
+@media screen and (min-width: 920px) {
+    .blog__title{
+        min-height: 115px ;
+    }
+}
+@media screen and (min-width: 928px) {
+    .blog__title{
+        /* min-height: 115px; */
+        min-height: 144px !important;
+    }
+    .blog__heading{
+        min-height: 144px !important;
+    }
+}
+
+
+@media screen and (max-width: 920px) {
+    .blog__title{
+        min-height: 113px;
+    }
+}
+
+
