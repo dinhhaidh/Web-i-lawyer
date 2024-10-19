@@ -1,0 +1,199 @@
+.title {
+    color: rgb(0, 24, 75);
+    font-weight: 700;
+    font-size: clamp(2rem, 1.53947rem + 2.30263vw, 3.75rem) !important;
+    font-family: "Space Grotesk", sans-serif !important;
+    text-align: center;
+}
+.contact{
+    padding-top: 3.5rem;
+    background-color: rgb(248, 248, 248);
+}
+.contact__main {
+    padding-bottom: 60px;
+}
+.contact__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    padding: 60px 0px 20px;
+    flex-direction: column;
+}
+.contact__content img{
+    width: 270px;
+}
+
+
+.contact__desc {
+    text-align: center;
+    color: rgb(0, 24, 75);
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contact__home {
+    font-size: clamp(0.875rem, 0.842105rem + 0.164474vw, 1rem);
+    color: rgb(0, 24, 75) !important;
+    text-decoration: none !important;
+    font-family: "DM Sans", sans-serif;
+}
+
+.contact__home span {
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+}
+
+.contact__data {
+    border-top: 1px solid rgb(214, 221, 235);
+    padding: 50px 0px 0px;
+}
+.contact__container {
+    padding: 20px 1.5rem 50px;
+}
+.contact__title {
+    /* width: 298px; */
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(1.625rem, 1.29605rem + 1.64474vw, 2.875rem);
+    font-weight: 700;
+    color: rgb(0, 24, 75);
+    letter-spacing: -1px;
+    line-height: 35px;
+    margin-bottom: 1rem;
+}
+.contact__text {
+    /* width: 426px; */
+    /* font-size: 14px; */
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    color: #2e2e3d;
+    line-height: 20px;
+}
+.form-group__name{
+    color: #00184b;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+    margin: 0 0 7px 13px;
+}
+.form-group input,
+.form-group textarea{
+    background-color: #f8f8f8;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+    color: #a3a3a3;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+}
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 2rem;
+}
+.contact__button{
+    width: 173px;
+    display:flex !important;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 30px !important;
+}
+.contact__map{
+    margin-top: 2rem;
+}
+.contact__span{
+    font-size: 14px;
+    color: #2E2E3D;
+    font-family: "DM Sans", sans-serif;
+    line-height: 20px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+}
+@media screen and (min-width: 500px) {
+    .contact__content img {
+        width: 320px;
+    }
+}
+
+
+@media screen and (min-width: 650px) {
+    .contact__data {
+        display: flex;
+        column-gap: 2rem;
+    }
+    .contact__content{
+        padding: 70px 0px 20px;
+    }
+}
+  
+@media screen and (min-width: 768px) {
+    .contact__title{
+        line-height: 52px;
+    }
+    .contact__content {
+        flex-direction: row;
+    }
+    .contact__content img{
+        width: 400px;
+    }
+  
+    .contact__title{
+        width: 298px;
+    }
+    .contact__data {
+        display: flex;
+        column-gap: 3.5rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .contact{
+        padding-top: 8rem;
+    }
+    .contact__data{
+        column-gap: 5.5rem;
+        padding: 70px 0px 0px;
+    }
+
+    .contact__map{
+        margin-top: 0px;
+    }
+   
+    .contact__container {
+        padding: 20px 1.5rem 0px;
+    }
+    .contact__content img {
+        width: unset;
+    }
+}
+@media screen and (min-width: 1150px) {
+    .contact__map{
+        width: 616px;
+        height: 889px;
+    }
+    .contact__map img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .contact__text{
+        width: 426px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .contact__title{
+        margin-bottom: 1.5rem;
+    }
+    .contact__form {
+        margin-top: 2.5rem;
+    }
+    .contact__button {
+        margin: 45px 0 30px !important;
+    }
+}
+
+
+
