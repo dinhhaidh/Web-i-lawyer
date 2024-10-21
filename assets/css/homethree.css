@@ -46,7 +46,7 @@ a.link-btn.d-inline-block.fw-medium.jobs__button.jobs__explore.homethree__button
         width: 100%;
     }
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 435px) {
     .homethree__data{
         flex-direction: column;
     }

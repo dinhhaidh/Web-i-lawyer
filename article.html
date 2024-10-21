@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jove - Angular Job Board Template">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Home Demo - 3 - Jove</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/variable.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/homethree.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/jobs.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/banner-area.css">
+    <link rel="stylesheet" href="./assets/css/company-box.css">
+    <link rel="stylesheet" href="./assets/css/how-jove-works-area.css">
+    <link rel="stylesheet" href="./assets/css/leading-company-content.css">
+    <link rel="stylesheet" href="./assets/css/navbar-area.css">
+    <link rel="stylesheet" href="./assets/css/blog.css">
+    <link rel="stylesheet" href="./assets/css/owl-theme.css">
+    <link rel="stylesheet" href="./assets/css/single-blog-post.css">
+    <link rel="stylesheet" href="./assets/css/single-category-box.css">
+    <link rel="stylesheet" href="./assets/css/single-expert-box.css">
+    <link rel="stylesheet" href="./assets/css/single-job-box.css">
+    <link rel="stylesheet" href="./assets/css/subscribe.css">
+    <link rel="stylesheet" href="./assets/css/homepage.css">
+    <link rel="stylesheet" href="./assets/css/testimonial-item.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/article.css">
+    <link rel="stylesheet" href="./assets/css/pagination.css">
+    <link rel="stylesheet" href="./assets/css/scrolltop.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+</head>
+
+<body>
+    <section class="header_top">
+        <div class="header__container container d-flex justify-content-between navbar-expand-lg">
+            <div class="header__data d-flex">
+                <div class="header__phone">
+                    <img src="./assets/images/icons/phone.svg" alt=""> &nbsp;
+                    <a href="#"><span class="header__desc">Hot Line</span> (+84) 312 567 899</a>
+                </div>
+                <div class="header__email header__phone">
+                    <img src="./assets/images/icons/email.svg" alt=""> &nbsp;
+                    <a href="#">support@ilawyer.vn</a>
+                </div>
+            </div>
+
+            <div class="header__login d-flex align-items-center">
+                <div class="header__lock header__phone">
+                    <img src="./assets/images/icons/lock.svg" alt=""> &nbsp;
+                    <a href="#">Đăng nhập</a>
+                </div>
+                <div class="header__brick"></div>
+                <div class=" header__phone">
+                    <img src="./assets/images/icons/Group 60.svg" alt=""> &nbsp;
+                    <a href="#">Đăng ký</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo"><img src="assets/images/logo.png" alt="logo"></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#homethree-banner" class="nav__link active-link">Trang chủ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#popular-jobs" class="nav__link">Giới thiệu</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about-us" class="nav__link">Tìm luật sư</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#leading-company" class="nav__link">TOP luật sư</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#how-jove-works" class="nav__link">Pricing</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#article" class="nav__link">Bài viết</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#blog" class="nav__link">Liên hệ</a>
+                    </li>
+
+
+                    <div class="switch">
+                        <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                        <label for="language-toggle"></label>
+                        <span class="on">EN</span>
+                        <span class="off">VI</span>
+                    </div>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+
+                </ul>
+
+
+            </div>
+
+            <!-- toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="contact">
+        <div class="contact__main container">
+            <div class="contact__content ">
+                <h1 class="title">Bài viết tại</h1>
+                <img src="./assets/images/contact-logo.png" alt="">
+            </div>
+            <p class="contact__desc contact-text">Cung cấp cho bạn những thông tin chính xác và cập nhật nhất về pháp
+                luật, giúp bạn
+                hiểu rõ hơn về quyền lợi và nghĩa vụ của mình trong các tình huống pháp lý khác nhau.
+            </p>
+
+            <form action="" class="homethree__data contact__artilce">
+                <div class="form-group position-relative"><i class="ri-search-line form__search"></i><input type="text"
+                        placeholder="Tên luật sư" class="form-control form__control homepage__lawyer">
+                </div>
+
+                <a href="#" class="link-btn d-inline-block fw-medium jobs__button jobs__explore homethree__button"> Tìm
+                    kiếm <img src="./assets/images/icons/arrow-right.svg" alt=""
+                        class="jobs__arrow homepage-arrow-right homepage-arrow-right"> </a>
+            </form>
+
+        </div>
+    </div>
+    <div class="article">
+        <p class="contact__home container article__subtitle">
+            <span>Trang chủ / </span><strong>Bài viết</strong>
+        </p>
+        <div class="article__container container ">
+            <p class="contact__home article__home ">
+                <span class="article__sort-by">Sắp xếp theo: &nbsp; </span><span class="article__all">Tất cả &nbsp; &nbsp; <img src="./assets/images/arrow-bottom.svg" alt=""></span>
+            </p>
+            
+            <div class="row justify-content-center">
+                <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
+                    <div class="job-item  overflow-hidden position-relative jobs_box">
+                        <div class="content article__list">
+                            <div class="jobs__list">
+                                <img src="./assets/images/article-img-1.png" alt="">
+                            </div>
+
+                            <div class="jobs__content article__card">
+                                <ul class="meta ps-0 list-unstyled blog__swiper-day">
+                                    <span class="d-inline-block blog__item">JUN 06, 2024</span>
+
+                                    <li class="blog__primary">tin tức pháp lý</li>
+                                </ul>
+                                <h4 class="article__description">5 Điều Cần Biết Khi Thuê Luật Sư Cho Doanh Nghiệp</h4>
+                                <span class="heading ">Bài viết này sẽ giải thích lý do tại sao việc thuê luật sư từ sớm
+                                    có thể giúp bạn tránh được nhiều rắc rối pháp lý.</span> <br>
+                                <img src="./assets/images/border-1.png" alt="" class="article__img">
+                                <div class="jobs__data article__read-more">
+                                    <div class="jobs__message blog__read-more">
+                                        <h5 class="jobs__send">
+                                            Đọc thêm
+                                        </h5>
+                                        <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
+                    <div class="job-item  overflow-hidden position-relative jobs_box">
+                        <div class="content article__list">
+                            <div class="jobs__list">
+                                <img src="./assets/images/article-img-2.png" alt="">
+                            </div>
+
+                            <div class="jobs__content article__card">
+                                <ul class="meta ps-0 list-unstyled blog__swiper-day">
+                                    <span class="d-inline-block blog__item">JUN 06, 2024</span>
+
+                                    <li class="blog__primary">tin tức pháp lý</li>
+                                </ul>
+                                <h4 class="article__description">5 Điều Cần Biết Khi Thuê Luật Sư Cho Doanh Nghiệp</h4>
+                                <span class="heading ">Bài viết này sẽ giải thích lý do tại sao việc thuê luật sư từ sớm
+                                    có thể giúp bạn tránh được nhiều rắc rối pháp lý.</span> <br>
+                                <img src="./assets/images/border-1.png" alt="" class="article__img">
+                                <div class="jobs__data article__read-more">
+                                    <div class="jobs__message blog__read-more">
+                                        <h5 class="jobs__send">
+                                            Đọc thêm
+                                        </h5>
+                                        <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
+                    <div class="job-item  overflow-hidden position-relative jobs_box">
+                        <div class="content article__list">
+                            <div class="jobs__list">
+                                <img src="./assets/images/article-img-3.png" alt="">
+                            </div>
+
+                            <div class="jobs__content article__card">
+                                <ul class="meta ps-0 list-unstyled blog__swiper-day">
+                                    <span class="d-inline-block blog__item">JUN 06, 2024</span>
+
+                                    <li class="blog__primary">tin tức pháp lý</li>
+                                </ul>
+                                <h4 class="article__description">5 Điều Cần Biết Khi Thuê Luật Sư Cho Doanh Nghiệp</h4>
+                                <span class="heading ">Bài viết này sẽ giải thích lý do tại sao việc thuê luật sư từ sớm
+                                    có thể giúp bạn tránh được nhiều rắc rối pháp lý.</span> <br>
+                                <img src="./assets/images/border-1.png" alt="" class="article__img">
+                                <div class="jobs__data article__read-more">
+                                    <div class="jobs__message blog__read-more">
+                                        <h5 class="jobs__send">
+                                            Đọc thêm
+                                        </h5>
+                                        <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
+                    <div class="job-item  overflow-hidden position-relative jobs_box">
+                        <div class="content article__list">
+                            <div class="jobs__list">
+                                <img src="./assets/images/article-img-4.png" alt="">
+                            </div>
+
+                            <div class="jobs__content article__card">
+                                <ul class="meta ps-0 list-unstyled blog__swiper-day">
+                                    <span class="d-inline-block blog__item">JUN 06, 2024</span>
+
+                                    <li class="blog__primary">tin tức pháp lý</li>
+                                </ul>
+                                <h4 class="article__description">5 Điều Cần Biết Khi Thuê Luật Sư Cho Doanh Nghiệp</h4>
+                                <span class="heading ">Bài viết này sẽ giải thích lý do tại sao việc thuê luật sư từ sớm
+                                    có thể giúp bạn tránh được nhiều rắc rối pháp lý.</span> <br>
+                                <img src="./assets/images/border-1.png" alt="" class="article__img">
+                                <div class="jobs__data article__read-more">
+                                    <div class="jobs__message blog__read-more">
+                                        <h5 class="jobs__send">
+                                            Đọc thêm
+                                        </h5>
+                                        <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
+                    <div class="job-item  overflow-hidden position-relative jobs_box">
+                        <div class="content article__list">
+                            <div class="jobs__list">
+                                <img src="./assets/images/article-img-5.png" alt="">
+                            </div>
+
+                            <div class="jobs__content article__card">
+                                <ul class="meta ps-0 list-unstyled blog__swiper-day">
+                                    <span class="d-inline-block blog__item">JUN 06, 2024</span>
+
+                                    <li class="blog__primary">tin tức pháp lý</li>
+                                </ul>
+                                <h4 class="article__description">5 Điều Cần Biết Khi Thuê Luật Sư Cho Doanh Nghiệp</h4>
+                                <span class="heading ">Bài viết này sẽ giải thích lý do tại sao việc thuê luật sư từ sớm
+                                    có thể giúp bạn tránh được nhiều rắc rối pháp lý.</span> <br>
+                                <img src="./assets/images/border-1.png" alt="" class="article__img">
+                                <div class="jobs__data article__read-more">
+                                    <div class="jobs__message blog__read-more">
+                                        <h5 class="jobs__send">
+                                            Đọc thêm
+                                        </h5>
+                                        <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
+                    <div class="job-item  overflow-hidden position-relative jobs_box">
+                        <div class="content article__list">
+                            <div class="jobs__list">
+                                <img src="./assets/images/article-img-6.png" alt="">
+                            </div>
+
+                            <div class="jobs__content article__card">
+                                <ul class="meta ps-0 list-unstyled blog__swiper-day">
+                                    <span class="d-inline-block blog__item">JUN 06, 2024</span>
+
+                                    <li class="blog__primary">tin tức pháp lý</li>
+                                </ul>
+                                <h4 class="article__description">5 Điều Cần Biết Khi Thuê Luật Sư Cho Doanh Nghiệp</h4>
+                                <span class="heading ">Bài viết này sẽ giải thích lý do tại sao việc thuê luật sư từ sớm
+                                    có thể giúp bạn tránh được nhiều rắc rối pháp lý.</span> <br>
+                                <img src="./assets/images/border-1.png" alt="" class="article__img">
+                                <div class="jobs__data article__read-more">
+                                    <div class="jobs__message blog__read-more">
+                                        <h5 class="jobs__send">
+                                            Đọc thêm
+                                        </h5>
+                                        <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
+                    <div class="job-item  overflow-hidden position-relative jobs_box">
+                        <div class="content article__list">
+                            <div class="jobs__list">
+                                <img src="./assets/images/article-img-7.png" alt="">
+                            </div>
+
+                            <div class="jobs__content article__card">
+                                <ul class="meta ps-0 list-unstyled blog__swiper-day">
+                                    <span class="d-inline-block blog__item">JUN 06, 2024</span>
+
+                                    <li class="blog__primary">tin tức pháp lý</li>
+                                </ul>
+                                <h4 class="article__description">5 Điều Cần Biết Khi Thuê Luật Sư Cho Doanh Nghiệp</h4>
+                                <span class="heading ">Bài viết này sẽ giải thích lý do tại sao việc thuê luật sư từ sớm
+                                    có thể giúp bạn tránh được nhiều rắc rối pháp lý.</span> <br>
+                                <img src="./assets/images/border-1.png" alt="" class="article__img">
+                                <div class="jobs__data article__read-more">
+                                    <div class="jobs__message blog__read-more">
+                                        <h5 class="jobs__send">
+                                            Đọc thêm
+                                        </h5>
+                                        <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
+                    <div class="job-item  overflow-hidden position-relative jobs_box">
+                        <div class="content article__list">
+                            <div class="jobs__list">
+                                <img src="./assets/images/article-img-8.png" alt="">
+                            </div>
+
+                            <div class="jobs__content article__card">
+                                <ul class="meta ps-0 list-unstyled blog__swiper-day">
+                                    <span class="d-inline-block blog__item">JUN 06, 2024</span>
+
+                                    <li class="blog__primary">tin tức pháp lý</li>
+                                </ul>
+                                <h4 class="article__description">5 Điều Cần Biết Khi Thuê Luật Sư Cho Doanh Nghiệp</h4>
+                                <span class="heading ">Bài viết này sẽ giải thích lý do tại sao việc thuê luật sư từ sớm
+                                    có thể giúp bạn tránh được nhiều rắc rối pháp lý.</span> <br>
+                                <img src="./assets/images/border-1.png" alt="" class="article__img">
+                                <div class="jobs__data article__read-more">
+                                    <div class="jobs__message blog__read-more">
+                                        <h5 class="jobs__send">
+                                            Đọc thêm
+                                        </h5>
+                                        <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
+                    <div class="job-item  overflow-hidden position-relative jobs_box">
+                        <div class="content article__list">
+                            <div class="jobs__list">
+                                <img src="./assets/images/article-img-9.png" alt="">
+                            </div>
+
+                            <div class="jobs__content article__card">
+                                <ul class="meta ps-0 list-unstyled blog__swiper-day">
+                                    <span class="d-inline-block blog__item">JUN 06, 2024</span>
+
+                                    <li class="blog__primary">tin tức pháp lý</li>
+                                </ul>
+                                <h4 class="article__description">5 Điều Cần Biết Khi Thuê Luật Sư Cho Doanh Nghiệp</h4>
+                                <span class="heading ">Bài viết này sẽ giải thích lý do tại sao việc thuê luật sư từ sớm
+                                    có thể giúp bạn tránh được nhiều rắc rối pháp lý.</span> <br>
+                                <img src="./assets/images/border-1.png" alt="" class="article__img">
+                                <div class="jobs__data article__read-more">
+                                    <div class="jobs__message blog__read-more">
+                                        <h5 class="jobs__send">
+                                            Đọc thêm
+                                        </h5>
+                                        <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
+                    <div class="job-item  overflow-hidden position-relative jobs_box">
+                        <div class="content article__list">
+                            <div class="jobs__list">
+                                <img src="./assets/images/article-img-10.png" alt="">
+                            </div>
+
+                            <div class="jobs__content article__card">
+                                <ul class="meta ps-0 list-unstyled blog__swiper-day">
+                                    <span class="d-inline-block blog__item">JUN 06, 2024</span>
+
+                                    <li class="blog__primary">tin tức pháp lý</li>
+                                </ul>
+                                <h4 class="article__description">5 Điều Cần Biết Khi Thuê Luật Sư Cho Doanh Nghiệp</h4>
+                                <span class="heading ">Bài viết này sẽ giải thích lý do tại sao việc thuê luật sư từ sớm
+                                    có thể giúp bạn tránh được nhiều rắc rối pháp lý.</span> <br>
+                                <img src="./assets/images/border-1.png" alt="" class="article__img">
+                                <div class="jobs__data article__read-more">
+                                    <div class="jobs__message blog__read-more">
+                                        <h5 class="jobs__send">
+                                            Đọc thêm
+                                        </h5>
+                                        <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
+                    <div class="job-item  overflow-hidden position-relative jobs_box">
+                        <div class="content article__list">
+                            <div class="jobs__list">
+                                <img src="./assets/images/article-img-11.png" alt="">
+                            </div>
+
+                            <div class="jobs__content article__card">
+                                <ul class="meta ps-0 list-unstyled blog__swiper-day">
+                                    <span class="d-inline-block blog__item">JUN 06, 2024</span>
+
+                                    <li class="blog__primary">tin tức pháp lý</li>
+                                </ul>
+                                <h4 class="article__description">5 Điều Cần Biết Khi Thuê Luật Sư Cho Doanh Nghiệp</h4>
+                                <span class="heading ">Bài viết này sẽ giải thích lý do tại sao việc thuê luật sư từ sớm
+                                    có thể giúp bạn tránh được nhiều rắc rối pháp lý.</span> <br>
+                                <img src="./assets/images/border-1.png" alt="" class="article__img">
+                                <div class="jobs__data article__read-more">
+                                    <div class="jobs__message blog__read-more">
+                                        <h5 class="jobs__send">
+                                            Đọc thêm
+                                        </h5>
+                                        <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
+                    <div class="job-item  overflow-hidden position-relative jobs_box">
+                        <div class="content article__list">
+                            <div class="jobs__list">
+                                <img src="./assets/images/article-img-12.png" alt="">
+                            </div>
+
+                            <div class="jobs__content article__card">
+                                <ul class="meta ps-0 list-unstyled blog__swiper-day">
+                                    <span class="d-inline-block blog__item">JUN 06, 2024</span>
+
+                                    <li class="blog__primary">tin tức pháp lý</li>
+                                </ul>
+                                <h4 class="article__description">5 Điều Cần Biết Khi Thuê Luật Sư Cho Doanh Nghiệp</h4>
+                                <span class="heading ">Bài viết này sẽ giải thích lý do tại sao việc thuê luật sư từ sớm
+                                    có thể giúp bạn tránh được nhiều rắc rối pháp lý.</span> <br>
+                                <img src="./assets/images/border-1.png" alt="" class="article__img">
+                                <div class="jobs__data article__read-more">
+                                    <div class="jobs__message blog__read-more">
+                                        <h5 class="jobs__send">
+                                            Đọc thêm
+                                        </h5>
+                                        <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <nav aria-label="Page navigation example ">
+        <ul class="pagination pagination__container container d-flex justify-content-center">
+          <li class="page-item pagination__item"><a class="page-link" href="#"><i class="ri-arrow-left-s-line"></i> Back</a></li>
+          <li class="page-item pagination__item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item pagination__item"><a class="page-link  pagination__info" href="#">2</a></li>
+          <li class="page-item pagination__item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item pagination__item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item pagination__item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item pagination__item"><a class="page-link" href="#">Next <i class="ri-arrow-right-s-line"></i> </a></li>
+        </ul>
+      </nav>
+
+
+
+
+    <section class="subscribe">
+        <div class="subscribe__container container">
+            <div class="subscribe__data">
+                <div class="subscribe-image text-center"><img src="assets/images/footer_image.png"
+                        alt="subscribe-image">
+                </div>
+
+                <div class="subscribe-content ">
+                    <h2 class="subscribe__title"> Đăng ký để không bỏ lỡ thông tin quan trọng!</h2>
+                    <p class="about__text subscribe__desc"> Nhận tin tức pháp luật và luôn cập nhật những thay đổi quan
+                        trọng. </p>
+                    <form><input type="text" placeholder="Nhập email của bạn!"
+                            class="input-newsletter d-block w-100 subscribe-name ">
+                        <a routerlink="/jobs-grid"
+                            class="link-btn d-inline-block fw-medium jobs__button jobs__explore explore "
+                            href="/jove/jobs-grid"> Subscribe
+                            <img src="./assets/images/icons/arrow-right.svg" alt=""
+                                class="jobs__arrow homepage-arrow-right subscribe__button">
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="footer" id="footer">
+        <div class="d-none">
+            <footer class="footer-area pt-100">
+                <div class="container">
+                    <div class="row">
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500"
+                            class="col-lg-3 col-sm-6 aos-init aos-animate">
+                            <div class="single-footer-widget">
+                                <a routerlink="/" class="logo d-inline-block" href="/jove/"><img
+                                        src="assets/images/footer_image.png" alt="logo"></a><!---->
+                                <ul class="socials-link mb-0 ps-0 list-unstyled">
+                                    <li><a href="#" target="_blank" class="facebook d-flex align-items-center"><span
+                                                class="d-block"><i class="ri-facebook-fill"></i></span> Facebook </a>
+                                    </li>
+                                    <li><a href="#" target="_blank" class="twitter d-flex align-items-center"><span
+                                                class="d-block"><i class="ri-twitter-x-line"></i></span> Twitter </a>
+                                    </li>
+                                    <li><a href="#" target="_blank" class="linkedin d-flex align-items-center"><span
+                                                class="d-block"><i class="ri-linkedin-fill"></i></span> Linkedin </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" data-aos-bk-delay="100"
+                            class="col-lg-3 col-sm-6 aos-init aos-animate">
+                            <div class="single-footer-widget">
+                                <h3 class=""> For candidates </h3>
+                                <ul class="custom-links ps-0 mb-0 list-unstyled">
+                                    <li><a routerlink="/jobs-grid" href="/jove/jobs-grid"> Browse jobs </a></li>
+                                    <li><a routerlink="/categories" href="/jove/categories"> Browse categories </a></li>
+                                    <li><a routerlink="/employers" href="/jove/employers"> Browse employers </a></li>
+                                    <li><a routerlink="/contact" href="/jove/contact"> Contact us </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" data-aos-bk-delay="200"
+                            class="col-lg-3 col-sm-6 aos-init aos-animate">
+                            <div class="single-footer-widget">
+                                <h3 class=""> Information </h3>
+                                <ul class="custom-links ps-0 mb-0 list-unstyled">
+                                    <li><a routerlink="/about" href="/jove/about"> About us </a></li>
+                                    <li><a routerlink="/contact" href="/jove/contact"> Contact us </a></li>
+                                    <li><a routerlink="/terms-conditions" href="/jove/terms-conditions"> Terms of use
+                                        </a></li>
+                                    <li><a routerlink="/privacy-policy" href="/jove/privacy-policy"> Cookie policy </a>
+                                    </li>
+                                    <li><a routerlink="/privacy-policy" href="/jove/privacy-policy"> Privacy center </a>
+                                    </li>
+                                    <li><a routerlink="/blog" href="/jove/blog"> Blog right sidebar </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" data-aos-bk-delay="300"
+                            class="col-lg-3 col-sm-6 aos-init aos-animate">
+                            <div class="single-footer-widget">
+                                <h3 class=""> Contact Info </h3>
+                                <ul class="contact-info ps-0 mb-0 list-unstyled">
+                                    <li><span class="d-block">Address:</span><a href="#" target="_blank"> 84 Wexham Road
+                                            RH19 8EA, USA </a></li>
+                                    <li><span class="d-block">Email:</span><a href="mailto:hello@jove.com">
+                                            hello@jove.com </a></li>
+                                    <li><span class="d-block">Phone:</span><a href="mailto:+1 (514) 312-5678"> +1 (514)
+                                            312-5678 </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright-area">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-6">
+                                <p>© Jove is Proudly Owned by <a href="https://hibootstrap.com/"
+                                        target="_blank">HiBootstrap</a>
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <select class="form-select fw-medium">
+                                    <option selected="">English</option>
+                                    <option value="1">Spanish</option>
+                                    <option value="2">French</option>
+                                    <option value="3">Portuguese</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/images/shapes/shape3.png" alt="shape" class="shape">
+            </footer>
+        </div>
+        <div class="ng-star-inserted">
+            <footer class="footer-area pt-5 bg-black pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-lg-3 col-sm-6 aos-init">
+                            <div class="single-footer-widget">
+                                <a routerlink="/" class="logo d-inline-block" href="/jove/"><img
+                                        src="assets/images/footer_i-lawyers.vn.png" alt="white-logo"></a>
+
+                                <div class="header__phone">
+                                    <img src="./assets/images/icons/phone.svg" alt=""> &nbsp;
+                                    <a href="#"><span class="header__desc">Hot Line</span>&nbsp;<span
+                                            class="footer__desc">(+84) 312 567 899</span></a>
+                                </div>
+
+                                <div class="header__email header__phone">
+                                    <img src="./assets/images/icons/email.svg" alt=""> &nbsp;
+                                    <a href="#" class="support">support@ilawyer.vn</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" data-aos-bk-delay="100"
+                            class="col-lg-3 col-sm-6 aos-init">
+                            <div class="single-footer-widget">
+                                <h3 class="footer__title"> Giới thiệu </h3>
+                                <ul class="custom-links ps-0 mb-0 list-unstyled">
+                                    <li><a routerlink="/jobs-grid" href="/jove/jobs-grid" class="footer__item"> Về chúng
+                                            tôi </a></li>
+                                    <li><a routerlink="/categories" href="/jove/categories" class="footer__item">Sứ mệnh
+                                            và tầm nhìn </a></li>
+                                    <li><a routerlink="/employers" href="/jove/employers" class="footer__item"> Điều
+                                            khoản sử dụng</a></li>
+                                    <li><a routerlink="/contact" href="/jove/contact" class="footer__item">Chính sách
+                                            bảo mật </a></li>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" data-aos-bk-delay="200"
+                            class="col-lg-3 col-sm-6 aos-init">
+                            <div class="single-footer-widget">
+                                <h3 class="footer__title"> Dịch vụ </h3>
+                                <ul class="custom-links ps-0 mb-0 list-unstyled">
+                                    <li><a routerlink="/about" href="/jove/about" class="footer__item"> Thuê luật sư</a>
+                                    </li>
+                                    <li><a routerlink="/contact" href="/jove/contact" class="footer__item">Gói dịch vụ
+                                            cho luật sư </a></li>
+                                    <li><a routerlink="/terms-conditions" href="/jove/terms-conditions"
+                                            class="footer__item">Bảng giá dịch vụ
+                                        </a></li>
+                                    <li><a routerlink="/privacy-policy" href="/jove/privacy-policy"
+                                            class="footer__item">Câu hỏi thường gặp (FAQ) </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" data-aos-bk-delay="300"
+                            class="col-lg-3 col-sm-6 aos-init">
+                            <div class="single-footer-widget">
+                                <h3 class="footer__title">Hỗ trợ khách hàng</h3>
+                                <ul class="custom-links ps-0 mb-0 list-unstyled">
+                                    <li><a routerlink="/about" href="/jove/about" class="footer__item">Trung tâm hỗ
+                                            trợ</a></li>
+                                    <li><a routerlink="/contact" href="/jove/contact" class="footer__item">Liên hệ </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <a href="#" class="scrollup show-scroll" id="scroll-up">
+        <i class="ri-arrow-up-s-line scrollup__icon"></i>
+    </a>
+
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+
+</body>
+
+</html>

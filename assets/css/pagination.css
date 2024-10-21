@@ -1,0 +1,21 @@
+.pagination__info{
+    background-color: var(--primary-color00) !important;
+    color: #fff !important;
+}
+.page-link{
+    color: #2E2E3D;
+}
+
+.pagination__container{
+    column-gap: 10px !important;
+    padding: 30px 0 60px 0px;
+}
+.pagination__item .page-link{
+    border-radius: 4px !important;
+}
+@media screen and (max-width: 450px) {
+    .pagination__item:nth-child(1),
+    .pagination__item:last-child{
+        display: none;
+    }
+}

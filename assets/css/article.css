@@ -1,0 +1,46 @@
+.article__container{
+    /* padding-top: 30px; */
+}
+.article__card{
+    padding: 25px 40px 30px 40px;
+}
+.article__read-more{
+    padding: 0;
+}
+.article__img{
+    padding-top: 20px;
+    width: 100%;
+}
+.article__description{
+    font-weight: 700;
+    font-family: "Space Grotesk", sans-serif;
+    line-height: 30px;
+    font-size: clamp(1.125rem, 1.0263157894736843rem + 0.4934210526315789vw, 1.5rem);
+    color: #00184b;
+}
+.article__home{
+    padding-block: 30px;
+    border-top: 1px solid #D6DDEB;
+    display: flex;
+    justify-content: flex-end;
+}
+.article__all{
+    font-weight: 500 !important;
+}
+.article__subtitle{
+    padding-block: 20px;
+}
+.article__sort-by{
+    color: #7C8493;
+}
+.article__top{
+    background-color: #f8f8f8;
+    padding-top: 50px;
+}
+
+
+@media screen and (min-width: 1150px) {
+    .article__list{
+        width: 370px;
+    }
+}
