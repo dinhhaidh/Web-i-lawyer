@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jove - Angular Job Board Template">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Home Demo - 3 - Jove</title>
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
+
+    <!-- ============ FONTS ============ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- ============ SWIPER ============ -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
+    <!-- ============ JQUERY-UI ============ -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/variable.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/homethree.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/jobs.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/banner-area.css">
+    <link rel="stylesheet" href="./assets/css/company-box.css">
+    <link rel="stylesheet" href="./assets/css/how-jove-works-area.css">
+    <link rel="stylesheet" href="./assets/css/leading-company-content.css">
+    <link rel="stylesheet" href="./assets/css/navbar-area.css">
+    <link rel="stylesheet" href="./assets/css/blog.css">
+    <link rel="stylesheet" href="./assets/css/owl-theme.css">
+    <link rel="stylesheet" href="./assets/css/single-blog-post.css">
+    <link rel="stylesheet" href="./assets/css/single-category-box.css">
+    <link rel="stylesheet" href="./assets/css/single-expert-box.css">
+    <link rel="stylesheet" href="./assets/css/single-job-box.css">
+    <link rel="stylesheet" href="./assets/css/subscribe.css">
+    <link rel="stylesheet" href="./assets/css/homepage.css">
+    <link rel="stylesheet" href="./assets/css/testimonial-item.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/article.css">
+    <link rel="stylesheet" href="./assets/css/pagination.css">
+    <link rel="stylesheet" href="./assets/css/pricing.css">
+    <link rel="stylesheet" href="./assets/css/lawyers.css">
+    <link rel="stylesheet" href="./assets/css/scrolltop.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+</head>
+
+<body>
+    <section class="header_top">
+        <div class="header__container container d-flex justify-content-between navbar-expand-lg">
+            <div class="header__data d-flex">
+                <div class="header__phone">
+                    <img src="./assets/images/icons/phone.svg" alt=""> &nbsp;
+                    <a href="#"><span class="header__desc">Hot Line</span> (+84) 312 567 899</a>
+                </div>
+                <div class="header__email header__phone">
+                    <img src="./assets/images/icons/email.svg" alt=""> &nbsp;
+                    <a href="#">support@ilawyer.vn</a>
+                </div>
+
+            </div>
+
+            <div class="header__login d-flex align-items-center">
+                <div class="header__lock header__phone">
+                    <img src="./assets/images/icons/lock.svg" alt=""> &nbsp;
+                    <a href="#">Đăng nhập</a>
+                </div>
+                <div class="header__brick"></div>
+                <div class=" header__phone">
+                    <img src="./assets/images/icons/Group 60.svg" alt=""> &nbsp;
+                    <a href="#">Đăng ký</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo"><img src="assets/images/logo.png" alt="logo"></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#homethree-banner" class="nav__link active-link">Trang chủ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#popular-jobs" class="nav__link">Giới thiệu</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about-us" class="nav__link">Tìm luật sư</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#leading-company" class="nav__link">TOP luật sư</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#how-jove-works" class="nav__link">Pricing</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#article" class="nav__link">Bài viết</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#blog" class="nav__link">Liên hệ</a>
+                    </li>
+
+
+                    <div class="switch">
+                        <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                        <label for="language-toggle"></label>
+                        <span class="on">EN</span>
+                        <span class="off">VI</span>
+                    </div>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+
+                </ul>
+
+
+            </div>
+
+            <!-- toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="contact">
+        <div class="contact__main container">
+            <div class="contact__content ">
+                <h1 class="title">Gói dịch vụ</h1>
+                <!-- <div class="contact__image">
+                    <h2 class="contact-desc">
+                        Toàn diện
+                    </h2>
+                </div> -->
+
+            </div>
+            <p class="contact__desc contact__client">Khám phá các gói dịch vụ đa dạng của chúng tôi, từ tư vấn cơ bản
+                đến dịch vụ toàn diện, giúp bạn tìm kiếm giải pháp pháp lý phù hợp với nhu cầu và ngân sách của mình.
+            </p>
+            <a href="#"
+                class="link-btn d-inline-block fw-medium jobs__button jobs__explore homethree__button contact-button">Mua
+                ngay<img src="./assets/images/icons/arrow-right.svg" alt=""
+                    class="jobs__arrow homepage-arrow-right homepage-arrow-right"> </a>
+        </div>
+    </div>
+
+    <div class="lawyer pricing">
+        <div class="lawyer__container container">
+            <p class="contact__home  article__subtitle lawyer__brick">
+                <span>Trang chủ / </span><strong>Pricing</strong>
+            </p>
+
+            <div id="tabs">
+                <ul class="tabs__content">
+                    <li><a href="#tabs-1">Monthly</a></li>
+                    <li><a href="#tabs-2" class="tabs__text"><span class="tabs__desc"> Yearly &nbsp; </span> <span><img
+                                    src="./assets/images/pricing-icon-1.png" alt=""> Ưu đãi giảm giá lên đến 20%
+                            </span></a></li>
+                </ul>
+                <div id="tabs-1">
+                    <div class="tabs__list">
+                        <div class="tabs__card ">
+                            <div class="tabs__subitle">
+                                <h5>
+                                    CƠ BẢN (Basic)
+                                </h5>
+                                <p>
+                                    Tham gia nền tảng và tiếp cận khách hàng tiềm năng với gói cơ bản
+                                </p>
+                            </div>
+
+                            <div class="tabs__data">
+                                <div class="tabs__round tabs-primary">
+                                    <div class="tabs-suntitle">
+                                        <h5>$ <h3 class="tabs__title">0</h3>
+                                        </h5>
+                                    </div>
+                                    <span>per year <br>
+                                        forever</span>
+                                </div>
+
+                                <div class="tabs-main">
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Tạo Profile miễn phí</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Cập nhật thông tin miễn phí</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Chuyên ngành: <strong>1</strong></span>
+                                    </div>
+                                    <div class="tabs__span">
+
+                                        <i class="ri-close-circle-fill pricing__close"></i>
+                                        <span class="tabs__gray">Nhận lượt khách hàng mới</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-close-circle-fill pricing__close"></i>
+                                        <span class="tabs__gray">Hỗ trợ nhanh 24/7</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-close-circle-fill pricing__close"></i>
+                                        <span class="tabs__gray">Hiển thị số điện thoại</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-close-circle-fill pricing__close"></i>
+                                        <span class="tabs__gray">Hiển thị Email</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-close-circle-fill pricing__close"></i>
+                                        <span class="tabs__gray">Hiển thị mạng xã hội</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-close-circle-fill pricing__close"></i>
+                                        <span class="tabs__gray">Ưu tiên kết quả tìm kiếm</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-close-circle-fill pricing__close"></i>
+                                        <span class="tabs__gray">Ưu tiên hiển thị trang chủ</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="tabs__primary">
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="tabs__card ">
+                            <div class="tabs__subitle tabs-info">
+                                <h5>
+                                    NÂNG CAO (Staler)
+                                </h5>
+                                <p>
+                                    Nhận hỗ trợ và tăng cường hiển thị trên nền tảng với gói nâng cao
+                                </p>
+                            </div>
+
+                            <div class="tabs__data">
+                                <div class="tabs__round tabs-info">
+                                    <div class="tabs-suntitle">
+                                        <h5>$ <h3 class="tabs__title">100</h3>
+                                        </h5>
+                                    </div>
+                                    <span>per year <br>
+                                        for the first 3 years
+                                    </span>
+                                </div>
+
+                                <div class="tabs-main">
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Tạo Profile miễn phí</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Cập nhật thông tin miễn phí</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Chuyên ngành: <strong>5</strong></span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Nhận <strong>5</strong> lượt khách hàng mới</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Hỗ trợ nhanh 24/7</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Hiển thị số điện thoại</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Hiển thị Email</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Hiển thị mạng xã hội</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Ưu tiên kết quả tìm kiếm</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-close-circle-fill pricing__close"></i>
+                                        <span class="tabs__gray">Ưu tiên hiển thị trang chủ</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="tabs__info">
+
+                                </div>
+                            </div>
+
+                            <div class="tabs__bg">
+                                <img src="./assets/images/pricing__star.svg" alt="">
+                                <span>Most popular</span>
+
+                            </div>
+                            <span class="tabs__success-1">
+
+                            </span>
+                            <span class="tabs__success-2">
+
+                            </span>
+
+                        </div>
+                        <div class="tabs__card tabs__cart">
+                            <div class="tabs__subitle tabs-warning">
+                                <h5>
+                                    CAO CẤP (PRO)
+                                </h5>
+                                <p>
+                                    Phát triển sự nghiệp và mở rộng mạng lưới với gói chuyên nghiệp
+                                </p>
+                            </div>
+
+                            <div class="tabs__data">
+                                <div class="tabs__round tabs-warning">
+                                    <div class="tabs-suntitle">
+                                        <h5>$ <h3 class="tabs__title">150</h3>
+                                        </h5>
+                                    </div>
+                                    <span>per year <br>
+                                        for the first 3 years
+                                    </span>
+                                </div>
+
+                                <div class="tabs-main">
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Tạo Profile miễn phí</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Cập nhật thông tin miễn phí</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Chuyên ngành: <strong>10</strong></span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Nhận <strong>30</strong> lượt khách hàng mới</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Hỗ trợ nhanh 24/7</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Hiển thị số điện thoại</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Hiển thị Email</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Hiển thị mạng xã hội</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Ưu tiên kết quả tìm kiếm</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Ưu tiên hiển thị trang chủ</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="tabs__warning">
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div id="tabs-2">
+                    <div class="tabs__list">
+                        <div class="tabs__card ">
+                            <div class="tabs__subitle">
+                                <h5>
+                                    CƠ BẢN (Basic)
+                                </h5>
+                                <p>
+                                    Tham gia nền tảng và tiếp cận khách hàng tiềm năng với gói cơ bản
+                                </p>
+                            </div>
+
+                            <div class="tabs__data">
+                                <div class="tabs__round tabs-primary">
+                                    <div class="tabs-suntitle">
+                                        <h5>$ <h3 class="tabs__title">0</h3>
+                                        </h5>
+                                    </div>
+                                    <span>per year <br>
+                                        forever</span>
+                                </div>
+
+                                <div class="tabs-main">
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Tạo Profile miễn phí</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Cập nhật thông tin miễn phí</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Chuyên ngành: <strong>1</strong></span>
+                                    </div>
+                                    <div class="tabs__span">
+
+                                        <i class="ri-close-circle-fill pricing__close"></i>
+                                        <span class="tabs__gray">Nhận lượt khách hàng mới</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-close-circle-fill pricing__close"></i>
+                                        <span class="tabs__gray">Hỗ trợ nhanh 24/7</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-close-circle-fill pricing__close"></i>
+                                        <span class="tabs__gray">Hiển thị số điện thoại</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-close-circle-fill pricing__close"></i>
+                                        <span class="tabs__gray">Hiển thị Email</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-close-circle-fill pricing__close"></i>
+                                        <span class="tabs__gray">Hiển thị mạng xã hội</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-close-circle-fill pricing__close"></i>
+                                        <span class="tabs__gray">Ưu tiên kết quả tìm kiếm</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-close-circle-fill pricing__close"></i>
+                                        <span class="tabs__gray">Ưu tiên hiển thị trang chủ</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="tabs__primary">
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="tabs__card ">
+                            <div class="tabs__subitle tabs-info">
+                                <h5>
+                                    NÂNG CAO (Staler)
+                                </h5>
+                                <p>
+                                    Nhận hỗ trợ và tăng cường hiển thị trên nền tảng với gói nâng cao
+                            </div>
+
+                            <div class="tabs__data">
+                                <div class="tabs__round tabs-info">
+                                    <div class="tabs-suntitle">
+                                        <h5>$ <h3 class="tabs__title">9.99</h3>
+                                        </h5>
+                                    </div>
+                                    <span>per month <br>
+                                        get 1 year $100
+                                    </span>
+                                </div>
+
+                                <div class="tabs-main">
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Tạo Profile miễn phí</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Cập nhật thông tin miễn phí</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Chuyên ngành: <strong>5</strong></span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Nhận <strong>5</strong> lượt khách hàng mới</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Hỗ trợ nhanh 24/7</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Hiển thị số điện thoại</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Hiển thị Email</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Hiển thị mạng xã hội</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Ưu tiên kết quả tìm kiếm</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-close-circle-fill pricing__close"></i>
+                                        <span class="tabs__gray">Ưu tiên hiển thị trang chủ</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="tabs__info">
+
+                                </div>
+                            </div>
+
+                            <div class="tabs__bg">
+                                <img src="./assets/images/pricing__star.svg" alt="">
+                                <span>Most popular</span>
+
+                            </div>
+                            <span class="tabs__success-1">
+
+                            </span>
+                            <span class="tabs__success-2">
+
+                            </span>
+
+                        </div>
+                        <div class="tabs__card tabs__cart">
+                            <div class="tabs__subitle tabs-warning">
+                                <h5>
+                                    CAO CẤP (PRO)
+                                </h5>
+                                <p>
+                                    Phát triển sự nghiệp và mở rộng mạng lưới với gói chuyên nghiệp
+                                </p>
+                            </div>
+
+                            <div class="tabs__data">
+                                <div class="tabs__round tabs-warning">
+                                    <div class="tabs-suntitle">
+                                        <h5>$ <h3 class="tabs__title">15.99</h3>
+                                        </h5>
+                                    </div>
+                                    <span>per month <br>
+                                        get 1 year $150
+                                    </span>
+                                </div>
+
+                                <div class="tabs-main">
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Tạo Profile miễn phí</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Cập nhật thông tin miễn phí</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Chuyên ngành: <strong>10</strong></span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Nhận <strong>30</strong> lượt khách hàng mới</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Hỗ trợ nhanh 24/7</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Hiển thị số điện thoại</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Hiển thị Email</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Hiển thị mạng xã hội</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Ưu tiên kết quả tìm kiếm</span>
+                                    </div>
+                                    <div class="tabs__span">
+                                        <i class="ri-checkbox-circle-fill pricing__succcess"></i>
+                                        <span>Ưu tiên hiển thị trang chủ</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="tabs__warning">
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <img src="./assets/images/pricing-logo.png" alt="" class="pricing__image">
+    </div>
+
+    <section class="leading-company bg-gray" id="leading-company">
+        <div class="leading-company-area pb-100">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="leading-company-content aos-init">
+                            <div class="box">
+                                <h2 class="leading-company-desc"> Tham gia mạng lưới Luật sư uy tín</h2>
+                                <p class="leading-company__connect">Bạn là luật sư và muốn mở rộng cơ hội kết nối với
+                                    nhiều khách hàng hơn? Hãy gia nhập nền tảng của chúng tôi ngay hôm nay!</p>
+                                <div class="row features-list">
+                                    <div class="col-sm-6"><span class="d-block position-relative enhance">
+                                            <img src="./assets/images/check.svg" alt="">
+                                            Tăng cường tiếp cận khách hàng</span></div>
+                                    <div class="col-sm-6"><span class="d-block position-relative enhance"> <img
+                                                src="./assets/images/check.svg" alt=""> Dịch vụ hỗ trợ chuyên
+                                            nghiệp</span></div>
+                                    <div class="col-sm-6"><span class="d-block position-relative enhance"> <img
+                                                src="./assets/images/check.svg" alt=""> Tăng cường uy tín cá nhân
+                                        </span></div>
+                                    <div class="col-sm-6"><span class="d-block position-relative enhance"> <img
+                                                src="./assets/images/check.svg" alt=""> Tăng doanh thu tiềm năng
+                                        </span></div>
+                                    <div class="col-sm-6"><span class="d-block position-relative enhance"> <img
+                                                src="./assets/images/check.svg" alt=""> Tính năng VIP độc quyền
+                                        </span></div>
+                                    <div class="col-sm-6"><span class="d-block position-relative enhance"> <img
+                                                src="./assets/images/check.svg" alt=""> Tích hợp công cụ giao tiếp
+                                            tiện lợi </span>
+                                    </div>
+                                    <div class="col-sm-6"><span class="d-block position-relative enhance"> <img
+                                                src="./assets/images/check.svg" alt=""> Quản lý dễ dàng </span>
+                                    </div>
+                                    <div class="col-sm-6"><span class="d-block position-relative enhance"> <img
+                                                src="./assets/images/check.svg" alt=""> Đa dạng lĩnh vực pháp lý
+                                        </span></div>
+                                    <div class="col-sm-6"><span class="d-block position-relative enhance"> <img
+                                                src="./assets/images/check.svg" alt=""> Không giới hạn lĩnh vực
+                                            chuyên môn </span>
+                                    </div>
+                                    <div class="col-sm-6"><span class="d-block position-relative enhance"> <img
+                                                src="./assets/images/check.svg" alt=""> Nâng cao khả năng cạnh tranh
+                                        </span></div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h2 class="leading-company-heading"> Đăng ký ngay hôm nay! </h2>
+                                <p class="about__text"> Với hàng ngàn người dùng truy cập mỗi ngày, <span
+                                        class="about__desc">i-lawyers.vn</span> là nền tảng lý tưởng để bạn
+                                    mở rộng cơ hội nghề nghiệp và xây dựng thương hiệu cá nhân. Hãy tham gia mạng lưới
+                                    luật sư uy tín của chúng tôi để nắm bắt những cơ hội phát triển nghề nghiệp và hỗ
+                                    trợ pháp lý nhanh chóng.</p>
+
+                                <p class="about__text"> Đăng ký ngay hôm nay để trở thành đối tác của <span
+                                        class="about__desc">i-lawyers.vn</span> và cùng chúng tôi mang đến sự
+                                    hỗ trợ pháp lý chuyên nghiệp và hiệu quả cho mọi khách hàng.
+                                </p>
+                                <a routerlink="/jobs-grid"
+                                    class="link-btn d-inline-block fw-medium jobs__button jobs__explore explore"
+                                    href="/jove/jobs-grid"> Đăng ký ngay <img
+                                        src="./assets/images/icons/arrow-right.svg" alt=""
+                                        class="jobs__arrow homepage-arrow-right"> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" data-aos-bk-delay="100"
+                            class="leading-company-image leading-company-img text-center aos-init  leading-company-imag">
+                            <img src="assets/images/male.png" alt="leading-company-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="leading-compamny__image">
+            <img src="./assets/images/image 7.png" alt="">
+        </div>
+    </section>
+
+    <section class="subscribe">
+        <div class="subscribe__container container">
+            <div class="subscribe__data">
+                <div class="subscribe-image text-center"><img src="assets/images/footer_image.png"
+                        alt="subscribe-image">
+                </div>
+
+                <div class="subscribe-content ">
+                    <h2 class="subscribe__title"> Đăng ký để không bỏ lỡ thông tin quan trọng!</h2>
+                    <p class="about__text subscribe__desc"> Nhận tin tức pháp luật và luôn cập nhật những thay đổi quan
+                        trọng. </p>
+                    <form><input type="text" placeholder="Nhập email của bạn!"
+                            class="input-newsletter d-block w-100 subscribe-name ">
+                        <a routerlink="/jobs-grid"
+                            class="link-btn d-inline-block fw-medium jobs__button jobs__explore explore "
+                            href="/jove/jobs-grid"> Subscribe
+                            <img src="./assets/images/icons/arrow-right.svg" alt=""
+                                class="jobs__arrow homepage-arrow-right subscribe__button">
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="footer" id="footer">
+        <div class="d-none">
+            <footer class="footer-area pt-100">
+                <div class="container">
+                    <div class="row">
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500"
+                            class="col-lg-3 col-sm-6 aos-init aos-animate">
+                            <div class="single-footer-widget">
+                                <a routerlink="/" class="logo d-inline-block" href="/jove/"><img
+                                        src="assets/images/footer_image.png" alt="logo"></a><!---->
+                                <ul class="socials-link mb-0 ps-0 list-unstyled">
+                                    <li><a href="#" target="_blank" class="facebook d-flex align-items-center"><span
+                                                class="d-block"><i class="ri-facebook-fill"></i></span> Facebook </a>
+                                    </li>
+                                    <li><a href="#" target="_blank" class="twitter d-flex align-items-center"><span
+                                                class="d-block"><i class="ri-twitter-x-line"></i></span> Twitter </a>
+                                    </li>
+                                    <li><a href="#" target="_blank" class="linkedin d-flex align-items-center"><span
+                                                class="d-block"><i class="ri-linkedin-fill"></i></span> Linkedin </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" data-aos-bk-delay="100"
+                            class="col-lg-3 col-sm-6 aos-init aos-animate">
+                            <div class="single-footer-widget">
+                                <h3 class=""> For candidates </h3>
+                                <ul class="custom-links ps-0 mb-0 list-unstyled">
+                                    <li><a routerlink="/jobs-grid" href="/jove/jobs-grid"> Browse jobs </a></li>
+                                    <li><a routerlink="/categories" href="/jove/categories"> Browse categories </a></li>
+                                    <li><a routerlink="/employers" href="/jove/employers"> Browse employers </a></li>
+                                    <li><a routerlink="/contact" href="/jove/contact"> Contact us </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" data-aos-bk-delay="200"
+                            class="col-lg-3 col-sm-6 aos-init aos-animate">
+                            <div class="single-footer-widget">
+                                <h3 class=""> Information </h3>
+                                <ul class="custom-links ps-0 mb-0 list-unstyled">
+                                    <li><a routerlink="/about" href="/jove/about"> About us </a></li>
+                                    <li><a routerlink="/contact" href="/jove/contact"> Contact us </a></li>
+                                    <li><a routerlink="/terms-conditions" href="/jove/terms-conditions"> Terms of use
+                                        </a></li>
+                                    <li><a routerlink="/privacy-policy" href="/jove/privacy-policy"> Cookie policy </a>
+                                    </li>
+                                    <li><a routerlink="/privacy-policy" href="/jove/privacy-policy"> Privacy center </a>
+                                    </li>
+                                    <li><a routerlink="/blog" href="/jove/blog"> Blog right sidebar </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" data-aos-bk-delay="300"
+                            class="col-lg-3 col-sm-6 aos-init aos-animate">
+                            <div class="single-footer-widget">
+                                <h3 class=""> Contact Info </h3>
+                                <ul class="contact-info ps-0 mb-0 list-unstyled">
+                                    <li><span class="d-block">Address:</span><a href="#" target="_blank"> 84 Wexham Road
+                                            RH19 8EA, USA </a></li>
+                                    <li><span class="d-block">Email:</span><a href="mailto:hello@jove.com">
+                                            hello@jove.com </a></li>
+                                    <li><span class="d-block">Phone:</span><a href="mailto:+1 (514) 312-5678"> +1 (514)
+                                            312-5678 </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright-area">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-6">
+                                <p>© Jove is Proudly Owned by <a href="https://hibootstrap.com/"
+                                        target="_blank">HiBootstrap</a>
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <select class="form-select fw-medium">
+                                    <option selected="">English</option>
+                                    <option value="1">Spanish</option>
+                                    <option value="2">French</option>
+                                    <option value="3">Portuguese</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/images/shapes/shape3.png" alt="shape" class="shape">
+            </footer>
+        </div>
+        <div class="ng-star-inserted">
+            <footer class="footer-area pt-5 bg-black pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-lg-3 col-sm-6 aos-init">
+                            <div class="single-footer-widget">
+                                <a routerlink="/" class="logo d-inline-block" href="/jove/"><img
+                                        src="assets/images/footer_i-lawyers.vn.png" alt="white-logo"></a>
+
+                                <div class="header__phone">
+                                    <img src="./assets/images/icons/phone.svg" alt=""> &nbsp;
+                                    <a href="#"><span class="header__desc">Hot Line</span>&nbsp;<span
+                                            class="footer__desc">(+84) 312 567 899</span></a>
+                                </div>
+
+                                <div class="header__email header__phone">
+                                    <img src="./assets/images/icons/email.svg" alt=""> &nbsp;
+                                    <a href="#" class="support footer__support">support@ilawyer.vn</a>
+                                </div>
+
+                                <div class="footer__social">
+                                    <a href="https://www.facebook.com" target="_blank" class="footer__social-link">
+                                        <img src="./assets/images/footer__facebook.svg" alt="">
+                                    </a>
+
+                                    <a href="https://www.twitter.com/" target="_blank" class="footer__social-link">
+                                        <img src="./assets/images/footer__twitter.svg" alt="">
+                                    </a>
+
+                                    <a href="https://www.inlike.com/" target="_blank" class="footer__social-link">
+                                        <img src="./assets/images/footer__in.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" data-aos-bk-delay="100"
+                            class="col-lg-3 col-sm-6 aos-init">
+                            <div class="single-footer-widget">
+                                <h3 class="footer__title"> Giới thiệu </h3>
+                                <ul class="custom-links ps-0 mb-0 list-unstyled">
+                                    <li><a routerlink="/jobs-grid" href="/jove/jobs-grid" class="footer__item"> Về chúng
+                                            tôi </a></li>
+                                    <li><a routerlink="/categories" href="/jove/categories" class="footer__item">Sứ mệnh
+                                            và tầm nhìn </a></li>
+                                    <li><a routerlink="/employers" href="/jove/employers" class="footer__item"> Điều
+                                            khoản sử dụng</a></li>
+                                    <li><a routerlink="/contact" href="/jove/contact" class="footer__item">Chính sách
+                                            bảo mật </a></li>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" data-aos-bk-delay="200"
+                            class="col-lg-3 col-sm-6 aos-init">
+                            <div class="single-footer-widget">
+                                <h3 class="footer__title"> Dịch vụ </h3>
+                                <ul class="custom-links ps-0 mb-0 list-unstyled">
+                                    <li><a routerlink="/about" href="/jove/about" class="footer__item"> Thuê luật sư</a>
+                                    </li>
+                                    <li><a routerlink="/contact" href="/jove/contact" class="footer__item">Gói dịch vụ
+                                            cho luật sư </a></li>
+                                    <li><a routerlink="/terms-conditions" href="/jove/terms-conditions"
+                                            class="footer__item">Bảng giá dịch vụ
+                                        </a></li>
+                                    <li><a routerlink="/privacy-policy" href="/jove/privacy-policy"
+                                            class="footer__item">Câu hỏi thường gặp (FAQ) </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" data-aos-bk-delay="300"
+                            class="col-lg-3 col-sm-6 aos-init">
+                            <div class="single-footer-widget">
+                                <h3 class="footer__title">Hỗ trợ khách hàng</h3>
+                                <ul class="custom-links ps-0 mb-0 list-unstyled">
+                                    <li><a routerlink="/about" href="/jove/about" class="footer__item">Trung tâm hỗ
+                                            trợ</a></li>
+                                    <li><a routerlink="/contact" href="/jove/contact" class="footer__item">Liên hệ </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <a href="#" class="scrollup show-scroll" id="scroll-up">
+        <i class="ri-arrow-up-s-line scrollup__icon"></i>
+    </a>
+
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+
+
+</body>
+
+</html>

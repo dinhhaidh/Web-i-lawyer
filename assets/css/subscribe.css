@@ -113,7 +113,7 @@
     font-family: "Space Grotesk", sans-serif;
     font-weight: 700;
     font-size: clamp(1.25rem, 1.1842105263157894rem + 0.3289473684210526vw, 1.5rem) !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 20px !important;
     
 }
 .subscribe__desc{
@@ -129,12 +129,31 @@
 .subscribe__button{
     margin-left: 30px !important;
 }
+@media screen and (max-width: 374.98px) {
+    .subscribe__title{
+        text-align: center;
+    }
+    .explore {
+        margin: 20px auto 20px auto !important;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 173px;
+    }
+    p.about__text.subscribe__desc {
+        text-align: center;
+    }
+}
+
 
 @media screen and (min-width: 768px) {
     .subscribe__data{
         flex-direction: row;
         column-gap: 2rem;
     }
+   
+   
 }
 
 

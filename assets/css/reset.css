@@ -81,6 +81,12 @@ body {
 .nav__item a:hover{
     color: var(--primary-color00) !important;
 }
+.bg-gray{
+    background-color: #f8f8f8 !important;
+}
+strong{
+    font-weight: 700 !important;
+}
 
 
 @media only screen and (max-width: 767px) {

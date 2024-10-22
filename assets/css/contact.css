@@ -130,6 +130,25 @@
 .contact__client{
     margin: 0 auto;
 }
+.contact__image{
+    /* position: relative; */
+    background-image: url(../images/logo-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-desc{
+    /* position: absolute;
+    top: 1.5rem;
+    left: 2.3rem;
+    font-size: clamp(2.25rem, 1.7730263157894737rem + 2.3848684210526314vw, 4.0625rem);
+    color: #02A09C; */
+    /* display: none; */
+}
+
+.contact-button{
+    margin: 50px auto 10px;
+}
 
 @media screen and (max-width: 435px) {
     .contact__artilce {
