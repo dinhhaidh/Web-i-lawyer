@@ -64,8 +64,8 @@
 }
 
 .box .icon {
-    width: 146px;
-    height: 146px;
+    width: 120px;
+    height: 120px;
     line-height: 140px;
     border-radius: 50%;
     transition: var(--transition);
@@ -131,6 +131,18 @@
     margin-top: -60px;
 }
 
+.how-jove__title{
+    text-align: center !important;
+}
+
+.section-title h2 {
+    font-size: clamp(1.875rem, 1.675rem + 1vw, 2.875rem) !important;
+    font-weight: 700;
+    font-family: "Space Grotesk", sans-serif;
+    color: #00184B;
+
+}
+
 @media screen and (max-width: 375px) {
     .how-jove__data{
         display: grid !important;
@@ -167,6 +179,12 @@
         display: flex !important;
         gap: 2rem;
     }
+    .how-jove__title{
+        margin: 0 auto;
+    }
+    h4.jobs__title.how-jove__title {
+        margin-bottom: 10px;
+    }
 }
 @media screen and (min-width: 1024px) {
     .how-jove__data{
@@ -180,12 +198,17 @@
     .how-jove-image{
         display: none;
     }
+   
 }
 
 
 @media only screen and (max-width: 767px) {
     .how-jove-works-area .row .col {
         width: 50%;
+    }
+    .how-jove-works-area.bg-f8f8fb.pt-100.pb-75 {
+        padding-bottom: 5rem;
+        padding-top: 4rem;
     }
 
     .box .icon {
@@ -241,11 +264,11 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .box .icon {
+    /* .box .icon {
         width: 140px;
         height: 140px;
         line-height: 130px;
-    }
+    } */
 
     .box .number {
         margin-top: -20px;
@@ -259,3 +282,11 @@
         display: none;
     }
 }
+
+@media screen and (min-width: 1300px) {
+    .box .icon {
+        width: 146px;
+        height: 146px;
+    }
+}
+

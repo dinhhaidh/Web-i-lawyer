@@ -123,8 +123,23 @@ input.form-control::placeholder{
     box-shadow: -20px 0 #1cbe7233
 }
 .features__lawyers{
-    margin-bottom: 90px;
+    /* margin-bottom: 90px; */
+    /* margin-bottom: 40px; */
+    margin-bottom: 30px;
 }
+@media screen and (max-width: 374.98px) {
+    .homethree__button{
+        margin: 0 auto;
+        width: 146px;
+    }
+}
+@media screen and (min-width: 375px) {
+    .homethree__button{
+        margin: 0 auto;
+        width: 146px;
+    }
+}
+
 
 @media only screen and (max-width: 767px) {
 
@@ -134,7 +149,7 @@ input.form-control::placeholder{
     }
 
     .banner-content {
-        margin-bottom: 25px;
+        margin-bottom: 60px;
         padding-right: 0;
         top: 0
     }
@@ -220,11 +235,11 @@ input.form-control::placeholder{
     }
    
 }
-@media screen and (min-width: 575px) {
+/* @media screen and (min-width: 575px) {
     .banner-content {
         margin-bottom: 25px;
     }
-}
+} */
 
 
 @media screen and (min-width: 1024px) {
@@ -348,21 +363,21 @@ input.form-control::placeholder{
         margin-top: 30px
     }
 }
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     .banner-content .features-list{
-        width: 100%;
+        width: 927px;
     }
    
-}
+} */
 @media screen and (max-width: 420px) {
     .banner-content .features-list {
         flex-direction: column;
         row-gap: 10px;
     }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1024px) {
     .banner-content .features-list{
-        width: 916px;
+        width: 927px;
         margin: 30px auto 0 auto ;
     }
 }

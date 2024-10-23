@@ -106,12 +106,15 @@
 
 } */
 .homepage__lawyer{
-    padding: 13px 10px 13px 60px;
+    /* padding: 13px 10px 13px 60px; */
+    padding: 13px 10px 13px 50px;
+
     border: none !important;
 }
 .form__search{
     position: absolute;
-    left: 1.5rem;
+    /* left: 1.5rem; */
+    left: 1rem;
     top: 0.5rem;
     color: var(--primary-color00);
     font-size: 1.4rem;
@@ -121,6 +124,7 @@
     height: 22px;
     position: absolute;
     top: 0.8rem;
+    left: 1rem;
 }
 .form__specialized{
     display: flex;
@@ -149,28 +153,49 @@
         column-gap: 3rem;
         flex-direction: row;
     }
-}
-
-@media screen and (min-width: 1024px) {
-    .homepage__text {
-        width: 397px !important;
+    .homepage__messenger {
+        margin-top: 0px;
+        width: 173px !important;
     }
-    /* form.homepage__form {
-        width: 927px;
-        height: 74px;
-    } */
-
 }
+
+
 @media screen and (max-width: 1024px) {
     form.homepage__form {
         width: 100%;
     }
+    .home__title {
+        margin-bottom: 10px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .homepage {
+        padding: 90px 0 90px;
+    }
+    .homepage__text {
+        width: 397px !important;
+    }
+    .homepage__lawyer {
+        padding: 13px 10px 13px 60px;
+        /* padding: 13px 10px 13px 50px; */
+        border: none !important;
+    }
+    .homepage__form-img {
+        left: 0px;
+    }
+    .form__search {
+       left: 1.5rem;
+    }
+    .home__title {
+        margin-bottom: 10px;
+    }
+   
 }
 
 @media screen and (min-width: 1150px) {
-    /* .homepage__data{
-        width: 767px;
-    } */
+   
     .homepage__form-control{
         width: 100%;
     }
@@ -181,5 +206,11 @@
         width: 100%;
     }
 }
+@media screen and (min-width: 1280px) {
+    .homepage__data{
+        width: 676px;
+    }
+}
+
 
 

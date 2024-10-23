@@ -24,6 +24,9 @@
 }
 .nav__link{
     font-family: "Space Grotesk", sans-serif !important;
+    font-weight: 400;
+    color: #00184B;
+
 }
 
 .active-link{

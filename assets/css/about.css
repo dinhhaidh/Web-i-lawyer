@@ -4,7 +4,7 @@
     bottom: 0;
     z-index: -1;
     content: "";
-    height: 165px;
+    height: 150px;
     position: absolute;
     background-color: var(--whiteColor);
 }
@@ -22,7 +22,7 @@
 }
 .about-content h2 {
     font-size: 1.75rem;
-    font-size: clamp(1.75rem, 1.4539473684210527rem + 1.4802631578947367vw, 2.875rem);
+    font-size: clamp(1.75rem, 1.4539473684210527rem + 1.4802631578947367vw, 2.875rem) !important;
     margin-bottom: 14px
 }
 .about__text{
@@ -80,6 +80,7 @@
 .about_quickly {
     line-height: 20px;
     padding-left: 17px;
+    padding-bottom: 35px;
 }
 
 
@@ -119,6 +120,7 @@
     color: #000;
     font-weight: 400;
     font-family: "DM sans", sans-serif;
+    margin-bottom: 5px;
 }
 .about_quickly  li span{
     color: var(--primary-color00);
@@ -156,7 +158,6 @@
     font-family: "Space Grotesk", sans-serif;
     font-weight: 400 !important;
     margin-left: 5px !important;
-    top: 20px !important;
 }
 .about__title{
     font-size: clamp(1.625rem, 1.4605263157894737rem + 0.8223684210526315vw, 2.25rem) !important;
@@ -168,15 +169,33 @@
 .about__title sup{
     margin-left: 10px;
 }
+@media screen and (min-width: 1024px) {
+    .about-content p {
+        margin-bottom: 25px;
+    }
+    .about_quickly {
+        padding-bottom: 15px;
+    }
+    .about-text .funfacts-box {
+        margin-top: 50px;
+    }
+}
+
+
 
 @media screen and (min-width: 1150px) {
-   
+    .about-text {
+        height: 97%;
+    }
     .about-image{
         width: 550px;
         height: 770px;
     }
     .about__text{
         width: 569px;
+    }
+    .about-img {
+        margin-right: 45px;
     }
 }
 @media screen and (min-width: 1280px) {
@@ -264,9 +283,9 @@
     }
 
     .about-text .funfacts-box .funfact-box h2 sup {
-        top: 8px;
-        right: -20px;
-        font-size: 30px
+        /* top: 8px; */
+        right: -25px;
+        font-size: 30px;
     }
 }
 
@@ -315,7 +334,8 @@
     }
 
     .about-text .funfacts-box {
-        margin-top: 25px
+        margin-top: 50px;
+        margin-bottom: 20px;
     }
 
     .about-text .funfacts-box .funfact-box h2 {
@@ -406,3 +426,5 @@
         right: -30px
     }
 }
+
+

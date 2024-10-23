@@ -112,6 +112,7 @@
     align-items: center;
     column-gap: 30px;
 }
+
 @media screen and (max-width: 374.98px) {
     .blog__article{
         width: 270px;
@@ -165,6 +166,10 @@
     .blog .swiper-button-next{
         right: -4rem;
         z-index: 3;
+    }
+    .blog .outstanding{
+        width: 538px;
+        margin: 5px auto 0px;
     }
     
 }
