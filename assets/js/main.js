@@ -39,9 +39,9 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive)
 
-let swiperNew = new Swiper('.blog__swiper', {
+let swiperBlog = new Swiper('.blog__swiper', {
     loop: true,
-    spaceBetween: 16,
+    spaceBetween: 22,
     slidesPerView: 'auto',
     centeredSlides: 'auto',
 
@@ -64,6 +64,31 @@ let swiperNew = new Swiper('.blog__swiper', {
 
         1150: {
             slidesPerView: 3,
+        }
+    }
+});
+let swiperNewsletter = new Swiper('.newsletter__swiper', {
+    loop: true,
+    spaceBetween: 16,
+
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    // },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        
+        clickable: true,
+    },
+    breakpoints: {
+        575: {
+            slidesPerView: 2,
+            spaceBetween: 16,
         }
     }
 });

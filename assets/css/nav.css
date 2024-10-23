@@ -13,7 +13,7 @@
 .nav__close,
 .nav__toggle{
     font-size: 1.5rem;
-    color: #000;
+    color: var(--primary-color00);
     cursor: pointer;
 }
 .nav__item{

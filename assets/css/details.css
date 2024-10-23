@@ -1,0 +1,134 @@
+.details{
+    /* padding-top: 13rem; */
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    background-color: #f8f8f8;
+}
+.details__data,
+.details__main {
+    display: flex;
+    flex-direction: column;
+    /* column-gap: 2.5rem; */
+    row-gap: 2rem;
+}
+/* .details__data {
+    align-items: center;
+} */
+.details__main {
+    margin-bottom: 2rem;
+}
+
+.details-content{
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+}
+.details__day{
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "DM", sans-serif;
+    color: #25324B;
+    margin-top: 5px;
+}
+.details__join span{
+    color: #515B6F;
+    font-size: 16px;
+    font-family: "DM", sans-serif;
+    font-weight: 400;
+}
+a.link-btn.d-inline-block.fw-medium.jobs__button.jobs__explore.homethree__button.details__button {
+    column-gap: 20px !important;
+}
+
+.details__text{
+    font-size: 16px;
+    font-family: "DM", sans-serif;
+    color: #2E2E3D;
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+}
+.details__phone,
+.details__gmail{
+    color: #2E2E3D;
+    font-size: 14px !important;
+}
+.detail__content {
+    margin-bottom: 2rem;
+}
+.detail__icon {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.details__phone{
+    font-family: "DM", sans-serif !important;
+}
+@media screen and (max-width: 374.98px) {
+    a.link-btn.d-inline-block.fw-medium.jobs__button.jobs__explore.homethree__button.details__button {
+        margin: 0 auto !important;
+    }
+}
+@media screen and (min-width: 375px) {
+    a.link-btn.d-inline-block.fw-medium.jobs__button.jobs__explore.homethree__button.details__button {
+        margin: 0 auto !important;
+    }
+}
+
+
+
+@media screen and (min-width: 470px) {
+    .details__main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+}
+@media screen and (min-width: 575px) {
+    .details{
+        padding-top: 9rem;
+    }
+    .details__main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    a.link-btn.d-inline-block.fw-medium.jobs__button.jobs__explore.homethree__button.details__button {
+        margin: unset  !important;
+    }
+}
+@media screen and (min-width: 768px) {
+    .details__data, .details__main {
+       flex-direction: row;
+        column-gap: 2rem;
+    }
+    .details__main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 980px) {
+    .details__main {
+        grid-template-columns: repeat(3, max-content);
+    }
+}
+@media screen and (min-width: 1024px) {
+    .details{
+        padding-top: 13rem;
+        padding-bottom: 5rem;
+    }
+    .details__main {
+        grid-template-columns: repeat(3, max-content);
+        column-gap: 3rem;
+    }
+    .details__list{
+        column-gap: 2.5rem;
+    }
+}
+
+
+
+
+
