@@ -1,5 +1,5 @@
 .newsletter__data {
-    padding: 20px 0 50px;
+    padding: 20px 0 45px;
 }
 /* .newsletter__list{
     display: flex;
@@ -148,13 +148,13 @@ p:last-child {
     border-radius: 10px;
 }
 .newsletter__heading{
-    margin-top: 30px;
     letter-spacing: -1px;
+    margin-bottom: 40px;
 }
 .newsletter-image{
     padding-bottom: 1.5rem;
     position: relative;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
 }
 .newsletter__card {
     width: 350px;
@@ -327,6 +327,7 @@ p:last-child {
     .newsletter__content{
         width: 660px;
     }
+   
   
 }
 
