@@ -1,0 +1,118 @@
+.hero{
+    background-color: #f8f8f8;
+    padding-block: 60px;
+}
+.hero__title{
+    font-weight: 700;
+    font-family: "Space Grotesk", sans-serif;
+    letter-spacing: -1px;
+    color: #00184B;
+    font-size: clamp(1.375rem, 1.2763157894736843rem + 0.4934210526315789vw, 1.75rem);
+    margin-bottom: 15px;
+}
+
+.hero__container.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.hero__list{
+    row-gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.hero__desc,
+.hero__content p{
+    font-size: clamp(0.8125rem, 0.7960526315789473rem + 0.08223684210526315vw, 0.875rem);
+    line-height: 20px;
+    color: #2E2E3D;
+    font-family: "DM", sans-serif;
+    font-weight: 400;
+}
+.hero__content p{
+    margin-bottom: 20px;
+}
+
+.hero__content h6{
+    font-size: clamp(1rem, 0.9671052631578947rem + 0.1644736842105263vw, 1.125rem);
+    font-family: "DM", sans-serif;
+}
+.hero__content p span{
+    color: var(--primary-color00);
+    font-weight: 700;
+    
+}
+.hero__subtitle{
+    background: #fff;
+    column-gap: 10px;
+    display: flex;
+    padding: 1rem 1rem 1.5rem 1rem;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ,transform .3s;
+    box-shadow: 0px 4px 8px 0px #0000000D;
+}
+.hero__cart{
+    box-shadow: 0px 4px 8px 0px #00000040;
+}
+.hero__subtitle:hover{
+    box-shadow: 0px 4px 8px 0px #00000040;
+    transform: translateY(-.5rem);
+}
+
+.hero__img{
+    padding: 10px;
+    background-color: #f8f8f8;
+    padding: 7.5px 7.5px 3px 7.5px;
+    border-radius: 4px;
+    width: 47px;
+    height: 47px;
+}
+.hero__img-1{
+    width: 32px;
+    height: 27.15px;
+}
+.hero__img-2{
+    width: 32px;
+    height: 32px;
+}
+.hero__icon{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.hero__icon span{
+    font-size: clamp(0.9375rem, 0.9210526315789473rem + 0.08223684210526315vw, 1rem);
+    color: var(--primary-color00);
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+}
+.hero-subtitle{
+    display: none;
+}
+@media screen and (max-width: 375px) {
+    .hero__list{
+        margin-top: 2rem;
+    }
+    .hero__content {
+        width: 80%;
+    }
+}
+@media screen and (min-width: 375px) {
+    .hero__list{
+        margin-top: 2rem;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .hero{
+        padding-block: 90px;
+    }
+    .hero__subtitle {
+        padding: 1.5rem 1.5rem 2rem 1.5rem;
+    }
+}
+

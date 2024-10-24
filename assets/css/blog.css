@@ -162,10 +162,12 @@
     .blog .swiper-button-prev{
         left: -4rem;
         z-index: 3;
+        top: 30rem;
     }
     .blog .swiper-button-next{
         right: -4rem;
         z-index: 3;
+        top: 30rem;
     }
     .blog .outstanding{
         width: 538px;

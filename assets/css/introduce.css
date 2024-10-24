@@ -1,8 +1,8 @@
 .introduce__container {
-    padding: 20px 1.5rem 50px;
+    padding: 20px 1.5rem 60px;
 }
 .introduce__content{
-    margin-top: 3rem;
+    padding-top: 4rem;
 }
 .introduce__subtitle{
     display: flex;
@@ -16,6 +16,8 @@
 .introduce__title{
     margin-bottom: 15px !important;
     font-family: "Space Grotesk", sans-serif;
+    
+    
 }
 .introduce__desc{
     margin-bottom: 40px;
@@ -26,7 +28,10 @@
     row-gap: 12px;
 
 }
-
+.introduce__image{
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -38,5 +43,17 @@
     .introduce__subtitle{
         column-gap: 7px;
     }
+    .introduce__container {
+        padding: 20px 1.5rem 70px;
+    }
+    .introduce__content{
+        border-top: 1px solid #D6DDEB;
+    }
 }
+@media screen and (min-width: 1024px) {
+    .introduce__container {
+        padding: 20px 1.5rem 90px;
+    }
+}
+
 

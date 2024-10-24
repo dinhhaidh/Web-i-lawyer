@@ -238,9 +238,9 @@ p:last-child {
 .newsletter__facebook{
     width: 247px;
 }
-.newsletter .swiper-button-prev, .swiper-button-next {
+/* .newsletter .swiper-button-prev, .swiper-button-next {
     top: 10rem;
-}
+} */
 /* .newsletter__inliked{
     width: 308px;
 } */
@@ -270,10 +270,9 @@ p:last-child {
     button.qualification__button.qualification__marriage-1 {
         margin-right: 0px;
     }
-    .newsletter .swiper-button-prev, .swiper-button-next {
+    /* .newsletter .swiper-button-prev, .swiper-button-next {
         top: 12rem;
-        /* right: 0; */
-    }
+    } */
     .newsletter__img-2 img{
         width: 100%;
         height: 100%;
@@ -356,14 +355,17 @@ p:last-child {
     .newsletter .swiper-button-next {
         right: -4rem;
         display: unset;
+        top: 22rem;
+
     }
     .newsletter .swiper-button-prev {
         left: -5rem;
         display: unset;
+        top: 22rem;
     }
-    .newsletter .swiper-button-prev, .swiper-button-next {
+    /* .newsletter .swiper-button-prev, .swiper-button-next {
         top: 15rem;
-    }
+    } */
    }
    
 }

@@ -50,6 +50,8 @@
     <link rel="stylesheet" href="./assets/css/testimonial-item.css">
     <link rel="stylesheet" href="./assets/css/lawyers.css">
     <link rel="stylesheet" href="./assets/css/introduce.css">
+    <link rel="stylesheet" href="./assets/css/hero.css">
+    <link rel="stylesheet" href="./assets/css/faith.css">
     <link rel="stylesheet" href="./assets/css/scrolltop.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
 </head>
@@ -148,18 +150,19 @@
         </div>
     </section>
 
-    <div class="introduce">
+    <section class="introduce">
         <div class="introduce__container container">
             <p class="contact__home article__subtitle">
                 <span>Trang chủ / </span><strong>Giới thiệu</strong>
             </p>
 
-            <div class="row  introduce__content">
+            <div class="row  introduce__content align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="leading-company-content aos-init">
                         <div class="box">
                             <h2 class="leading-company-desc introduce__title">Sứ mệnh của chúng tôi</h2>
-                            <p class="leading-company__connect introduce__desc">Chúng tôi tin rằng mỗi người đều xứng đáng được tiếp
+                            <p class="leading-company__connect introduce__desc">Chúng tôi tin rằng mỗi người đều xứng
+                                đáng được tiếp
                                 cận dịch vụ pháp lý chất lượng cao. Bằng cách kết nối những luật sư giàu kinh nghiệm
                                 với khách hàng, chúng tôi tạo điều kiện để cả hai bên cùng đạt được sự hài lòng
                                 trong công việc và giải quyết các vấn đề pháp lý một cách nhanh chóng, hiệu quả.
@@ -204,807 +207,104 @@
                         </div>
                         <div class="content">
                             <h2 class="leading-company-heading"> Liên hệ với chúng tôi</h2>
-                            <p class="about__text introduce__text"> Nếu bạn cần hỗ trợ pháp lý hoặc muốn tìm hiểu thêm về dịch vụ
+                            <p class="about__text introduce__text"> Nếu bạn cần hỗ trợ pháp lý hoặc muốn tìm hiểu thêm
+                                về dịch vụ
                                 của chúng tôi, đừng ngần ngại liên hệ. Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ
                                 bạn trong mọi tình huống
                             </p>
                             <a routerlink="/jobs-grid"
                                 class="link-btn d-inline-block fw-medium jobs__button jobs__explore explore jobs__auto"
-                                href="/jove/jobs-grid">Liên hệ ngay<img
-                                    src="./assets/images/icons/arrow-right.svg" alt=""
-                                    class="jobs__arrow homepage-arrow-right"> </a>
+                                href="/jove/jobs-grid">Liên hệ ngay<img src="./assets/images/icons/arrow-right.svg"
+                                    alt="" class="jobs__arrow homepage-arrow-right"> </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12">
+                <div class="col-lg-6 col-md-12 introduce__image">
                     <div data-aos-bk="fade-in" data-aos-bk-duration="500" data-aos-bk-delay="100"
-                        class="leading-company-image leading-company-img text-center aos-init  leading-company-imag">
+                        class="leading-company-image  text-center aos-init">
                         <img src="assets/images/introduce__img-1.png" alt="leading-company-image">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- <section class="leading-company" id="leading-company">
-        <div class="leading-company-area pb-100">
-            <div class="container">
-              
-            </div>
-        </div>
-        <div class="leading-compamny__image">
-            <img src="./assets/images/image 7.png" alt="">
-        </div>
-    </section> -->
-
-    <section class="popular-jobs" id="popular-jobs">
-        <div class="jobs-area position-relative z-1 pb-100 d-none">
-            <div class="container">
-                <div class="section-title text-start">
-                    <h2 class="mb-0"> Popular jobs right now </h2>
-                    <select class="form-select fw-medium">
-                        <option selected="">Full Time</option>
-                        <option value="1">Part Time</option>
-                        <option value="2">Hourly</option>
-                        <option value="3">Monthly</option>
-                    </select>
-                </div>
-                <div class="row">
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-lg-6 aos-init aos-animate ">
-                        <div class="single-job-box">
-                            <div class="d-sm-flex d-lg-block d-xl-flex align-items-center justify-content-between">
-                                <div class="d-sm-flex align-items-center">
-                                    <div class="company-logo"><img src="assets/images/companies/company8.png"
-                                            alt="company-image"></div>
-                                    <div class="content">
-                                        <h3 class=""><a routerlink="/job-details" href="/jove/job-details">
-                                                Mechanical Engineer </a></h3>
-                                        <span class="location d-block"> Topoint in London </span><span
-                                            class="job-type d-block"> Full Time </span>
-                                    </div>
-                                </div>
-                                <div class="apply-btn"><a routerlink="/job-details" class="default-btn"
-                                        href="/jove/job-details"> Apply </a></div>
-                            </div>
-                            <div class="info d-sm-flex d-lg-block d-xl-flex align-items-center justify-content-between">
-                                <span class="salary d-block"><span class="">Salary:</span><span>$1K -
-                                        $3K</span> /monthly </span><span class="deadline d-block"><span
-                                        class="">Deadline:</span> Oct 30, 2023 <span>(20 mins
-                                        ago)</span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500" data-aos-bk-delay="100"
-                        class="col-lg-6 aos-init aos-animate">
-                        <div class="single-job-box">
-                            <div class="d-sm-flex d-lg-block d-xl-flex align-items-center justify-content-between">
-                                <div class="d-sm-flex align-items-center">
-                                    <div class="company-logo"><img src="assets/images/companies/company9.png"
-                                            alt="company-image"></div>
-                                    <div class="content">
-                                        <h3 class=""><a routerlink="/job-details" href="/jove/job-details">
-                                                Senior Support Engineer </a></h3>
-                                        <span class="location d-block"> Zayper in Barcelona </span><span
-                                            class="job-type d-block"> Part Time </span>
-                                    </div>
-                                </div>
-                                <div class="apply-btn"><a routerlink="/job-details" class="default-btn"
-                                        href="/jove/job-details"> Apply </a></div>
-                            </div>
-                            <div class="info d-sm-flex d-lg-block d-xl-flex align-items-center justify-content-between">
-                                <span class="salary d-block"><span class="">Salary:</span><span>$10 -
-                                        $50</span> /hourly </span><span class="deadline d-block"><span
-                                        class="">Deadline:</span> Nov 10, 2023 <span>(1 day
-                                        ago)</span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-lg-6 aos-init aos-animate">
-                        <div class="single-job-box">
-                            <div class="d-sm-flex d-lg-block d-xl-flex align-items-center justify-content-between">
-                                <div class="d-sm-flex align-items-center">
-                                    <div class="company-logo"><img src="assets/images/companies/company10.png"
-                                            alt="company-image"></div>
-                                    <div class="content">
-                                        <h3 class=""><a routerlink="/job-details" href="/jove/job-details">
-                                                Senior C# / .NET Developer </a></h3>
-                                        <span class="location d-block"> Doca in São Paulo </span><span
-                                            class="job-type d-block"> Full Time </span>
-                                    </div>
-                                </div>
-                                <div class="apply-btn"><a routerlink="/job-details" class="default-btn"
-                                        href="/jove/job-details"> Apply </a></div>
-                            </div>
-                            <div class="info d-sm-flex d-lg-block d-xl-flex align-items-center justify-content-between">
-                                <span class="salary d-block"><span class="">Salary:</span><span>$6K -
-                                        $7K</span> /monthly </span><span class="deadline d-block"><span
-                                        class="">Deadline:</span> Nov 11, 2023 <span>(2 days
-                                        ago)</span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500" data-aos-bk-delay="100"
-                        class="col-lg-6 aos-init aos-animate">
-                        <div class="single-job-box">
-                            <div class="d-sm-flex d-lg-block d-xl-flex align-items-center justify-content-between">
-                                <div class="d-sm-flex align-items-center">
-                                    <div class="company-logo"><img src="assets/images/companies/company11.png"
-                                            alt="company-image"></div>
-                                    <div class="content">
-                                        <h3 class=""><a routerlink="/job-details" href="/jove/job-details">
-                                                Senior Project Manager </a></h3>
-                                        <span class="location d-block"> Techstar in Chicago </span><span
-                                            class="job-type d-block"> Full Time </span>
-                                    </div>
-                                </div>
-                                <div class="apply-btn"><a routerlink="/job-details" class="default-btn"
-                                        href="/jove/job-details"> Apply </a></div>
-                            </div>
-                            <div class="info d-sm-flex d-lg-block d-xl-flex align-items-center justify-content-between">
-                                <span class="salary d-block"><span class="">Salary:</span><span>$2K -
-                                        $3K</span> /monthly </span><span class="deadline d-block"><span
-                                        class="">Deadline:</span> Nov 12, 2023 <span>(3 days
-                                        ago)</span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-lg-6 aos-init aos-animate">
-                        <div class="single-job-box">
-                            <div class="d-sm-flex d-lg-block d-xl-flex align-items-center justify-content-between">
-                                <div class="d-sm-flex align-items-center">
-                                    <div class="company-logo"><img src="assets/images/companies/company12.png"
-                                            alt="company-image"></div>
-                                    <div class="content">
-                                        <h3 class=""><a routerlink="/job-details" href="/jove/job-details">
-                                                Assistant Manager </a></h3>
-                                        <span class="location d-block"> Mund in Seoul </span><span
-                                            class="job-type d-block"> Full Time </span>
-                                    </div>
-                                </div>
-                                <div class="apply-btn"><a routerlink="/job-details" class="default-btn"
-                                        href="/jove/job-details"> Apply </a></div>
-                            </div>
-                            <div class="info d-sm-flex d-lg-block d-xl-flex align-items-center justify-content-between">
-                                <span class="salary d-block"><span class="">Salary:</span><span>$11K -
-                                        $23K</span> /monthly </span><span class="deadline d-block"><span
-                                        class="">Deadline:</span> Nov 13, 2023 <span>(4 days
-                                        ago)</span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500" data-aos-bk-delay="100"
-                        class="col-lg-6 aos-init aos-animate">
-                        <div class="single-job-box">
-                            <div class="d-sm-flex d-lg-block d-xl-flex align-items-center justify-content-between">
-                                <div class="d-sm-flex align-items-center">
-                                    <div class="company-logo"><img src="assets/images/companies/company13.png"
-                                            alt="company-image"></div>
-                                    <div class="content">
-                                        <h3 class=""><a routerlink="/job-details" href="/jove/job-details">
-                                                Junior Banker </a></h3>
-                                        <span class="location d-block"> Finix in Hong Kong </span><span
-                                            class="job-type d-block"> Full Time </span>
-                                    </div>
-                                </div>
-                                <div class="apply-btn"><a routerlink="/job-details" class="default-btn"
-                                        href="/jove/job-details"> Apply </a></div>
-                            </div>
-                            <div class="info d-sm-flex d-lg-block d-xl-flex align-items-center justify-content-between">
-                                <span class="salary d-block"><span class="">Salary:</span><span>$50 -
-                                        $100</span> /hourly </span><span class="deadline d-block"><span
-                                        class="">Deadline:</span> Nov 14, 2023 <span>(5 days
-                                        ago)</span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-lg-6 aos-init aos-animate">
-                        <div class="single-job-box">
-                            <div class="d-sm-flex d-lg-block d-xl-flex align-items-center justify-content-between">
-                                <div class="d-sm-flex align-items-center">
-                                    <div class="company-logo"><img src="assets/images/companies/company14.png"
-                                            alt="company-image"></div>
-                                    <div class="content">
-                                        <h3 class=""><a routerlink="/job-details" href="/jove/job-details">
-                                                Founder Associate </a></h3>
-                                        <span class="location d-block"> Aoriv in Toronto </span><span
-                                            class="job-type d-block"> Full Time </span>
-                                    </div>
-                                </div>
-                                <div class="apply-btn"><a routerlink="/job-details" class="default-btn"
-                                        href="/jove/job-details"> Apply </a></div>
-                            </div>
-                            <div class="info d-sm-flex d-lg-block d-xl-flex align-items-center justify-content-between">
-                                <span class="salary d-block"><span class="">Salary:</span><span>$10K -
-                                        $33K</span> /monthly </span><span class="deadline d-block"><span
-                                        class="">Deadline:</span> Nov 15, 2023 <span>(6 days
-                                        ago)</span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500" data-aos-bk-delay="100"
-                        class="col-lg-6 aos-init aos-animate">
-                        <div class="single-job-box">
-                            <div class="d-sm-flex d-lg-block d-xl-flex align-items-center justify-content-between">
-                                <div class="d-sm-flex align-items-center">
-                                    <div class="company-logo"><img src="assets/images/companies/company15.png"
-                                            alt="company-image"></div>
-                                    <div class="content">
-                                        <h3 class=""><a routerlink="/job-details" href="/jove/job-details">
-                                                Marketing Executive </a></h3>
-                                        <span class="location d-block"> Dking in Beijing </span><span
-                                            class="job-type d-block"> Full Time </span>
-                                    </div>
-                                </div>
-                                <div class="apply-btn"><a routerlink="/job-details" class="default-btn"
-                                        href="/jove/job-details"> Apply </a></div>
-                            </div>
-                            <div class="info d-sm-flex d-lg-block d-xl-flex align-items-center justify-content-between">
-                                <span class="salary d-block"><span class="">Salary:</span><span>$3K -
-                                        $5K</span> /monthly </span><span class="deadline d-block"><span
-                                        class="">Deadline:</span> Nov 16, 2023 <span>(7 days
-                                        ago)</span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-lg-6 aos-init aos-animate">
-                        <div class="single-job-box">
-                            <div class="d-sm-flex d-lg-block d-xl-flex align-items-center justify-content-between">
-                                <div class="d-sm-flex align-items-center">
-                                    <div class="company-logo"><img src="assets/images/companies/company16.png"
-                                            alt="company-image"></div>
-                                    <div class="content">
-                                        <h3 class=""><a routerlink="/job-details" href="/jove/job-details">
-                                                Digital Marketing Manager </a></h3>
-                                        <span class="location d-block"> Oxygen in New York </span><span
-                                            class="job-type d-block"> Full Time </span>
-                                    </div>
-                                </div>
-                                <div class="apply-btn"><a routerlink="/job-details" class="default-btn"
-                                        href="/jove/job-details"> Apply </a></div>
-                            </div>
-                            <div class="info d-sm-flex d-lg-block d-xl-flex align-items-center justify-content-between">
-                                <span class="salary d-block"><span class="">Salary:</span><span>$2K -
-                                        $2.5K</span> /monthly </span><span class="deadline d-block"><span
-                                        class="">Deadline:</span> Nov 17, 2023 <span>(8 days
-                                        ago)</span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500" data-aos-bk-delay="100"
-                        class="col-lg-6 aos-init aos-animate">
-                        <div class="single-job-box">
-                            <div class="d-sm-flex d-lg-block d-xl-flex align-items-center justify-content-between">
-                                <div class="d-sm-flex align-items-center">
-                                    <div class="company-logo"><img src="assets/images/companies/company17.png"
-                                            alt="company-image"></div>
-                                    <div class="content">
-                                        <h3 class=""><a routerlink="/job-details" href="/jove/job-details">
-                                                Technical SEO Manager </a></h3>
-                                        <span class="location d-block"> Affort in Tokyo </span><span
-                                            class="job-type d-block"> Full Time </span>
-                                    </div>
-                                </div>
-                                <div class="apply-btn"><a routerlink="/job-details" class="default-btn"
-                                        href="/jove/job-details"> Apply </a></div>
-                            </div>
-                            <div class="info d-sm-flex d-lg-block d-xl-flex align-items-center justify-content-between">
-                                <span class="salary d-block"><span class="">Salary:</span><span>$15 -
-                                        $25</span> /hourly </span><span class="deadline d-block"><span
-                                        class="">Deadline:</span> Nov 18, 2023 <span>(9 days
-                                        ago)</span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="more-jobs-btn text-center">
-                    <p>We select the opportunities we like <a routerlink="/jobs-grid" href="/jove/jobs-grid">Discover
-                            all opportunities</a></p>
-                </div>
-            </div>
-            <img src="assets/images/shapes/shape1.png" alt="shape-image" class="shape">
-        </div>
-        <div class="jobs-area ptb-75 ng-star-inserted">
-            <div class="jobs__container container">
-                <div class="section-title text-start ">
-                    <h4 class="mb-0 jobs_lawyer jobs__title"> TOP LUẬT SƯ </h4>
-                    <h2 class="jobs_heading">Các chuyên gia <br>
-                        hàng đầu</h2>
-                    <a routerlink="/jobs-grid" class="link-btn  fw-medium jobs__button jobs__explore display-n w-196"
-                        href="/jove/jobs-grid"> Khám phá thêm <img src="./assets/images/icons/arrow-right.svg" alt=""
-                            class="jobs__arrow homepage-arrow-right homepage-arrow-right ">
-                    </a>
-                </div>
-                <div class="row justify-content-center">
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500"
-                        class="col-xl-4 col-md-6 col-sm-6 col-lg-4  aos-init">
-                        <div class="job-item  overflow-hidden position-relative jobs_box jobs__active">
-                            <div class="content">
-                                <div class="jobs__list">
-                                    <img src="./assets/images/jobs-1.png" alt="">
-                                    <button class="criminal ">Luật hình sự</button>
-                                </div>
-
-                                <div class="jobs__content">
-                                    <div class="jobs__elite">
-                                        <h4 class="jobs__name">Nguyễn Thế Mỹ</h4> <img src="./assets/images/Vietnam.png"
-                                            alt=""> <br>
-                                    </div>
-                                    <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
-                                    <div class="jobs__city">
-                                        <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
-                                        <span class="text">Tp. Hồ Chí Minh</span>
-
-                                    </div>
-                                    <div class="jobs__city">
-                                        <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
-                                        <span class="text">(+84)935 153 721</span>
-                                    </div>
-                                    <div class="jobs__city">
-                                        <img src="./assets/images/jobs-email.png" alt="">&nbsp;
-                                        <span class="text">themylawyer@gmail.com</span>
-                                    </div>
-                                </div>
-                                <img src="./assets/images/border-1.png" alt="" class="jobs__img">
-                                <div class="jobs__data">
-                                    <div class="job__icon">
-                                        <a href="https://www.facebook.com/?locale=vi_VN">
-                                            <img src="./assets/images/icons/facebook.svg" alt="">
-                                        </a>
-                                        <a href="https://www.youtube.com/?locale=vi_VN">
-                                            <img src="./assets/images/icons/youtube.svg" alt="">
-                                        </a>
-                                        <a href="https://www.linledln.com/?locale=vi_VN">
-                                            <img src="./assets/images/icons/in.svg" alt="">
-                                        </a>
-                                    </div>
-
-                                    <div class="jobs__message">
-                                        <h5 class="jobs__send jobs__text">
-                                            Gửi tin nhắn
-                                        </h5>
-                                        <img src="./assets/images/arrow-1.svg" alt="" class="jobs__arrow-right">
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500"
-                        class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
-                        <div class="job-item  overflow-hidden position-relative jobs_box">
-                            <div class="content">
-                                <div class="jobs__list">
-                                    <img src="./assets/images/jobs-2.png" alt="">
-                                    <button class="criminal ">Luật hình sự</button>
-                                    <button class="marriage">Luật hôn nhân</button>
-                                    <article class="card__article">
-                                        <button class="card__button jobs__subtitle ">
-                                            +2
-                                        </button>
-
-                                        <div class="card__tooltip">
-                                            <div class="card__content">
-                                                <div class="card__data">
-                                                    <button class="card__button">Luật đất đai</button>
-                                                    <button class="card__button">Luật lao động</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
-
-
-
-
-                                    <div class="">
-                                        <button class="criminal ">Luật hình sự</button>
-                                        <button class="marriage">Luật hôn nhân</button>
-                                    </div>
-                                </div>
-
-                                <div class="jobs__content">
-                                    <div class="jobs__elite">
-                                        <h4 class="jobs__name">Buck Emilia</h4>
-                                        <img src="./assets/images/icons/đức.png" alt=""> <br>
-                                    </div>
-                                    <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
-                                    <div class="jobs__city">
-                                        <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
-                                        <span class="text">Tp. Hồ Chí Minh</span>
-
-                                    </div>
-                                    <div class="jobs__city">
-                                        <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
-                                        <span class="text">(+84)935 153 721</span>
-                                    </div>
-                                    <div class="jobs__city">
-                                        <img src="./assets/images/jobs-email.png" alt="">&nbsp;
-                                        <span class="text">themylawyer@gmail.com</span>
-                                    </div>
-                                </div>
-                                <img src="./assets/images/border-1.png" alt="" class="jobs__img">
-                                <div class="jobs__data">
-                                    <div class="job__icon">
-                                        <a href="https://www.facebook.com/?locale=vi_VN">
-                                            <img src="./assets/images/facebook-1.png" alt="">
-                                        </a>
-                                        <a href="https://www.youtube.com/?locale=vi_VN">
-                                            <img src="./assets/images/icons/youtube.svg" alt="">
-                                        </a>
-                                        <a href="https://www.linledln.com/?locale=vi_VN">
-                                            <img src="./assets/images/icons/in.svg" alt="">
-                                        </a>
-                                    </div>
-
-                                    <div class="jobs__message">
-                                        <h5 class="jobs__send">
-                                            Gửi tin nhắn
-                                        </h5>
-                                        <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500"
-                        class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
-                        <div class="job-item  overflow-hidden position-relative jobs_box">
-                            <div class="content">
-                                <div class="jobs__list">
-                                    <img src="./assets/images/jobs-3.png" alt="">
-                                    <button class="criminal ">Luật hình sự</button>
-                                </div>
-
-                                <div class="jobs__content">
-                                    <div class="jobs__elite">
-                                        <h4 class="jobs__name">Mabelle Rosalyn</h4> <img src="./assets/images/anh.png"
-                                            alt=""> <br>
-                                    </div>
-                                    <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
-                                    <div class="jobs__city">
-                                        <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
-                                        <a class="text">Tp. Hồ Chí Minh</a>
-
-                                    </div>
-                                    <div class="jobs__city">
-                                        <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
-                                        <a class="text">(+84)935 153 721</a>
-                                    </div>
-                                    <div class="jobs__city">
-                                        <img src="./assets/images/jobs-email.png" alt="">&nbsp;
-                                        <a class="text">themylawyer@gmail.com</a>
-                                    </div>
-                                </div>
-                                <img src="./assets/images/border-1.png" alt="" class="jobs__img">
-                                <div class="jobs__data">
-                                    <div class="job__icon">
-                                        <a href="https://www.facebook.com/?locale=vi_VN">
-                                            <img src="./assets/images/facebook-1.png" alt="">
-                                        </a>
-                                        <a href="https://www.youtube.com/?locale=vi_VN">
-                                            <img src="./assets/images/icons/youtube.svg" alt="">
-                                        </a>
-                                        <a href="https://www.linledln.com/?locale=vi_VN">
-                                            <img src="./assets/images/icons/in.svg" alt="">
-                                        </a>
-                                    </div>
-
-                                    <div class="jobs__message">
-                                        <h5 class="jobs__send">
-                                            Gửi tin nhắn
-                                        </h5>
-                                        <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500"
-                        class="col-xl-4 col-md-6 col-sm-6 col-lg-4  aos-init">
-                        <div class="job-item  overflow-hidden position-relative jobs_box">
-                            <div class="content">
-                                <div class="jobs__list">
-                                    <img src="./assets/images/jobs-4.png" alt="">
-                                    <button class="criminal ">Luật hình sự</button>
-                                </div>
-
-                                <div class="jobs__content">
-                                    <div class="jobs__elite">
-                                        <h4 class="jobs__name">Hà Honour</h4> <img src="./assets/images/Vietnam.png"
-                                            alt=""> <br>
-                                    </div>
-                                    <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
-                                    <div class="jobs__city">
-                                        <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
-                                        <a class="text">Tp. Hồ Chí Minh</a>
-
-                                    </div>
-                                    <div class="jobs__city">
-                                        <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
-                                        <a class="text">(+84)935 153 721</a>
-                                    </div>
-                                    <div class="jobs__city">
-                                        <img src="./assets/images/jobs-email.png" alt="">&nbsp;
-                                        <a class="text">themylawyer@gmail.com</a>
-                                    </div>
-                                </div>
-                                <img src="./assets/images/border-1.png" alt="" class="jobs__img">
-                                <div class="jobs__data">
-                                    <div class="job__icon">
-                                        <a href="https://www.facebook.com/?locale=vi_VN">
-                                            <img src="./assets/images/facebook-1.png" alt="">
-                                        </a>
-                                        <a href="https://www.youtube.com/?locale=vi_VN">
-                                            <img src="./assets/images/icons/youtube.svg" alt="">
-                                        </a>
-                                        <a href="https://www.linledln.com/?locale=vi_VN">
-                                            <img src="./assets/images/icons/in.svg" alt="">
-                                        </a>
-                                    </div>
-
-                                    <div class="jobs__message">
-                                        <h5 class="jobs__send">
-                                            Gửi tin nhắn
-                                        </h5>
-                                        <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500"
-                        class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
-                        <div class="job-item  overflow-hidden position-relative jobs_box">
-                            <div class="content">
-                                <div class="jobs__list">
-                                    <img src="./assets/images/jobs-5.png" alt="">
-                                    <button class="criminal ">Luật hình sự</button>
-                                    <button class="marriage">Luật dân sự</button>
-                                </div>
-
-                                <div class="jobs__content">
-                                    <div class="jobs__elite">
-                                        <h4 class="jobs__name">Hoàng Văn Quốc Thiên</h4> <img
-                                            src="./assets/images/Vietnam.png" alt=""> <br>
-                                    </div>
-                                    <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
-                                    <div class="jobs__city">
-                                        <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
-                                        <a class="text">Tp. Hồ Chí Minh</a>
-
-                                    </div>
-                                    <div class="jobs__city">
-                                        <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
-                                        <a class="text">(+84)935 153 721</a>
-                                    </div>
-                                    <div class="jobs__city">
-                                        <img src="./assets/images/jobs-email.png" alt="">&nbsp;
-                                        <a class="text">themylawyer@gmail.com</a>
-                                    </div>
-                                </div>
-                                <img src="./assets/images/border-1.png" alt="" class="jobs__img">
-                                <div class="jobs__data">
-                                    <div class="job__icon">
-                                        <a href="https://www.facebook.com/?locale=vi_VN">
-                                            <img src="./assets/images/facebook-1.png" alt="">
-                                        </a>
-                                        <a href="https://www.youtube.com/?locale=vi_VN">
-                                            <img src="./assets/images/icons/youtube.svg" alt="">
-                                        </a>
-                                        <a href="https://www.linledln.com/?locale=vi_VN">
-                                            <img src="./assets/images/icons/in.svg" alt="">
-                                        </a>
-                                    </div>
-
-                                    <div class="jobs__message">
-                                        <h5 class="jobs__send">
-                                            Gửi tin nhắn
-                                        </h5>
-                                        <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500"
-                        class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
-                        <div class="job-item  overflow-hidden position-relative jobs_box">
-                            <div class="content">
-                                <div class="jobs__list">
-                                    <img src="./assets/images/jobs-6.png" alt="">
-                                    <button class="criminal ">Luật hình sự</button>
-                                    <button class="marriage">Luật dân sự</button>
-                                </div>
-
-                                <div class="jobs__content">
-                                    <div class="jobs__elite">
-                                        <h4 class="jobs__name">Nguyễn Văn Mai Hương</h4> <img
-                                            src="./assets/images/Vietnam.png" alt=""> <br>
-                                    </div>
-                                    <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
-                                    <div class="jobs__city">
-                                        <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
-                                        <a class="text">Tp. Hồ Chí Minh</a>
-
-                                    </div>
-                                    <div class="jobs__city">
-                                        <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
-                                        <a class="text">(+84)935 153 721</a>
-                                    </div>
-                                    <div class="jobs__city">
-                                        <img src="./assets/images/jobs-email.png" alt=""> &nbsp;
-                                        <a class="text">themylawyer@gmail.com</a>
-                                    </div>
-                                </div>
-                                <img src="./assets/images/border-1.png" alt="" class="jobs__img">
-                                <div class="jobs__data">
-                                    <div class="job__icon">
-                                        <a href="https://www.facebook.com/?locale=vi_VN">
-                                            <img src="./assets/images/facebook-1.png" alt="">
-                                        </a>
-                                        <a href="https://www.youtube.com/?locale=vi_VN">
-                                            <img src="./assets/images/icons/youtube.svg" alt="">
-                                        </a>
-                                        <a href="https://www.linledln.com/?locale=vi_VN">
-                                            <img src="./assets/images/icons/in.svg" alt="">
-                                        </a>
-                                    </div>
-
-                                    <div class="jobs__message">
-                                        <h5 class="jobs__send">
-                                            Gửi tin nhắn
-                                        </h5>
-                                        <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <a routerlink="/jobs-grid"
-                    class="link-btn fw-medium jobs__button jobs__explore jobs__button-1 popular-jobs__button"
-                    href="/jove/jobs-grid"> Khám phá thêm <img src="./assets/images/icons/arrow-right.svg" alt=""
-                        class="jobs__arrow homepage-arrow-right homepage-arrow-right">
-                </a>
-            </div>
-        </div>
     </section>
 
-    <section class="about-us" id="about-us">
-        <div class="about-area ptb-100 bg-faf5f2 d-none">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div data-aos-bk="fade-up" data-aos-bk-duration="500"
-                        class="col-lg-6 col-md-12 aos-init aos-animate">
-                        <div class="about-image text-center"><img src="assets/images/about.png" alt="about-image"></div>
-                    </div>
-                    <div data-aos-bk="fade-up" data-aos-bk-duration="500" data-aos-bk-delay="100"
-                        class="col-lg-6 col-md-12 aos-init aos-animate">
-                        <div class="about-content">
-                            <h2> How jobs board “Jove” works </h2>
-                            <p> A job board is an online platform that connects job seekers with job opportunities
-                                posted by employers, recruiters, or companies. The primary purpose of a job board is to
-                                facilitate the job search and hiring process by providing a centralized place for job
-                                listings and candidate applications. </p>
-                            <div class="box position-relative">
-                                <img src="assets/images/icons/analyze.svg" alt="analyze-icon">
-                                <h3 class=""> Search &amp; analyze </h3>
-                                <p> Job seekers visit the job board platform and search for relevant job listings. They
-                                    can use filters such as keywords, location, industry, and job type to narrow down
-                                    their search. </p>
-                            </div>
-                            <div class="box position-relative">
-                                <img src="assets/images/icons/accept.svg" alt="accept-icon">
-                                <h3 class=""> Compare &amp; quick apply </h3>
-                                <p> Job seekers visit the job board platform and search for relevant job listings. They
-                                    can use filters such as keywords, location, industry, and job type to narrow down
-                                    their search. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="hero">
+        <div class="hero__container container">
+            <div class="hero__image">
+                <img src="./assets/images/hero__image.png" alt="">
             </div>
-        </div>
-        <div class="about-area about__bg bg-e9e7e7 position-relative z-1 pt-100 ng-star-inserted">
-            <div class="container">
-                <div class="row">
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500"
-                        class="col-lg-6 col-md-12 order-2 order-lg-1 aos-init">
-                        <div class="about-img position-relative z-1 text-center">
-                            <div href="#" class="job__image">
-                                <img src="assets/images/woman-smile.png" alt="about-image" class="">
+
+            <div class="hero__main">
+                <h4 class="hero__title">
+                    Chúng tôi dành cho ai?
+                </h4>
+
+                <p class="hero__desc">
+                    Chúng tôi không chỉ là một nền tảng kết nối, mà còn là cầu nối giữa những người đang tìm kiếm giải
+                    pháp pháp lý và những luật sư uy tín, chuyên nghiệp. Với mục tiêu đơn giản hóa quy trình tìm kiếm
+                    luật sư, chúng tôi tạo ra một hệ thống dễ dàng, nhanh chóng và đáng tin cậy, giúp khách hàng tiếp
+                    cận những chuyên gia pháp lý tốt nhất.
+                </p>
+
+                <div class="hero__list">
+                    <div class="hero__subtitle hero__cart">
+                        <div class="hero__img">
+                            <img src="./assets/images/hero-icon-1.svg" alt="" class="hero__img-1">
+                        </div>
+                        <div class="hero__content">
+                            <h6 class="">
+                                Cá nhân và Doanh nghiệp
+                            </h6>
+                            <p>Dù bạn là cá nhân đang gặp phải vấn đề pháp lý hay doanh nghiệp cần tư vấn và bảo vệ
+                                quyền lợi,<span> i-lawyers.vn</span> luôn sẵn sàng hỗ trợ.
+                            </p>
+
+                            <div class="hero__icon">
+                                <span>Tìm luật sư</span>
+                                <img src="./assets/images/arrow-2.svg" alt="">
                             </div>
-                            <img src="assets/images/shapes/shapes-4.png" alt="shape-image" class="shape">
+
                         </div>
                     </div>
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500" data-aos-bk-delay="100"
-                        class="col-lg-6 col-md-12 order-1 order-lg-2 aos-init">
-                        <div class="about-text">
-                            <div class="about-content">
-                                <h4 class="jobs__title">VỀ CHÚNG TÔI</h4>
-                                <h2 class="jobs_heading">Giải pháp pháp lý <br>
-                                    cho mọi nhu cầu</h2>
-                                <p class="about__description"> Tại <span class="about__desc">i-lawyers.vn</span>, chúng
-                                    tôi cam kết mang đến cho bạn dịch vụ kết nối với những luật
-                                    sư giỏi nhất và uy tín nhất trong nhiều lĩnh vực pháp lý. Với nền tảng hiện đại và
-                                    tiện ích, bạn có thể dễ dàng tìm kiếm và liên hệ với các luật sư phù hợp với nhu cầu
-                                    của mình, từ pháp lý doanh nghiệp, bất động sản, cho đến các vấn đề tranh chấp dân
-                                    sự... Chúng tôi luôn sẵn sàng hỗ trợ để đảm bảo bạn nhận được sự tư vấn chuyên
-                                    nghiệp và hiệu quả nhất.
-                                </p>
+                    <div class="hero__subtitle hero-subtitle">
+                        <div class="hero__img">
+                            <img src="./assets/images/hero-icon-2.svg" alt="" class="hero__img-2">
+                        </div>
+                        <div class="hero__content">
+                            <h6 class="">
+                                Luật sư chuyên nghiệp
+                            </h6>
+                            <p>Với mục tiêu xây dựng cộng đồng pháp lý phát triển, chúng tôi tạo ra một môi trường nơi
+                                luật sư có thể tiếp cận khách hàng tiềm năng, tăng cường uy tín cá nhân và mở rộng mạng
+                                lưới.
+                            </p>
 
-                                <ul class="about_quickly">
-                                    <li>
-                                        <span>Tìm kiếm nhanh chóng: </span> Hệ thống tìm kiếm thông minh, dễ sử dụng,
-                                        giúp bạn tìm được luật sư phù hợp trong thời gian ngắn.
-                                    </li>
-                                    <li>
-                                        <span>Luật sư uy tín: </span> Danh sách các luật sư đã được chọn lọc và xác thực
-                                        với chuyên môn sâu rộng trong nhiều lĩnh vực.
-                                    </li>
-
-                                    <li>
-                                        <span>Tư vấn chuyên nghiệp: </span> Đảm bảo bạn nhận được sự hỗ trợ pháp lý đúng
-                                        người, đúng lĩnh vực.
-                                    </li>
-
-                                    <li>
-                                        <span>Linh hoạt: </span> Dịch vụ kết nối với luật sư VIP và gói miễn phí phù hợp
-                                        với nhu cầu khác nhau.
-                                        với nhu cầu khác nhau.
-                                    </li>
-                                    <li>
-                                        <span>Bảo mật thông tin: </span> Cam kết bảo mật toàn bộ thông tin của khách
-                                        hàng khi sử dụng dịch vụ trên nền tảng của chúng tôi.
-                                    </li>
-                                </ul>
-
-                                <a routerlink="/jobs-grid"
-                                    class="link-btn d-inline-block fw-medium jobs__explore explore jobs-explore mt-10 w-196 mb-10"
-                                    href="/jove/jobs-grid"> Khám phá thêm <img
-                                        src="./assets/images/icons/arrow-right.svg" alt=""
-                                        class="jobs__arrow homepage-arrow-right"> </a>
-
-
-
+                            <div class="hero__icon">
+                                <span>Trở thành luật sư của chúng tôi</span>
+                                <img src="./assets/images/arrow-2.svg" alt="">
                             </div>
-                            <div class="funfacts-box">
-                                <div class="row justify-content-center">
-                                    <div class="col-md-4 col-4">
-                                        <div class="funfact-box">
-                                            <h2 class="about__heading"> 200 <sup class="about-heading"> + </sup></h2>
-                                            <span class="d-block">Luật sư</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-4">
-                                        <div class="funfact-box">
-                                            <h2 class="about__heading"> 5000 <sup class="about-heading"> + </sup></h2>
-                                            <span class="d-block">Kết nối</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-4">
-                                        <div class="funfact-box">
-                                            <h2 class="about__heading "> 96 <sup class="about__title"> % </sup></h2>
-                                            <span class="d-block"> Tỷ lệ hài lòng</span>
-                                        </div>
-                                    </div>
-                                </div>
+
+                        </div>
+                    </div>
+                    <div class="hero__subtitle ">
+                        <div class="hero__img">
+                            <img src="./assets/images/hero-icon-2.svg" alt="" class="hero__img-2">
+                        </div>
+                        <div class="hero__content">
+                            <h6 class="">
+                                Luật sư chuyên nghiệp
+                            </h6>
+                            <p>Với mục tiêu xây dựng cộng đồng pháp lý phát triển, chúng tôi tạo ra một môi trường nơi
+                                luật sư có thể tiếp cận khách hàng tiềm năng, tăng cường uy tín cá nhân và mở rộng mạng
+                                lưới.
+                            </p>
+
+                            <div class="hero__icon">
+                                <span>Trở thành luật sư</span>
+                                <img src="./assets/images/arrow-2.svg" alt="">
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -1012,84 +312,64 @@
         </div>
     </section>
 
-    <section class="leading-company" id="leading-company">
-        <div class="leading-company-area pb-100">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-12">
-                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="leading-company-content aos-init">
-                            <div class="box">
-                                <h2 class="leading-company-desc"> Tham gia mạng lưới Luật sư uy tín</h2>
-                                <p class="leading-company__connect">Bạn là luật sư và muốn mở rộng cơ hội kết nối với
-                                    nhiều khách hàng hơn? Hãy gia nhập nền tảng của chúng tôi ngay hôm nay!</p>
-                                <div class="row features-list">
-                                    <div class="col-sm-6"><span class="d-block position-relative enhance">
-                                            <img src="./assets/images/check.svg" alt="">
-                                            Tăng cường tiếp cận khách hàng</span></div>
-                                    <div class="col-sm-6"><span class="d-block position-relative enhance"> <img
-                                                src="./assets/images/check.svg" alt=""> Dịch vụ hỗ trợ chuyên
-                                            nghiệp</span></div>
-                                    <div class="col-sm-6"><span class="d-block position-relative enhance"> <img
-                                                src="./assets/images/check.svg" alt=""> Tăng cường uy tín cá nhân
-                                        </span></div>
-                                    <div class="col-sm-6"><span class="d-block position-relative enhance"> <img
-                                                src="./assets/images/check.svg" alt=""> Tăng doanh thu tiềm năng
-                                        </span></div>
-                                    <div class="col-sm-6"><span class="d-block position-relative enhance"> <img
-                                                src="./assets/images/check.svg" alt=""> Tính năng VIP độc quyền
-                                        </span></div>
-                                    <div class="col-sm-6"><span class="d-block position-relative enhance"> <img
-                                                src="./assets/images/check.svg" alt=""> Tích hợp công cụ giao tiếp
-                                            tiện lợi </span>
-                                    </div>
-                                    <div class="col-sm-6"><span class="d-block position-relative enhance"> <img
-                                                src="./assets/images/check.svg" alt=""> Quản lý dễ dàng </span>
-                                    </div>
-                                    <div class="col-sm-6"><span class="d-block position-relative enhance"> <img
-                                                src="./assets/images/check.svg" alt=""> Đa dạng lĩnh vực pháp lý
-                                        </span></div>
-                                    <div class="col-sm-6"><span class="d-block position-relative enhance"> <img
-                                                src="./assets/images/check.svg" alt=""> Không giới hạn lĩnh vực
-                                            chuyên môn </span>
-                                    </div>
-                                    <div class="col-sm-6"><span class="d-block position-relative enhance"> <img
-                                                src="./assets/images/check.svg" alt=""> Nâng cao khả năng cạnh tranh
-                                        </span></div>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <h2 class="leading-company-heading"> Đăng ký ngay hôm nay! </h2>
-                                <p class="about__text"> Với hàng ngàn người dùng truy cập mỗi ngày, <span
-                                        class="about__desc">i-lawyers.vn</span> là nền tảng lý tưởng để bạn
-                                    mở rộng cơ hội nghề nghiệp và xây dựng thương hiệu cá nhân. Hãy tham gia mạng lưới
-                                    luật sư uy tín của chúng tôi để nắm bắt những cơ hội phát triển nghề nghiệp và hỗ
-                                    trợ pháp lý nhanh chóng.</p>
+    <section class="faith">
+        <div class="faith__container container">
+            <div class="faith__content">
+                <h4 class="hero__title faith__title">
+                    Niềm tin của khách hàng là động lực của chúng tôi!
+                </h4>
 
-                                <p class="about__text"> Đăng ký ngay hôm nay để trở thành đối tác của <span
-                                        class="about__desc">i-lawyers.vn</span> và cùng chúng tôi mang đến sự
-                                    hỗ trợ pháp lý chuyên nghiệp và hiệu quả cho mọi khách hàng.
-                                </p>
-                                <a routerlink="/jobs-grid"
-                                    class="link-btn d-inline-block fw-medium jobs__button jobs__explore explore jobs__auto"
-                                    href="/jove/jobs-grid"> Đăng ký ngay <img
-                                        src="./assets/images/icons/arrow-right.svg" alt=""
-                                        class="jobs__arrow homepage-arrow-right"> </a>
+                <p class="faith__desc">
+                    Lắng nghe những câu chuyện thành công từ khách hàng của chúng tôi. Hàng trăm khách hàng đã tìm được
+                    giải pháp pháp lý hiệu quả, bảo vệ quyền lợi của mình. Chúng tôi tự hào là cầu nối giữa khách hàng
+                    và các luật sư uy tín, mang đến sự tin cậy và kết quả đáng hài lòng.
+                </p>
+            </div>
+
+            <div class="swiper faith__swiper">
+                <div class="swiper-wrapper">
+                    <article class="swiper-slide">
+                        <div class="faith__name">
+                            <img src="./assets/images/faith-img-2.png" alt="">
+
+                            <div class="faith__subtitle">
+                                <h5 class="faith__name">
+                                    Hoàng Hà
+                                </h5>
+                                <p>CEO Công ty Thống Nhất</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" data-aos-bk-delay="100"
-                            class="leading-company-image leading-company-img text-center aos-init  leading-company-imag">
-                            <img src="assets/images/male.png" alt="leading-company-image">
+
+                        <p class="faith__description">
+                            "Lần đầu tiên tôi phải đối mặt với vấn đề tranh chấp hợp đồng và không biết bắt đầu từ đâu.
+                            Nhờ vào việc tìm được một luật sư chuyên nghiệp trên i-lawyers.vn, mọi việc đã được xử lý ổn
+                            thỏa. Tôi rất hài lòng!"
+                        </p>
+
+                        <div class="faith__star">
+                            <h4>
+                                5.0 <span>rating</span>
+                            </h4>
+                            <div class=""> 
+                                <img src="./assets/images/faith__Star 1.svg" alt="">
+                                <img src="./assets/images/faith__Star 1.svg" alt="">
+                                <img src="./assets/images/faith__Star 1.svg" alt="">
+                                <img src="./assets/images/faith__Star 1.svg" alt="">
+                                <img src="./assets/images/faith__Star 1.svg" alt="">
+                            </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
             </div>
-        </div>
-        <div class="leading-compamny__image">
-            <img src="./assets/images/image 7.png" alt="">
+
+
+            <img src="assets/images/faith__quotes.png" alt="" class="faith__image">
         </div>
     </section>
+
 
     <section class="how-jove-works" id="how-jove-works">
         <div class="how-jove-works-area bg-f8f8fb pt-100 pb-100">
@@ -1151,175 +431,6 @@
         </div>
     </section>
 
-    <section class="homepage" id="homepage">
-        <div class="homepage__container container grid">
-            <div class="homepage__content">
-                <h5 class="jobs__title home__title">
-                    GỬI TIN NHẮN CHO CHÚNG TÔI
-                </h5>
-                <h2 class="jobs_heading ">Nhận tư vấn pháp lý <br>
-                    nhanh chóng! </h2>
-                <p class="homepage__text about__text">Bạn đang gặp vấn đề pháp lý cần giải quyết? Hãy để chúng tôi giúp
-                    bạn tìm luật sư phù hợp ngay
-                    hôm nay! Điền thông tin vào form bên dưới và nhận tư vấn miễn phí từ những luật sư chuyên nghiệp
-                    nhất.
-                </p>
-            </div>
-
-            <form action="" class="homepage__form-input">
-                <div class="homepage__data">
-                    <div class="homepage__form-control">
-                        <div class="homepage__form-input">
-                            <div class="homepage__lable">
-                                <label for=""> Họ và tên </label>
-                                <input type="text" placeholder="Tên của bạn">
-                            </div>
-                            <div class="homepage__lable">
-                                <label for=""> Email</label>
-                                <input type="Email" placeholder="Email của bạn">
-                            </div>
-                        </div>
-                        <div class="homepage__form-input">
-                            <div class="homepage__lable">
-                                <label for=""> Số điện thoại </label>
-                                <input type="text" placeholder="Số điện thoại">
-                            </div>
-                            <div class="homepage__lable homepage__specialized">
-                                <label for=""> Chuyên ngành cần hỗ trợ</label>
-                                <input type="text" placeholder="Tất cả chuyên ngành">
-
-                                <i class="ri-arrow-down-s-line homepage__arrow"></i>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                    <div class="homepage__form-name">
-                        <label for="">Tin nhắn</label>
-                        <textarea name="" id="" cols="50" rows="5" placeholder="Thắc mắc của bạn là gì?"
-                            class="homepage__textarea"></textarea>
-
-                    </div>
-                </div>
-                <a routerlink="/jobs-grid"
-                    class="link-btn d-inline-block fw-medium jobs__button jobs__explore homepage__button homepage__messenger"
-                    href="/jove/jobs-grid"> Gửi tin nhắn
-                    <img src="./assets/images/icons/arrow-right.svg" alt="" class="jobs__arrow homepage-arrow-right">
-                </a>
-            </form>
-        </div>
-    </section>
-
-    <section class="blog container" id="blog">
-        <div class="blog-area pt-100 pb-75">
-            <div class="section-title text-center mx-auto">
-                <h4 class="blog__news jobs__title how-jove__title">TIN TỨC</h4>
-                <h2 class="mb-0 outstanding">Thông tin pháp lý nổi bật</h2>
-            </div>
-
-
-            <div class="swiper blog__swiper">
-                <div class="swiper-wrapper">
-                    <article class="swiper-slide blog__article jobs_box">
-                        <img src="assets/images/about-lawyer.png" alt="blog-image"></a>
-                        <div class="swiper__card">
-                            <ul class="meta ps-0 list-unstyled blog__swiper-day">
-                                <span class="d-inline-block blog__item"> MAY 24, 2024 </span>
-
-                                <li class="blog__primary">tin tức pháp lý</li>
-                            </ul>
-                            <h3 class="blog__title">
-                                <a routerlink="/blog-details"> 5 Điều
-                                    Cần Biết Khi Thuê Luật Sư Cho Doanh Nghiệp </a>
-                            </h3>
-
-                            <div class="jobs__message blog__read-more">
-                                <h5 class="jobs__send">
-                                    Đọc thêm
-                                </h5>
-                                <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
-                            </div>
-                        </div>
-                    </article>
-                    <article class="swiper-slide blog__article jobs_box">
-                        <img src="assets/images/book.png" alt="blog-image">
-                        <div class="swiper__card">
-                            <ul class="meta ps-0 list-unstyled blog__swiper-day">
-
-                                <span class="d-inline-block blog__item">JUN 06, 2024</span>
-                                <li class="blog__primary">tin tức pháp lý</li>
-                            </ul>
-                            <h3 class="blog__heading">
-                                <a routerlink="/blog-details"> Tìm hiểu chi tiết về phí dịch vụ luật sư: cách tính và
-                                    các yếu tố ảnh hưởng</a>
-                            </h3>
-
-                            <div class="jobs__message blog__read-more">
-                                <h5 class="jobs__send">
-                                    Đọc thêm
-                                </h5>
-                                <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
-                            </div>
-                        </div>
-                    </article>
-                    <article class="swiper-slide blog__article jobs_box">
-                        <img src="assets/images/technology.png" alt="blog-image">
-                        <div class="swiper__card">
-                            <ul class="meta ps-0 list-unstyled blog__swiper-day">
-                                <span class="d-inline-block blog__item"> JUN 06, 2024 </span>
-                                <li class="blog__primary">tin tức pháp lý</li>
-                            </ul>
-                            <h3 class="">
-                                <a routerlink="/blog-details"> Luật sư trong kỷ nguyên công nghệ: legaltech đang thay
-                                    đổi nghề nghiệp </a>
-                            </h3>
-
-                            <div class="jobs__message blog__read-more">
-                                <h5 class="jobs__send">
-                                    Đọc thêm
-                                </h5>
-                                <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
-                            </div>
-                        </div>
-                    </article>
-                    <article class="swiper-slide blog__article jobs_box">
-                        <img src="assets/images/book.png" alt="blog-image">
-                        <div class="swiper__card">
-                            <ul class="meta ps-0 list-unstyled blog__swiper-day">
-                                <span class="d-inline-block blog__item">JUN 06, 2024</span>
-
-                                <li class="blog__primary">tin tức pháp lý</li>
-                            </ul>
-                            <h3 class="blog__heading">
-                                <a routerlink="/blog-details"> Tìm hiểu chi tiết về phí dịch vụ luật sư: cách tính và
-                                    các yếu tố ảnh hưởng</a>
-                            </h3>
-
-                            <div class="jobs__message blog__read-more">
-                                <h5 class="jobs__send">
-                                    Đọc thêm
-                                </h5>
-                                <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-            </div>
-            <div class="swiper-button-prev">
-                <img src="./assets/./images/blog-arrow-right.png" alt="">
-            </div>
-            <div class="swiper-button-next">
-                <img src="./assets/./images/blog-arrow-left.png" alt="">
-            </div>
-        </div>
-    </section>
 
     <section class="footer" id="footer">
         <div class="d-none">

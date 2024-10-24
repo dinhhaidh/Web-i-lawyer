@@ -1,0 +1,31 @@
+.faith__container{
+    position: relative;
+    padding: 60px 1rem 60px;
+
+}
+.faith__text{
+    position: relative;
+    z-index: 1;
+}
+.faith__desc{
+    font-size: clamp(0.8125rem, 0.7960526315789473rem + 0.08223684210526315vw, 0.875rem);
+    line-height: 20px;
+    color: #2E2E3D;
+    font-family: "DM", sans-serif;
+    font-weight: 400;
+
+}
+.faith__image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+@media screen and (min-width: 1024px) {
+    .faith__title{
+        line-height: 35.73px;
+    }
+}
+
