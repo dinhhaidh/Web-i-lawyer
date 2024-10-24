@@ -1,0 +1,37 @@
+.introduce__container {
+    padding: 20px 1.5rem 50px;
+}
+.introduce__content{
+    margin-top: 3rem;
+}
+.introduce__subtitle{
+    display: flex;
+    column-gap: 7px;
+}
+.introduce__subtitle img{
+    width: 10px;
+    height: 8.96px;
+    margin-top: 6px;
+
+}
+.introduce__title{
+    margin-bottom: 15px !important;
+    font-family: "Space Grotesk", sans-serif;
+}
+.introduce__desc{
+    margin-bottom: 40px;
+}
+.introduce__data{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .introduce__text{
+        width: 509px;
+    }
+}

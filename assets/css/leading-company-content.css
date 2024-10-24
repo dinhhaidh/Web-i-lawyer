@@ -37,12 +37,18 @@
 .leading-company-desc{
     margin-bottom: 10px !important;
     margin-bottom: 10px;
+    font-family: "Space Grotesk", sans-serif;
 }
-
+.row.features-list.leading-company__data {
+    row-gap: 10px;
+}
 .leading-company-content
     .box
     .features-list {
     margin-top: -7px;
+}
+.leading-company__text{
+    margin-bottom: 25px;
 }
 
 .leading-company-content
@@ -121,7 +127,7 @@
         width: 500px;
     }
     .leading-company-content .box {
-        padding: 55px 85px 55px;
+        padding: 53.6px 85px 53.6px;
     }
   
 }
