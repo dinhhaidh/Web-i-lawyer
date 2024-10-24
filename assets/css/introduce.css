@@ -6,7 +6,6 @@
 }
 .introduce__subtitle{
     display: flex;
-    column-gap: 7px;
 }
 .introduce__subtitle img{
     width: 10px;
@@ -35,3 +34,9 @@
         width: 509px;
     }
 }
+@media screen and (min-width: 1024px) {
+    .introduce__subtitle{
+        column-gap: 7px;
+    }
+}
+
