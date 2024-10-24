@@ -296,6 +296,9 @@
     .single-footer-widget .logo {
         margin-bottom: 20px
     }
+    .footer__button{
+        margin-top: 20px;
+    }
 
     .single-footer-widget .socials-link li a span {
         width: 30px;

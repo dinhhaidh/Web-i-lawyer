@@ -16,7 +16,8 @@
 .introduce__title{
     margin-bottom: 15px !important;
     font-family: "Space Grotesk", sans-serif;
-    
+    font-size: clamp(1.375rem, 1.2763157894736843rem + 0.4934210526315789vw, 1.75rem) !important;
+    font-weight: 700;
     
 }
 .introduce__desc{

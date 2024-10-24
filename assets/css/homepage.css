@@ -87,24 +87,12 @@
     top: 2.5rem;
 }
 
-.homepage-arrow-right{
-    transform: translateX(0);
-    transition: transform .3s;
-}
-.homepage-arrow-right:hover{
-    transform: translateX(.25rem);
-
-}
 .homepage__button{
     width: 173px;
     display: flex !important;
     column-gap: 1.3rem;
 }
 
-/* .form__control{
-    border: none;
-
-} */
 .homepage__lawyer{
     /* padding: 13px 10px 13px 60px; */
     padding: 13px 10px 13px 50px;

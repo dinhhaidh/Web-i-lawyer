@@ -62,7 +62,7 @@ body {
     font-family: var(--fontFamily)
 }
 .container{
-    max-width: 1162px;
+    max-width: 1172px;
     margin: 0 auto !important;
     padding: 0 1.5rem;
 }
@@ -97,6 +97,29 @@ strong{
     column-gap: 10px;
     justify-content: space-between;
     align-items: center;
+}
+.w-251{
+    background-color: #00C6C1 !important;
+    padding: 15px;
+    border-radius: 6px;
+    color: #fff;
+    column-gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 251px;
+}
+.section__title{
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(1.375rem, 1.2763157894736843rem + 0.4934210526315789vw, 1.75rem) !important;
+    font-weight: 700;
+    letter-spacing: -1px;
+    
+}
+.mt-35{
+    margin-top: 35px;
+}
+.mt-50{
+    margin-top: 50px;
 }
 @media screen and (min-width: 768px) {
     .w-150,
@@ -140,7 +163,9 @@ a:hover{
 .section-title .link-btn:hover {
     padding-right: 0px;
 }
-
+.bg__ff{
+    background: #fff !important;
+}
 
 @media only screen and (max-width: 767px) {
     body {
