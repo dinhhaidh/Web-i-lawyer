@@ -87,6 +87,7 @@ p:last-child {
 .qualification-content{
     padding-left: 0rem;
     display: flex;
+    column-gap: 10px;
 
 }
 .qualification-content .arrow {
@@ -96,7 +97,6 @@ p:last-child {
     background: var(--primary-color00);
     display: block;
     margin-top: 0.8rem;
-    margin: 0.8rem 0.8rem 0px 0px;
 }
 
 .newsletter-list li{
