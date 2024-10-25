@@ -157,7 +157,15 @@
         height: 139px !important;
         margin: 50px auto 20px;
     }
+   
 }
+@media screen and (min-width: 450px) {
+    .contact__artilce{
+        width: 100%;
+        background-color: #fff;
+    }
+}
+
 
 
 @media screen and (min-width: 500px) {
@@ -180,6 +188,7 @@
     .contact__content{
         padding: 70px 0px 20px;
     }
+    
 }
   
 @media screen and (min-width: 768px) {
@@ -208,6 +217,7 @@
     .contact__artilce{
         width: 748px !important;
     }
+    
 }
 
 @media screen and (min-width: 1024px) {

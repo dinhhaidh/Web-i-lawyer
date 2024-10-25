@@ -165,9 +165,9 @@
     .homepage__text {
         width: 397px !important;
     }
+   
     .homepage__lawyer {
-        padding: 13px 10px 13px 60px;
-        /* padding: 13px 10px 13px 50px; */
+        padding: 13px 200px 13px 60px;
         border: none !important;
     }
     .homepage__form-img {

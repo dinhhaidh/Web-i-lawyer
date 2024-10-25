@@ -97,6 +97,7 @@ strong{
     column-gap: 10px;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 }
 .w-251{
     background-color: #00C6C1 !important;
@@ -107,13 +108,14 @@ strong{
     justify-content: space-between;
     align-items: center;
     width: 251px;
+    margin: 0 auto;
 }
 .section__title{
     font-family: "Space Grotesk", sans-serif;
-    font-size: clamp(1.375rem, 1.2763157894736843rem + 0.4934210526315789vw, 1.75rem) !important;
+    font-size: clamp(1.625rem, 1.5921052631578947rem + 0.1644736842105263vw, 1.75rem) !important;
     font-weight: 700;
     letter-spacing: -1px;
-    
+    color: #00184B;
 }
 .mt-35{
     margin-top: 35px;
@@ -121,12 +123,59 @@ strong{
 .mt-50{
     margin-top: 50px;
 }
+.mb-10{
+    margin-bottom: 10px;
+}
+.pb-90{
+    padding-bottom: 90px;
+}
+.pt-90{
+    padding-top: 90px;
+}
+.contact__now{
+    margin: 40px auto 0px;
+}
+.w-146{
+    width: 146px !important;
+    background-color: #00C6C1 !important;
+    padding: 15px;
+    border-radius: 6px;
+    color: #fff;
+    column-gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (min-width: 567.98px) {
+    .w-150,
+    .w-250{
+        margin: 0px;
+    }
+    .w-251{
+        margin: 50px 0px 0px !important;
+    }
+    
+}
+
+@media screen and (max-width: 767.98px) {
+    .pb-90{
+        padding-bottom: 50px;
+    }
+    .pt-90{
+        padding-top: 50px;
+    }
+}
+
+
 @media screen and (min-width: 768px) {
     .w-150,
     .w-196{
         display: flex !important;
        
     }
+    .w-173{
+        margin: 50px 0;
+    }
+  
 }
 
 a:hover{
@@ -183,5 +232,6 @@ a:hover{
         padding: 0px;
     }
 } */
+
 
 
