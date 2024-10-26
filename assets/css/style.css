@@ -2041,6 +2041,7 @@ input.form-control::placeholder{
     padding: 6px 9px;
     border-radius: 4px;
 }
+
 .contact-info__phone p,
 .contact-info__email p{
     color: #00C6C1;
@@ -2090,6 +2091,20 @@ textarea, input{
 .form-group__name {
     margin: 0 0 7px 16px;
 }
+@media screen and (max-width: 340px) {
+    .contact__info-email{
+        letter-spacing: -1px !important;
+    }
+    .newsletter__primary{
+        font-size: 15px !important;
+    }
+}
+@media screen and (min-width: 375px) {
+    .contact__info-email{
+        letter-spacing: -0.5px !important;
+    }
+}
+
 
 @media screen and (min-width: 500px) {
     .contact-info__card {
@@ -3314,10 +3329,13 @@ a.link-btn.d-inline-block.fw-medium.jobs__button.jobs__explore.homethree__button
 .footer-area.bg-black .copyright-area .form-select {
     filter: invert(1)
 }
-.footer__button{
-    margin-top: 10px;
-}
 
+
+@media screen and (max-width: 375px) {
+    .footer__button{
+        margin: 0 auto;
+    }
+}
 
 
 .single-footer-widget {
@@ -3491,9 +3509,6 @@ a.link-btn.d-inline-block.fw-medium.jobs__button.jobs__explore.homethree__button
 @media only screen and (max-width: 767px) {
     .single-footer-widget .logo {
         margin-bottom: 20px
-    }
-    .footer__button{
-        margin-top: 20px;
     }
 
     .single-footer-widget .socials-link li a span {
@@ -8888,8 +8903,8 @@ p:last-child {
     flex-direction: column;
     /* column-gap: 13px; */
     margin: 30px 0 0px;
-    padding-bottom: 80px;
-    border-bottom: 1px solid #D1E7E5;
+    padding-bottom: 60px;
+  
     
 }
 .newsletter__img-1{
@@ -8922,9 +8937,13 @@ p:last-child {
 .newsletter__heading{
     letter-spacing: -1px;
     margin-bottom: 40px;
+    text-align: initial;
+}
+.newsletter__heading {
+    margin-bottom: 38px !important;
 }
 .newsletter-image{
-    padding-bottom: 1.5rem;
+    padding-bottom: 3.5rem;
     position: relative;
     /* padding-top: 2rem; */
 }
@@ -9022,6 +9041,7 @@ p:last-child {
     }
     
 } */
+
 .newsletter .swiper-button-next{
    display: none;
 }
@@ -9035,16 +9055,21 @@ p:last-child {
     }
    
 }
-@media screen and (min-width: 320px) {
-    .newsletter__inliked{
-        width: 308px;
+@media screen and (max-width: 374.98px) {
+    .newsletter__swiper {
+        padding-bottom: 3.5rem;
     }
+    .newsletter-image {
+        padding-bottom: 2.5rem;
+    }
+   
+}
+
+@media screen and (min-width: 320px) {
+  
     button.qualification__button.qualification__marriage-1 {
         margin-right: 0px;
     }
-    /* .newsletter .swiper-button-prev, .swiper-button-next {
-        top: 12rem;
-    } */
     .newsletter__img-2 img{
         width: 100%;
         height: 100%;
@@ -9053,13 +9078,13 @@ p:last-child {
     .newsletter__image{
         row-gap: 10px;
     }
-    /* .qualification-content .arrow {
-        width: 24px;
-        height: 6px;
-    } */
-   
-   
 }
+@media screen and (min-width: 375px) {
+    .newsletter__inliked{
+        width: 308px;
+    }
+}
+
 @media screen and (min-width: 470px) {
     button.qualification__button.qualification__marriage-1 {
         margin-right: 7px;
@@ -9076,6 +9101,12 @@ p:last-child {
     }
 }
 
+@media screen and (min-width: 700px) {
+    .newsletter__heading {
+        margin-bottom: 38px !important;
+        width: 678px;
+    }
+}
 
 
 @media screen and (min-width: 800px) {
@@ -9089,6 +9120,11 @@ p:last-child {
         align-items: center;
 
     }
+    .newsletter__image{
+        padding-bottom: 80px; 
+        border-bottom: 1px solid #D1E7E5;
+    
+    } 
 }
 @media screen and (min-width: 1024px) {
     .newsletter__list{
@@ -9127,13 +9163,13 @@ p:last-child {
     .newsletter .swiper-button-next {
         right: -4rem;
         display: unset;
-        top: 22rem;
+        top: 19rem;
 
     }
     .newsletter .swiper-button-prev {
         left: -5rem;
         display: unset;
-        top: 22rem;
+        top: 19rem;
     }
     /* .newsletter .swiper-button-prev, .swiper-button-next {
         top: 15rem;
@@ -10696,10 +10732,7 @@ a#ui-id-2 {
         width: 173px;
         border: none;
     }
-    /* .jobs__auto{
-        margin: 30px auto 30px !important;
-        display: flex;
-    } */
+     
     p.about__text.subscribe__desc {
         text-align: center;
     }

@@ -116,6 +116,7 @@ strong{
     width: 251px;
     margin: 0 auto;
 }
+
 .section__title{
     font-family: "Space Grotesk", sans-serif;
     font-size: clamp(1.625rem, 1.5921052631578947rem + 0.1644736842105263vw, 1.75rem) !important;
@@ -263,7 +264,7 @@ ul{
     }
 }
 
- @media screen and (max-width: 630px) {
+ @media screen and (min-width: 575px) {
    
     .w-146{
         margin: 0px;
@@ -321,6 +322,12 @@ ul{
         justify-content: space-between;
     }
   
+}
+@media screen and (min-width: 860px) {
+    .w-843{
+        width: 843px;
+        margin: 0 auto;
+    }
 }
 @media screen and (min-width: 1024px) {
     .w-927{
