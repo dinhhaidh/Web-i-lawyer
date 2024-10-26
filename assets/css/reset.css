@@ -61,6 +61,9 @@ body {
     font-size: var(--fontSize);
     font-family: var(--fontFamily)
 }
+.grid{
+    display: grid;
+}
 .container{
     max-width: 1172px;
     margin: 0 auto !important;

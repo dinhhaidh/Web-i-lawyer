@@ -967,6 +967,27 @@
     background-color: #f8f8f8;
     padding-top: 50px;
 }
+.card-list{
+    display: grid;
+    gap: 20px;
+}
+.article__list{
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 5;
+    gap: 0;
+}
+.article__card{
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
+    gap: 0;
+}
+@media screen and (max-width: 500px) {
+    .article__card {
+        padding: 25px 25px 15px 25px;
+    }
+}
 
 
 @media screen and (min-width: 1150px) {
@@ -5066,7 +5087,7 @@ span
     color: var(--primary-color);
     font-family: "Space Grotesk", sans-serif;
     font-weight: 700;
-    margin-bottom: 50px;
+    margin: 50px 0 50px;
 }
 .lawyer__card{
     display: flex;
