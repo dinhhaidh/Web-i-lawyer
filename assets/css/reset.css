@@ -69,7 +69,7 @@ body {
 .heading{
     font-size: 14px;
     color: #2E2E3D;
-    font-family: "Dm sans", sans-serif;
+    font-family: "DM sans", sans-serif;
     font-weight: 400;
     line-height: 20px;
 }
@@ -79,6 +79,9 @@ body {
     font-family: "Dm sans", sans-serif;
 }
 .nav__item a:hover{
+    color: var(--primary-color00) !important;
+}
+a:hover{
     color: var(--primary-color00) !important;
 }
 .bg-gray{
@@ -118,7 +121,10 @@ strong{
     color: #00184B;
 }
 .mt-35{
-    margin-top: 35px;
+    margin-top: 35px !important;
+}
+.mb-35{
+    margin-bottom: 35px !important;
 }
 .mt-50{
     margin-top: 50px;
@@ -132,60 +138,40 @@ strong{
 .pt-90{
     padding-top: 90px;
 }
+.pt-70{
+    padding-top: 70px;
+}
+.pb-70{
+    padding-bottom: 70px;
+}
 .contact__now{
     margin: 40px auto 0px;
 }
-.w-146{
-    width: 146px !important;
-    background-color: #00C6C1 !important;
-    padding: 15px;
-    border-radius: 6px;
-    color: #fff;
-    column-gap: 10px;
-    justify-content: space-between;
-    align-items: center;
-}
-@media screen and (min-width: 567.98px) {
-    .w-150,
-    .w-250{
-        margin: 0px;
-    }
-    .w-251{
-        margin: 50px 0px 0px !important;
-    }
-    
+
+ul{
+    margin-bottom: 0px;
 }
 
-@media screen and (max-width: 767.98px) {
-    .pb-90{
-        padding-bottom: 50px;
-    }
-    .pt-90{
-        padding-top: 50px;
-    }
+.mb-40{
+    margin-bottom: 40px;
 }
 
-
-@media screen and (min-width: 768px) {
-    .w-150,
-    .w-196{
-        display: flex !important;
-       
-    }
-    .w-173{
-        margin: 50px 0;
-    }
-  
-}
-
-a:hover{
-    color: #fff !important;
-}
 .mt-10{
     margin-top: 10px !important; 
 }
 .mb-10{
     margin-bottom: 10px;
+}
+.card__button{
+    background-color: #00C6C1 !important;
+    padding: 3px 12px;
+    border-radius: 20px;
+    color: #fff;
+    column-gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    font-size: 12px;
 }
 
 .w-196{
@@ -197,6 +183,8 @@ a:hover{
     column-gap: 10px;
     justify-content: space-between;
     align-items: center;
+    margin: 20px auto !important;
+    border: none !important;
 }
 .w-173{
     width: 173px !important;
@@ -208,6 +196,19 @@ a:hover{
     display: flex !important;
     justify-content: space-between;
     align-items: center;
+    border: none !important;
+}
+.w-154{
+    width: 154px;
+    background-color: #00C6C1 !important;
+    padding: 15px;
+    border-radius: 6px;
+    color: #fff;
+    column-gap: 10px;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
 }
 .section-title .link-btn:hover {
     padding-right: 0px;
@@ -215,6 +216,37 @@ a:hover{
 .bg__ff{
     background: #fff !important;
 }
+.w-146{
+    width: 146px !important;
+    background-color: #00C6C1 !important;
+    padding: 15px;
+    border-radius: 6px;
+    color: #fff;
+    column-gap: 10px;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    border: none;
+}
+/* .w-146{
+    width: 146px !important;
+    background-color: #00C6C1 !important;
+    padding: 15px;
+    border-radius: 6px;
+    color: #fff;
+    column-gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+} */
+
+@media screen and (max-width: 374.98px) {
+    .w-154{
+        margin: 0 auto 40px;
+    }
+}
+
 
 @media only screen and (max-width: 767px) {
     body {
@@ -227,11 +259,73 @@ a:hover{
         font-size: 15px
     }
 }
-/* @media screen and (min-width: 1200px) {
-    .container{
-        padding: 0px;
+
+ @media screen and (max-width: 630px) {
+   
+    .w-146{
+        margin: 0px;
     }
-} */
+}
+
+@media screen and (min-width: 576px) {
+    .display-n{
+        display: block !important;
+    }
+    .w-146{
+        margin: 0px !important;
+    }
+}
+
+
+@media screen and (min-width: 567.98px) {
+    .w-150,
+    .w-250{
+        margin: 0px;
+    }
+    .w-251{
+        margin: 50px 0px 0px !important;
+    }
+    
+    
+}
+
+@media screen and (max-width: 767.98px) {
+    .pb-90,
+    .pb-70{
+        padding-bottom: 50px;
+    }
+    .pt-90,
+    .pt-70{
+        padding-top: 50px;
+    }
+    
+}
+
+
+@media screen and (min-width: 768px) {
+    .w-150,
+    .w-196{
+        display: flex !important;
+        margin: 0px !important;
+       
+    }
+    .w-173{
+        margin: 50px 0;
+    }
+    .w-748{
+        width: 748px;
+        display: flex;
+        justify-content: space-between;
+    }
+  
+}
+@media screen and (min-width: 1024px) {
+    .w-927{
+        width: 927px !important;
+        margin: 0 auto;
+    }
+ }
+ 
 
 
 

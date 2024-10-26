@@ -26,30 +26,8 @@
     <link rel="stylesheet" href="./assets/css/variable.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/fonts.css">
-    <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/nav.css">
-    <link rel="stylesheet" href="./assets/css/homethree.css">
-    <link rel="stylesheet" href="./assets/css/about.css">
-    <link rel="stylesheet" href="./assets/css/jobs.css">
-    <link rel="stylesheet" href="./assets/css/app.css">
-    <link rel="stylesheet" href="./assets/css/banner-area.css">
-    <link rel="stylesheet" href="./assets/css/company-box.css">
-    <link rel="stylesheet" href="./assets/css/how-jove-works-area.css">
-    <link rel="stylesheet" href="./assets/css/leading-company-content.css">
-    <link rel="stylesheet" href="./assets/css/navbar-area.css">
-    <link rel="stylesheet" href="./assets/css/blog.css">
-    <link rel="stylesheet" href="./assets/css/owl-theme.css">
-    <link rel="stylesheet" href="./assets/css/single-blog-post.css">
-    <link rel="stylesheet" href="./assets/css/single-category-box.css">
-    <link rel="stylesheet" href="./assets/css/single-expert-box.css">
-    <link rel="stylesheet" href="./assets/css/single-job-box.css">
-    <link rel="stylesheet" href="./assets/css/subscribe.css">
-    <link rel="stylesheet" href="./assets/css/homepage.css">
-    <link rel="stylesheet" href="./assets/css/testimonial-item.css">
-    <link rel="stylesheet" href="./assets/css/introduce.css">
-    <link rel="stylesheet" href="./assets/css/scrolltop.css">
-    <link rel="stylesheet" href="./assets/css/newsletter.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 
 <body>
@@ -144,10 +122,11 @@
                                     class="fw-medium">Tìm luật sư, tìm giải pháp cho bạn!
                             </div>
 
-                            <form action="" class="homethree__data">
-                                <div class="form-group position-relative login__searcgh"><i
-                                        class="ri-search-line form__search "></i><input type="text"
-                                        placeholder="Tên luật sư" class="form-control form__control homepage__lawyer">
+                            <form action="" class="homethree__data w-927">
+                                <div class="form-group position-relative login__search"><i
+                                        class="ri-search-line form__search "></i>
+                                    <input type="text" placeholder="Tên luật sư"
+                                        class="form-control form__control homepage__lawyer banner-area__form">
                                 </div>
 
                                 <div class="form-group position-relative d-flex form__specialized">
@@ -204,31 +183,31 @@
                                     </select>
                                 </div>
 
-                                <a href="#"  class="link-btn  fw-medium jobs__explore homethree__button display-n w-150">
+                                <a href="#" class="link-btn  fw-medium jobs__explore  w-146 banner-button">
                                     Tìm kiếm <img src="./assets/images/icons/arrow-right.svg" alt=""
-                                        class="jobs__arrow homepage-arrow-right homepage-arrow-right"> 
+                                        class="jobs__arrow homepage-arrow-right homepage-arrow-right">
                                 </a>
 
 
                             </form>
 
-                            <ul
+                            <!-- <ul
                                 class="features-list ps-0  list-unstyled  align-items-center justify-content-between features__lawyers display-n">
                                 <li>Số lượng luật sư: <span class="">200+</span></li>
                                 <li>Số lượt kết nối <span class="">5000+</span></li>
                                 <li> Tỷ lệ hài lòng: <span class=""> 96%</span></li>
-                            </ul>
+                            </ul> -->
 
                             <ul
-                                class="homepage-list ps-0  list-unstyled d-flex align-items-center justify-content-between features__lawyers popular-jobs__button">
+                                class="homepage-list ps-0  list-unstyled d-flex align-items-center justify-content-between features__lawyers popular-jobs__button w-927 mt-35">
                                 <li><span class="">200+ </span>luật sư</li>
                                 <li><span class="">5000+ </span>kết nối</li>
                                 <li><span class="">96% </span>hài lòng</li>
                             </ul>
 
-                            <a href="#"  class="link-btn  fw-medium jobs__button jobs__explore homethree__button popular-jobs__button">
+                            <a href="#" class="link-btn  fw-medium jobs__explore w-146 banner-area-form">
                                 Tìm kiếm <img src="./assets/images/icons/arrow-right.svg" alt=""
-                                    class="jobs__arrow homepage-arrow-right homepage-arrow-right"> 
+                                    class="jobs__arrow homepage-arrow-right homepage-arrow-right">
                             </a>
                         </div>
                     </div>
@@ -505,17 +484,20 @@
         </div>
         <div class="jobs-area ptb-75 ng-star-inserted">
             <div class="jobs__container container">
-                <div class="section-title text-start ">
+                <div class="section-title text-start jobs-main">
                     <h4 class="mb-0 jobs_lawyer jobs__title"> TOP LUẬT SƯ </h4>
-                    <h2 class="jobs_heading">Các chuyên gia <br>
-                        hàng đầu</h2>
-                    <a routerlink="/jobs-grid" class="link-btn  fw-medium jobs__button jobs__explore display-n w-196"
-                        href="/jove/jobs-grid"> Khám phá thêm <img src="./assets/images/icons/arrow-right.svg" alt=""
-                            class="jobs__arrow homepage-arrow-right homepage-arrow-right "> 
+                    <div class="jobs__main">
+                        <h2 class="jobs_heading mb-35">Các chuyên gia <br>
+                            hàng đầu</h2>
+                        <a href="#" class="fw-medium jobs__button jobs__explore w-196 jobs-button"> Khám phá thêm <img
+                                src="./assets/images/icons/arrow-right.svg" alt=""
+                                class="jobs__arrow homepage-arrow-right homepage-arrow-right ">
                         </a>
+                    </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-4 col-md-6 col-sm-6 col-lg-4  aos-init">
+                    <div data-aos-bk="fade-in" data-aos-bk-duration="500"
+                        class="col-xl-4 col-md-6 col-sm-6 col-lg-4  aos-init">
                         <div class="job-item  overflow-hidden position-relative jobs_box jobs__active">
                             <div class="content">
                                 <div class="jobs__list">
@@ -570,15 +552,16 @@
 
                         </div>
                     </div>
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
+                    <div data-aos-bk="fade-in" data-aos-bk-duration="500"
+                        class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
                         <div class="job-item  overflow-hidden position-relative jobs_box">
                             <div class="content">
                                 <div class="jobs__list">
                                     <img src="./assets/images/jobs-2.png" alt="">
                                     <button class="criminal ">Luật hình sự</button>
-                                    <button class="marriage">Luật hôn nhân</button>
+                                    <button class="criminal marriage">Luật hôn nhân</button>
                                     <article class="card__article">
-                                        <button class="card__button jobs__subtitle ">
+                                        <button class="jobs__subtitle criminal">
                                             +2
                                         </button>
 
@@ -597,7 +580,7 @@
 
                                     <div class="">
                                         <button class="criminal ">Luật hình sự</button>
-                                        <button class="marriage">Luật hôn nhân</button>
+                                        <button class="criminal marriage">Luật hôn nhân</button>
                                     </div>
                                 </div>
 
@@ -648,7 +631,8 @@
 
                         </div>
                     </div>
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
+                    <div data-aos-bk="fade-in" data-aos-bk-duration="500"
+                        class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
                         <div class="job-item  overflow-hidden position-relative jobs_box">
                             <div class="content">
                                 <div class="jobs__list">
@@ -703,7 +687,8 @@
 
                         </div>
                     </div>
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-4 col-md-6 col-sm-6 col-lg-4  aos-init">
+                    <div data-aos-bk="fade-in" data-aos-bk-duration="500"
+                        class="col-xl-4 col-md-6 col-sm-6 col-lg-4  aos-init">
                         <div class="job-item  overflow-hidden position-relative jobs_box">
                             <div class="content">
                                 <div class="jobs__list">
@@ -758,13 +743,14 @@
 
                         </div>
                     </div>
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
+                    <div data-aos-bk="fade-in" data-aos-bk-duration="500"
+                        class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
                         <div class="job-item  overflow-hidden position-relative jobs_box">
                             <div class="content">
                                 <div class="jobs__list">
                                     <img src="./assets/images/jobs-5.png" alt="">
                                     <button class="criminal ">Luật hình sự</button>
-                                    <button class="marriage">Luật dân sự</button>
+                                    <button class="criminal marriage">Luật dân sự</button>
                                 </div>
 
                                 <div class="jobs__content">
@@ -814,13 +800,14 @@
 
                         </div>
                     </div>
-                    <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
+                    <div data-aos-bk="fade-in" data-aos-bk-duration="500"
+                        class="col-xl-4 col-md-6 col-sm-6 col-lg-4 aos-init">
                         <div class="job-item  overflow-hidden position-relative jobs_box">
                             <div class="content">
                                 <div class="jobs__list">
                                     <img src="./assets/images/jobs-6.png" alt="">
                                     <button class="criminal ">Luật hình sự</button>
-                                    <button class="marriage">Luật dân sự</button>
+                                    <button class="criminal marriage">Luật dân sự</button>
                                 </div>
 
                                 <div class="jobs__content">
@@ -870,10 +857,10 @@
 
                 </div>
 
-                <a routerlink="/jobs-grid" class="link-btn fw-medium jobs__button jobs__explore jobs__button-1 popular-jobs__button"
-                        href="/jove/jobs-grid"> Khám phá thêm <img src="./assets/images/icons/arrow-right.svg" alt=""
-                            class="jobs__arrow homepage-arrow-right homepage-arrow-right"> 
-                        </a>
+                <a class="fw-medium jobs__button jobs__explore jobs__button-1 popular-jobs__button popular__button"
+                    href="/jove/jobs-grid"> Khám phá thêm <img src="./assets/images/icons/arrow-right.svg" alt=""
+                        class="jobs__arrow homepage-arrow-right homepage-arrow-right">
+                </a>
             </div>
         </div>
     </section>
@@ -967,15 +954,14 @@
                                     </li>
                                 </ul>
 
-                                <a routerlink="/jobs-grid"
-                                    class="link-btn d-inline-block fw-medium jobs__explore explore jobs-explore mt-10 w-196 mb-10"
+                                <a class="mt-10 w-196 mb-10 about__button"
                                     href="/jove/jobs-grid"> Khám phá thêm <img
                                         src="./assets/images/icons/arrow-right.svg" alt=""
-                                        class="jobs__arrow homepage-arrow-right"> 
+                                        class="jobs__arrow homepage-arrow-right">
                                 </a>
 
                             </div>
-                            <div class="funfacts-box">
+                            <div class="funfacts-box funfacts__list">
                                 <div class="row justify-content-center">
                                     <div class="col-md-4 col-4">
                                         <div class="funfact-box">
@@ -1011,8 +997,10 @@
                     <div class="col-lg-6 col-md-12">
                         <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="leading-company-content aos-init">
                             <div class="box">
-                                <h2 class="leading-company-desc introduce__title"> Tham gia mạng lưới Luật sư uy tín</h2>
-                                <p class="leading-company__connect leading-company__text">Bạn là luật sư và muốn mở rộng cơ hội kết nối với
+                                <h2 class="leading-company-desc introduce__title"> Tham gia mạng lưới Luật sư uy tín
+                                </h2>
+                                <p class="leading-company__connect leading-company__text">Bạn là luật sư và muốn mở rộng
+                                    cơ hội kết nối với
                                     nhiều khách hàng hơn? Hãy gia nhập nền tảng của chúng tôi ngay hôm nay!</p>
                                 <div class="row features-list leading-company__data">
                                     <div class="col-sm-6 introduce__subtitle">
@@ -1032,14 +1020,14 @@
                                     <div class="col-sm-6 introduce__subtitle">
                                         <img src="./assets/images/check.svg" alt="">
                                         <span class="d-block position-relative enhance mt-0">
-                                           Tăng cường uy tín cá nhân
+                                            Tăng cường uy tín cá nhân
                                         </span>
                                     </div>
 
                                     <div class="col-sm-6 introduce__subtitle">
                                         <img src="./assets/images/check.svg" alt="">
                                         <span class="d-block position-relative enhance mt-0">
-                                           Tăng doanh thu tiềm năng
+                                            Tăng doanh thu tiềm năng
                                         </span>
                                     </div>
 
@@ -1049,14 +1037,14 @@
                                             Tính năng VIP độc quyền
                                         </span>
                                     </div>
-                                   
+
                                     <div class="col-sm-6 introduce__subtitle">
                                         <img src="./assets/images/check.svg" alt="">
                                         <span class="d-block position-relative enhance mt-0">
                                             Tích hợp công cụ giao tiếp tiện lợi
                                         </span>
                                     </div>
-                                 
+
                                     <div class="col-sm-6 introduce__subtitle">
                                         <img src="./assets/images/check.svg" alt="">
                                         <span class="d-block position-relative enhance mt-0">
@@ -1070,21 +1058,21 @@
                                             Đa dạng lĩnh vực pháp lý
                                         </span>
                                     </div>
-                                  
+
                                     <div class="col-sm-6 introduce__subtitle">
                                         <img src="./assets/images/check.svg" alt="">
                                         <span class="d-block position-relative enhance mt-0">
                                             Không giới hạn lĩnh vực chuyên môn
                                         </span>
                                     </div>
-                                  
+
                                     <div class="col-sm-6 introduce__subtitle">
                                         <img src="./assets/images/check.svg" alt="">
                                         <span class="d-block position-relative enhance mt-0">
                                             Nâng cao khả năng cạnh tranh
                                         </span>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div class="content">
@@ -1100,7 +1088,7 @@
                                     hỗ trợ pháp lý chuyên nghiệp và hiệu quả cho mọi khách hàng.
                                 </p>
                                 <a routerlink="/jobs-grid"
-                                    class="link-btn d-inline-block fw-medium jobs__button jobs__explore explore jobs__auto"
+                                    class="link-btn d-inline-block fw-medium jobs__button jobs__explore explore jobs__auto mt-35"
                                     href="/jove/jobs-grid"> Đăng ký ngay <img
                                         src="./assets/images/icons/arrow-right.svg" alt=""
                                         class="jobs__arrow homepage-arrow-right"> </a>
@@ -1122,7 +1110,7 @@
     </section>
 
     <section class="how-jove-works" id="how-jove-works">
-        <div class="how-jove-works-area bg-f8f8fb pt-100 pb-100">
+        <div class="how-jove-works-area bg-f8f8fb pt-70 pb-90">
             <div class="container">
                 <div class="section-title text-center mx-auto">
                     <h4 class="jobs__title how-jove__title">QUY TRÌNH LÀM VIỆC</h4>
@@ -1260,8 +1248,7 @@
                                 <li class="blog__primary">tin tức pháp lý</li>
                             </ul>
                             <h3 class="blog__title">
-                                <a routerlink="/blog-details"> 5 Điều
-                                    Cần Biết Khi Thuê Luật Sư Cho Doanh Nghiệp </a>
+                                5 Điều Cần Biết Khi Thuê Luật Sư Cho Doanh Nghiệp </a>
                             </h3>
 
                             <div class="jobs__message blog__read-more">
@@ -1281,7 +1268,7 @@
                                 <li class="blog__primary">tin tức pháp lý</li>
                             </ul>
                             <h3 class="blog__heading">
-                                <a routerlink="/blog-details"> Tìm hiểu chi tiết về phí dịch vụ luật sư: cách tính và
+                                Tìm hiểu chi tiết về phí dịch vụ luật sư: cách tính và
                                     các yếu tố ảnh hưởng</a>
                             </h3>
 
@@ -1301,7 +1288,7 @@
                                 <li class="blog__primary">tin tức pháp lý</li>
                             </ul>
                             <h3 class="">
-                                <a routerlink="/blog-details"> Luật sư trong kỷ nguyên công nghệ: legaltech đang thay
+                                Luật sư trong kỷ nguyên công nghệ: legaltech đang thay
                                     đổi nghề nghiệp </a>
                             </h3>
 
@@ -1322,7 +1309,7 @@
                                 <li class="blog__primary">tin tức pháp lý</li>
                             </ul>
                             <h3 class="blog__heading">
-                                <a routerlink="/blog-details"> Tìm hiểu chi tiết về phí dịch vụ luật sư: cách tính và
+                                Tìm hiểu chi tiết về phí dịch vụ luật sư: cách tính và
                                     các yếu tố ảnh hưởng</a>
                             </h3>
 
@@ -1455,7 +1442,7 @@
                             <form><input type="text" placeholder="Nhập email của bạn!"
                                     class="input-newsletter d-block w-100 subscribe-name ">
                                 <a routerlink="/jobs-grid"
-                                    class="link-btn d-inline-block fw-medium jobs__explore explore subscribe-button w-173 footer__button"
+                                    class="d-inline-block fw-medium jobs__explore explore subscribe-button w-173 footer__button"
                                     href="/jove/jobs-grid"> Subscribe
                                     <img src="./assets/images/icons/arrow-right.svg" alt=""
                                         class="jobs__arrow homepage-arrow-right subscribe__button">

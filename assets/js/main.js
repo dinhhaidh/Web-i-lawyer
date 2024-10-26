@@ -45,10 +45,10 @@ let swiperBlog = new Swiper('.blog__swiper', {
     slidesPerView: 'auto',
     centeredSlides: 'auto',
 
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    // },
 
     navigation: {
         nextEl: '.swiper-button-next',
