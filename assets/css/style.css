@@ -965,7 +965,7 @@
 }
 .article__top{
     background-color: #f8f8f8;
-    padding-top: 50px;
+    padding-top: 1px;
 }
 .card-list{
     display: grid;
@@ -1591,6 +1591,10 @@ input.form-control::placeholder{
     font-weight: 500;
     font-family: "DM sans", sans-serif;
     color: #707070;
+    margin-bottom: 1rem;
+}
+.blog__year{
+    margin-bottom: 5px;
 }
 .swiper__card h3{
     font-size: clamp(1.25rem, 1.1842105263157894rem + 0.3289473684210526vw, 1.5rem) !important;
@@ -5158,7 +5162,7 @@ span
     font-size: clamp(1.25rem, 1.1513157894736843rem + 0.4934210526315789vw, 1.625rem);
     font-weight: 700;
     font-family: "Space Grotesk", sans-serif;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .lawyer__technology{
     margin-bottom: 1.2rem !important; 
@@ -8827,13 +8831,32 @@ span.off {
     height: 15px;
     display: inline-block;
 } */
+.qualification__rounder-1{
+    position: relative;
+}
+
 .qualification__rounder {
     display: inline-block;
     width: 13px;
     height: 13px;
     background-color: var(--primary-color00);
     border-radius: 50%;
+    position: relative;
 }
+.qualification__rounder::after {
+    content: "";
+    position: absolute;
+    top: -3.6px;
+    right: -4px;
+    width: 21px;
+    height: 21px;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: #FFF;
+    border: 2px solid var(--primary-color00);
+    z-index: -1;
+}
+
 .qualification__line {
     display: block;
     width: 1px;
@@ -8870,6 +8893,9 @@ span.off {
 
 p:last-child {
     margin-bottom: 20px;
+}
+p.qualification__text {
+    margin-bottom: 5px;
 }
 .newsletter__work{
     margin-bottom: 15px;
@@ -11432,16 +11458,4 @@ a#ui-id-2 {
         margin-bottom: 0px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
