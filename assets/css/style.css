@@ -3858,10 +3858,9 @@ a.link-btn.d-inline-block.fw-medium.jobs__button.jobs__explore.homethree__button
 }
 .homepage__lable input{
     background-color: #fff;
-    padding: 10px 50px 10px 15px;
+    padding: 10px 40px 10px 15px;
     border: none;
     border-radius: 6px;
-
 }
 .homepage__lable input::placeholder,
 .homepage__form-name input::placeholder {
@@ -4610,6 +4609,9 @@ span
     column-gap: 10px;
     color: #fff;
 }
+.jobs__button:hover{
+    color: #fff;
+}
 .jobs__container{
     /* position: relative;
     text-align: center; */
@@ -4644,6 +4646,7 @@ span
 }
 .popular__button{
     display: none;
+    border: none;
 }
 
 .jobs__data{
@@ -4988,7 +4991,7 @@ span
 @media screen and (max-width: 767.98px) {
     .popular__button{
         display: block;
-        margin: 0 auto 30px;
+        margin: 20px auto 30px;
     }
     .mb-35{
         margin-bottom: 35px !important;
@@ -10732,6 +10735,12 @@ a#ui-id-2 {
         width: 173px;
         border: none;
     }
+    .homepage__messenger {
+        margin: 0 auto !important;
+    }
+    .mt-35{
+        margin-top: 35px !important;
+    }
      
     p.about__text.subscribe__desc {
         text-align: center;
@@ -11410,10 +11419,16 @@ a#ui-id-2 {
 .box.leading-company__main {
     padding: 50px 60px;
 }
+.leading-company__list{
+    margin-bottom: 50px;
+}
 
 @media screen and (min-width: 1024px) {
     .register__now{
         margin: 4px auto 0px auto !important;
+    }
+    .leading-company__list{
+        margin-bottom: 0px;
     }
 }
 
