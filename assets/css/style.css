@@ -2002,6 +2002,13 @@ input.form-control::placeholder{
     padding: 6px 9px;
     border-radius: 4px;
 }
+.contact-info__hotline p,
+.contact-info__suppor p,
+.contact-info__twitter p,
+.contact-info__facebook p,
+.contact-info__email p{
+    margin-bottom: 0px !important;
+}
 .contact-info__email{
     display: flex;
     column-gap: 10px !important;
@@ -2009,7 +2016,7 @@ input.form-control::placeholder{
     column-gap: 13px;
     border: 1px solid #00C6C1;
     font-size: clamp(0.875rem, 0.8421052631578947rem + 0.1644736842105263vw, 1rem);
-    letter-spacing: -0.5px;
+    letter-spacing: -1.5px;
     padding: 6px 9px;
     border-radius: 4px;
 }
@@ -2029,9 +2036,10 @@ input.form-control::placeholder{
     justify-content: space-between !important;
     align-items: center;
     padding: 6px 20px !important;
-    margin-bottom: 1.5rem;
+    margin: 0 auto 1.5rem;
     width: 242px !important;
 }
+   
 .contact-info__description{
     margin-bottom: 1.5rem;
 }
@@ -2041,7 +2049,7 @@ input.form-control::placeholder{
     color:#00184B;
 }
 .contact-info__email p a{
-    font-size: 14px !important;
+    font-size: 16px !important;
     color: #00C6C1;
     font-weight: 400;
     font-family: "Space Grotesk", sans-serif;
@@ -2062,32 +2070,58 @@ textarea, input{
     margin: 0 0 7px 16px;
 }
 
-
-@media screen and (min-width: 350px) {
-   
-}
-
-
-
 @media screen and (min-width: 500px) {
     .contact-info__card {
         padding: 1.5rem;
     }
 }
+@media screen and (max-width: 650px) {
+    .contact-info__email {
+        letter-spacing: -0.5px;
+    }
+}
+
 @media screen and (min-width: 650px) {
     .contact-info__card {
        width: 100%;
     }
     .contact-info-container{
         grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
+    }
+    .contact-info__map{
+        margin: 0 0 1.5rem;
     }
    
 }
+
 @media screen and (min-width: 768px) {
     .contact-info {
         padding-block: 80px;
     }
+    .contact-info-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .contact-info__email{
+        letter-spacing: -0.5px;
+    }
+    .contact-info__inline{
+        width: 324px;
+    }
+       .contact-info__twitter{
+        width: 242px;
+    }
+    .contact-info__facebook{
+        width: 259px;
+    }
+    .contact-info__hotline{
+        width: 243px;
+    }
+    .contact-info__suppor{
+        width: 196px;
+    }
+   
 }
 @media screen and (min-width: 920px) {
     .contact-info-container{
@@ -2099,19 +2133,11 @@ textarea, input{
     .textarea, input{
         padding: 1rem !important;
     }
-    .contact-info {
-        padding-block: 100px;
+    
+    .contact__info{
+        letter-spacing: -1px;
     }
     
-    .contact-info__inline{
-        width: 324px;
-    }
-       .contact-info__twitter{
-        width: 242px;
-    }
-    .contact-info__facebook{
-        width: 259px;
-    }
     
     .contact-info__card  h5,
     .contact__span,
@@ -2121,17 +2147,16 @@ textarea, input{
     .contact-info__icon{
         margin: 0 0 1.5rem;
     }
-    .contact-info__hotline{
-        width: 243px;
-    }
+   
     .contact-info__phone {
         letter-spacing: -0.8px;
     }
-    .contact-info__suppor{
-        width: 196px;
-    }
+  
     .contact-info__email {
-        letter-spacing: -0.7px;
+        letter-spacing: -0.5px;
+    }
+    .contact__info {
+        letter-spacing: -1px;
     }
     .form-group__name {
         margin: 0 0 10px 16px;
@@ -2195,7 +2220,7 @@ textarea, input{
     padding: 50px 0px 0px;
 }
 .contact__container {
-    padding: 20px 1.5rem 50px;
+    padding: 50px 1.5rem 60px !important;
 }
 .contact__title {
     /* width: 298px; */
@@ -2245,7 +2270,8 @@ textarea, input{
     display:flex !important;
     align-items: center;
     justify-content: center;
-    margin: 30px 0 30px !important;
+    margin: 30px auto 30px !important;
+    border: none;
 }
 .contact__map{
     margin-top: 2rem;
@@ -2304,6 +2330,9 @@ textarea, input{
     .contact__main {
         padding-bottom: 40px !important;
     }
+    .contact__button{
+        margin: 30px auto 30px !important;
+    }
 }
 
 @media screen and (max-width: 435px) {
@@ -2316,12 +2345,12 @@ textarea, input{
    
    
 }
-@media screen and (max-width: 450px) {
+/* @media screen and (max-width: 450px) {
     .contact__form{
         flex-direction: row;
     }
   
-}
+} */
 @media screen and (min-width: 450px) {
     .contact__artilce{
         width: 100%;
@@ -2357,8 +2386,9 @@ textarea, input{
 }
   
 @media screen and (min-width: 768px) {
-    .contact__title{
-        line-height: 52px;
+    
+    .contact__span{
+        text-align: initial;
     }
     .contact__main {
         padding-bottom: 60px;
@@ -2392,6 +2422,9 @@ textarea, input{
     .contact{
         padding-top: 8rem;
     }
+    .contact__title{
+        line-height: 52px;
+    }
     .contact__content {
         padding: 70px 0px 40px;
     }
@@ -2406,7 +2439,7 @@ textarea, input{
     }
    
     .contact__container {
-        padding: 20px 1.5rem 0px;
+        padding: 20px 1.5rem 0px !important;
     }
     .contact__content img {
         width: unset;
@@ -2415,13 +2448,14 @@ textarea, input{
     .contact-text{
         width: 844px;
     }
+    
 }
 @media screen and (min-width: 1150px) {
     .contact__map{
         width: 616px;
         height: 889px;
     }
-    .form-group,
+    .contact-form__input,
     .contact-form {
         width: 427px;
     }
@@ -7281,6 +7315,10 @@ span.off {
     z-index: -1;
 }
 
+.contact-form__input{
+    padding: 0px !important;
+}
+
 @media only screen and (max-width: 767px) {
     .navbar-area {
         padding-top: 15px;
@@ -10647,7 +10685,7 @@ a#ui-id-2 {
 }
 @media screen and (min-width: 500px) {
     .subscribe-button{
-        margin: 0px auto 0 !important;
+        margin: 0px 0px 0 !important;
     }
 }
 
