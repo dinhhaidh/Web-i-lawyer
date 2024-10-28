@@ -102,7 +102,7 @@ let swiperNewsletter = new Swiper('.newsletter__swiper', {
 
 let swiperFaith = new Swiper('.faith__swiper', {
     loop: true,
-    spaceBetween: 16,
+    spaceBetween: 22,
 
     // autoplay: {
     //     delay: 3000,
@@ -119,9 +119,9 @@ let swiperFaith = new Swiper('.faith__swiper', {
         clickable: true,
     },
     breakpoints: {
-        575: {
+        650: {
             slidesPerView: 2,
-            spaceBetween: 16,
+            spaceBetween: 22,
         }
     }
 });

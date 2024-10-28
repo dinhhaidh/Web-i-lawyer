@@ -2660,6 +2660,7 @@ a.link-btn.d-inline-block.fw-medium.jobs__button.jobs__explore.homethree__button
 .difference{
     padding: 190px 0 100px;
     background-color: #f8f8f8;
+    position: relative;
 }
 .distinctive__line-1{
     position: absolute;
@@ -2697,7 +2698,7 @@ a.link-btn.d-inline-block.fw-medium.jobs__button.jobs__explore.homethree__button
 .difference__image{
     position: relative;
     width: 637px;
-    height: 420px;
+    /* height: 420px; */
 
 }
 .difference__img-1{
@@ -2729,6 +2730,12 @@ a.link-btn.d-inline-block.fw-medium.jobs__button.jobs__explore.homethree__button
 .difference__subtitle{
     text-align: left;
 }
+.difference__img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-size: cover;
+}
 
 @media screen and (max-width: 374.98px) {
     .difference {
@@ -2744,7 +2751,7 @@ a.link-btn.d-inline-block.fw-medium.jobs__button.jobs__explore.homethree__button
 @media screen and (min-width: 575px) {
     .difference__text {
         width: 427px !important;
-        margin: 0 auto;
+        margin: 0 auto 1.5rem;
     }
     .difference {
         padding: 100px 0 60px;
@@ -2772,7 +2779,50 @@ a.link-btn.d-inline-block.fw-medium.jobs__button.jobs__explore.homethree__button
     .difference__image{
         display: block;
     }
+    .difference {
+        padding: 180px 0 80px;
+    }
+    .difference__image{
+        /* height: 420px; */
+    
+    }
+    .difference__img-2 {
+        position: absolute;
+        top: 0;
+        right: 1.6rem;
+        z-index: 3;
+        width: 330px;
+    }
+    .difference__img-3{
+        width: 300px;
+        right: 13.6rem;
+    }
+    .difference__img-1{
+        width: 200px;
+    }
 }
+
+@media screen and (min-width: 1150px) {
+    .difference__image{
+        height: 420px;
+    }
+
+    .difference__img-3 {
+        width: unset;
+        right: 16.2rem;
+    }
+    .difference__img-1,
+    .difference__img-2{
+        width: unset;
+    }
+    .difference__container {
+        justify-content: space-between;
+    }
+    .difference {
+        padding: 200px 0px 100px;
+    }
+}
+
 
 
 
@@ -3041,6 +3091,10 @@ a.link-btn.d-inline-block.fw-medium.jobs__button.jobs__explore.homethree__button
     column-gap: 15px;
     align-items: center;
 }
+.faith__avatar img{
+    
+    object-fit: cover;
+}
 .faith__name{
     font-size: clamp(1.25rem, 1.1513157894736843rem + 0.4934210526315789vw, 1.625rem);
     font-weight: 700;
@@ -3055,6 +3109,8 @@ a.link-btn.d-inline-block.fw-medium.jobs__button.jobs__explore.homethree__button
     font-family: "DM sans", sans-serif;
     color: #2E2E3D;
     line-height: 20.83px;
+    min-height: 147px;
+    margin-bottom: 0px;
 }
 .faith__primary{
     font-size: 16px;
@@ -3154,14 +3210,36 @@ a.link-btn.d-inline-block.fw-medium.jobs__button.jobs__explore.homethree__button
     height: 0.25rem;
     border-radius: 1rem;
 } */
+ @media screen and (min-width: 375px) {
+    .faith__description {
+        min-height: 90px;
+    }
+ }
+ 
+@media screen and (max-width: 420px) {
+    .faith__main {
+        padding: 2rem 1.7rem 2.7rem 1.7rem;
+    }
+ }
  @media screen and (max-width: 374.98px) {
-    .faith{
-        padding-block: 60px;
+    .faith {
+        padding: 60px 0 320px;
     }
     .faith__container {
         padding: 0px 1rem 260px;
     }
  }
+ @media screen and (max-width: 374.98px) {
+    .faith__star {
+        display: flex;
+        flex-direction: column;
+    }
+ }
+ 
+
+
+
+ 
 @media screen and (min-width: 375px) {
     .faith__container {
         padding: 0px 1rem 260px;
@@ -3186,10 +3264,19 @@ a.link-btn.d-inline-block.fw-medium.jobs__button.jobs__explore.homethree__button
 
     }
 }
+@media screen and (min-width: 740px) {
+    .faith__description {
+        min-height: 145px;
+    }
+}
+
 
  @media screen and (min-width: 768px) {
     .faith__container {
         padding: 0px 1rem 70px;
+        row-gap: 1.5rem;
+        display: flex;
+        flex-direction: column;
     }
     .faith__data{
         width: 700px !important; 
@@ -3211,12 +3298,56 @@ a.link-btn.d-inline-block.fw-medium.jobs__button.jobs__explore.homethree__button
     .faith__container {
         display: flex;
         column-gap: 3rem;
+        flex-direction: row;
+        justify-content: space-between;
     }
     .faith__article {
         width: 340px !important;
     }
-   
+    .faith__container {
+        padding: 0px 1rem 90px;
+    }
 }
+@media screen and (min-width: 1170px) {
+    .faith__content {
+        width: 316px;
+    }
+    .faith__article {
+        width: 370px !important;
+    }
+    .faith__data {
+        /* width: 700px !important; */
+        margin: 0px;
+        padding-top: 0px;
+    }
+    .faith__image {
+        position: absolute;
+        top: 46%;
+        transform: translate(-50%,-50%);
+        left: 24.4%;
+
+    }
+    .faith__data {
+        width: 760px !important;
+      
+    }
+   
+    .faith {
+        padding-block: 75px;
+    }
+    .faith__avatar {
+        column-gap: 20px;
+    }
+  
+}
+@media screen and (min-width: 1190px) {
+    .faith__container {
+        padding: 0px 0px 90px;
+    }
+  
+}
+
+
 
 /* FOOTER */
 .footer-area {
@@ -3809,7 +3940,6 @@ a.link-btn.d-inline-block.fw-medium.jobs__button.jobs__explore.homethree__button
         column-gap: 3rem;
     }
     .hero__image{
-        /* width: 320px; */
         width: 45%;
     }
     .hero__main{
@@ -3826,6 +3956,19 @@ a.link-btn.d-inline-block.fw-medium.jobs__button.jobs__explore.homethree__button
         padding: 1.5rem 1.5rem 2rem 1.5rem;
     }
 }
+
+@media screen and (min-width: 1170px) {
+    /* .hero__image {
+        width: 497px !important;
+    } */
+    .hero__main{
+        width: 569px;
+    }
+    .hero__title {
+        letter-spacing: 0px;
+    }
+}
+
 
 /* HOMEPAGE */
 .homepage{
@@ -4595,13 +4738,17 @@ span
     .introduce__container {
         padding: 20px 1.5rem 90px;
     }
-   
+    .introduce__heading{
+        margin-bottom: 0px !important;
+    }
 }
 @media screen and (min-width: 1150px) {
     .introduce__text{
         width: 509px;
      }
-   
+     .faith__desc {
+        letter-spacing: 0.3px;
+    }
 }
 
 
@@ -5286,7 +5433,7 @@ span
     color: #000;
 }
 .leading-company-desc{
-    margin-bottom: 10px !important;
+    margin-bottom: 15px !important;
     margin-bottom: 10px;
     font-family: "Space Grotesk", sans-serif;
 }
