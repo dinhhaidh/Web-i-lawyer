@@ -2,9 +2,16 @@ $(document).ready(function() {
     $('#nav-toggle').click(function(){
         $("#nav-menu").addClass("show-menu");
     })
+    $('#nav-toggle').click(function(){
+        $("#filter-container").addClass("show-menu");
+    })
     $('#nav-close').click(function(){
         $("#nav-menu").removeClass("show-menu");
     })
+    $('#filter-close').click(function(){
+        $("#filter-container").removeClass("show-menu");
+    })
+    
     $('.nav__link').click(function(){
         $("#nav-menu").removeClass("show-menu");
     })
@@ -118,3 +125,38 @@ let swiperFaith = new Swiper('.faith__swiper', {
         }
     }
 });
+
+
+function toggleDropdown(dropdownId, header) {
+    const dropdown = document.getElementById(dropdownId);
+    const icon = header.querySelector('i');
+
+    if (dropdown.style.display === "block") {
+        dropdown.style.display = "none"; 
+        icon.classList.remove('fa-chevron-up'); 
+        icon.classList.add('fa-chevron-down');
+    } else {
+        dropdown.style.display = "block";
+        icon.classList.remove('fa-chevron-down'); 
+        icon.classList.add('fa-chevron-up');
+    }
+}
+
+function toggleCities(checkbox) {
+    const nestedCities = checkbox.closest('.dropdown-content').querySelector('.nested-cities');
+
+    if (checkbox.checked) {
+        nestedCities.style.display = "block"; 
+        const noCheckBoxes = nestedCities.querySelectorAll('.no-check');
+        noCheckBoxes.forEach(cb => {
+            cb.checked = false; 
+        });
+
+        const checkedBoxes = nestedCities.querySelectorAll('.checked');
+        checkedBoxes.forEach(cb => {
+            cb.checked = true; 
+        });
+    } else {
+        nestedCities.style.display = "none"; 
+    }
+}

@@ -24,6 +24,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <!-- ============ SWIPER ============ -->
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
 
@@ -73,7 +75,7 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo"><img src="assets/images/logo.png" alt="logo"></a>
-            <div class="nav__menu" id="nav-menu">
+            <div class="nav__menu nav__main" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a href="index.html" class="nav__link active-link">Trang chủ</a>
@@ -105,6 +107,8 @@
                         <span class="off">VI</span>
                     </div>
 
+                 
+
                     <div class="nav__close" id="nav-close">
                         <i class="ri-close-line"></i>
                     </div>
@@ -114,40 +118,1269 @@
 
             </div>
 
+            <div class="filter__container" id="filter-container">
+                <div class="filter__content" >
+                    <h3 onclick="toggleDropdown('law-dropdown', this)" class="dropdown-header">Chuyên ngành <i class="fas fa-chevron-down"></i></h3>
+                    <div id="law-dropdown" class="dropdown-content">
+                        <label class="find-lawyer__label"><input type="checkbox" class="find-lawyer__check">Luật Hình sự (24)</label>
+                        <label  class="find-lawyer__label"><input type="checkbox"  class="find-lawyer__check">Luật Dân sự (3)</label>
+                        <label class="toggle-check find-lawyer__label"><input type="checkbox"  class="find-lawyer__check" >Luật Hành chính (3)</label>
+                        <label class="find-lawyer__label"><input type="checkbox"  class="find-lawyer__check" checked>Luật Thương mại (3)</label>
+                        <label class="find-lawyer__label"><input type="checkbox" class="find-lawyer__check">Luật Quốc tế (6)</label>
+                        <label class="find-lawyer__label"><input type="checkbox" class="find-lawyer__check">Cố vấn pháp lý (4)</label>
+                        <label class="toggle-check find-lawyer__label"><input type="checkbox"  class="find-lawyer__check">Luật Nhà nước (4)</label>
+                        <label class="toggle-check find-lawyer__label"><input type="checkbox"  class="find-lawyer__check" checked>Luật Tài chính (5)</label>
+                    </div>
+                    <h3 onclick="toggleDropdown('country-dropdown', this)" class="dropdown-header ">Quốc gia <i class="fas fa-chevron-down"></i></h3>
+                    <div id="country-dropdown" class="dropdown-content">
+                        <label class="find-lawyer__label"><input type="checkbox" class="find-lawyer__check" id="vietnamCheckbox" onclick="toggleCities(this)"> Việt Nam (24)</label>
+                        <div class="nested-cities">
+                            <label class="find-lawyer__label"><input type="checkbox" class="no-check find-lawyer__check"> Hà Nội (3)</label>
+                            <label class="find-lawyer__label"><input type="checkbox" class="no-check find-lawyer__check"> TP.HCM(3)</label>
+                            <label class="find-lawyer__label"><input type="checkbox" class="no-check find-lawyer__check">Hải Phòng (3)</label>
+                            <label class="find-lawyer__label"><input type="checkbox" class="no-check find-lawyer__check">Cần Thơ (6)</label>
+                            <label class="find-lawyer__label"><input type="checkbox" class="find-lawyer__check">Đà Nẵng (4)</label>
+                            <label class="find-lawyer__label"><input type="checkbox" class="no-check find-lawyer__check">Biên Hòa (3)</label>
+                            <label class="find-lawyer__label"><input type="checkbox" class="no-check find-lawyer__check">Hải Dương (3)</label>
+                            <label class="find-lawyer__label"><input type="checkbox" class="no-check find-lawyer__check">Huế (3)</label>
+                            <label class="find-lawyer__label"><input type="checkbox" class="no-check find-lawyer__check">Thuận An (6)</label>
+                            <label class="find-lawyer__label"><input type="checkbox" class="no-check find-lawyer__check">Thủ Đức (4)</label>
+                        </div>
+                        <label class="find-lawyer__label"><input type="checkbox"  class="find-lawyer__check">Australia (3)</label>
+                        <label class="find-lawyer__label"><input type="checkbox" class="find-lawyer__check">Canada (3)</label>
+                        <label class="find-lawyer__label"><input type="checkbox" class="find-lawyer__check">France (3)</label>
+                        <label class="find-lawyer__label"><input type="checkbox" class="find-lawyer__check">Germany (6)</label>
+                        <label class="find-lawyer__label"><input type="checkbox" class="find-lawyer__check">India (4)</label>
+                    </div>
+                </div>
+
+                <button href="#" class="fw-medium jobs__explore  w-146 banner-button filter__button">
+                    Tìm kiếm <img src="./assets/images/icons/arrow-right.svg" alt="" class="jobs__arrow homepage-arrow-right homepage-arrow-right">
+                </button>
+
+                <div class="filter__close" id="filter-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+          
+
             <!-- toggle button -->
             <div class="nav__toggle" id="nav-toggle">
                 <i class="ri-menu-line"></i>
             </div>
         </nav>
     </header>
+
+
     
     <div class="contact">
         <div class="contact__main container">
             <div class="contact__content ">
                 <h1 class="title">Tìm luật sư</h1>
-                <!-- <div class="contact__image">
-                    <h2 class="contact-desc">
-                        Toàn diện
-                    </h2>
-                </div> -->
-
             </div>
             <p class="contact__desc contact__client">Tìm luật sư chuyên môn – giải quyết vấn đề pháp lý nhanh chóng</p>
-            <a href="#"
-                class="link-btn d-inline-block fw-medium jobs__button jobs__explore homethree__button contact-button">Mua
-                ngay<img src="./assets/images/icons/arrow-right.svg" alt=""
-                    class="jobs__arrow homepage-arrow-right homepage-arrow-right"> </a>
+            <form action="" class="homethree__data w-927 mt-40">
+                <div class="form-group position-relative login__search"><i class="ri-search-line form__search "></i>
+                    <input type="text" placeholder="Tên luật sư" class="form-control form__control homepage__lawyer banner-area__form">
+                </div>
+
+                <div class="form-group position-relative d-flex form__specialized">
+                    <img src="./assets/images/icons/specialized.svg" alt="" class="homepage__form-img">
+                    <select class="form-select form__control homethree__select homepage__lawyer">
+                        <option selected="">Tất cả chuyên nghành</option>
+                        <option value="1">Tokyo, Japan</option>
+                        <option value="2">New York, USA</option>
+                        <option value="3">London, England</option>
+                        <option value="4">Beijing, China</option>
+                        <option value="5">Toronto, Canada</option>
+                        <option value="6">Chicago, USA</option>
+                        <option value="7">Hong Kong, China</option>
+                        <option value="8">Los Angeles, USA</option>
+                        <option value="9">São Paulo, Brazil</option>
+                        <option value="10">Seoul, South Korea</option>
+                        <option value="11">Barcelona, Spain</option>
+                        <option value="12">Istanbul, Turkey</option>
+                        <option value="13">Osaka, Japan</option>
+                        <option value="14">Copenhagen, Denmark</option>
+                        <option value="15">Madrid, Spain</option>
+                        <option value="16">Bangkok, Thailand</option>
+                        <option value="17">Dubai, UAE</option>
+                        <option value="18">Melbourne, Australia</option>
+                        <option value="19">Amsterdam, Netherlands</option>
+                        <option value="20">Paris, France</option>
+                    </select>
+                </div>
+
+                <div class="form-group position-relative d-flex">
+                    <img src="./assets/images/icons/map.svg" alt="" class="homethree__icon">
+                    <select class="form-select form__control homethree__select homethree__locations">
+                        <option selected="">Tất cả vị trí</option>
+                        <option value="1">Tokyo, Japan</option>
+                        <option value="2">New York, USA</option>
+                        <option value="3">London, England</option>
+                        <option value="4">Beijing, China</option>
+                        <option value="5">Toronto, Canada</option>
+                        <option value="6">Chicago, USA</option>
+                        <option value="7">Hong Kong, China</option>
+                        <option value="8">Los Angeles, USA</option>
+                        <option value="9">São Paulo, Brazil</option>
+                        <option value="10">Seoul, South Korea</option>
+                        <option value="11">Barcelona, Spain</option>
+                        <option value="12">Istanbul, Turkey</option>
+                        <option value="13">Osaka, Japan</option>
+                        <option value="14">Copenhagen, Denmark</option>
+                        <option value="15">Madrid, Spain</option>
+                        <option value="16">Bangkok, Thailand</option>
+                        <option value="17">Dubai, UAE</option>
+                        <option value="18">Melbourne, Australia</option>
+                        <option value="19">Amsterdam, Netherlands</option>
+                        <option value="20">Paris, France</option>
+                    </select>
+                </div>
+
+                <button href="#" class="fw-medium jobs__explore  w-146 banner-button">
+                    Tìm kiếm <img src="./assets/images/icons/arrow-right.svg" alt="" class="jobs__arrow homepage-arrow-right homepage-arrow-right">
+                </button>
+
+
+            </form>
+
+            <ul class="homepage-list ps-0  list-unstyled d-flex align-items-center justify-content-between features__lawyers popular-jobs__button w-927 mt-35 form__input">
+                <li><span class="">200+ </span>luật sư</li>
+                <li><span class="">5000+ </span>kết nối</li>
+                <li><span class="">96% </span>hài lòng</li>
+            </ul>
+
+            <a href="#" class="link-btn  fw-medium jobs__explore w-146 banner-area-form">
+                Tìm kiếm <img src="./assets/images/icons/arrow-right.svg" alt="" class="jobs__arrow homepage-arrow-right homepage-arrow-right">
+            </a>
         </div>
     </div>
 
-    <div class="lawyer">
+    <div class="find-lawyer">
         <div class="lawyer__container container">
             <p class="contact__home  article__subtitle lawyer__brick">
                 <span>Trang chủ / </span><strong>Tìm Luật sư</strong>
             </p>
-        </div>
-    </div>
 
+            <div class="find-lawyer__main">
+                <div class="filter-container">
+                    <h3 onclick="toggleDropdown('law-dropdown', this)" class="dropdown-header">Chuyên ngành <i class="fas fa-chevron-down"></i></h3>
+                    <div id="law-dropdown" class="dropdown-content">
+                        <label class="find-lawyer__label"><input type="checkbox" class="find-lawyer__check">Luật Hình sự (24)</label>
+                        <label  class="find-lawyer__label"><input type="checkbox"  class="find-lawyer__check">Luật Dân sự (3)</label>
+                        <label class="toggle-check find-lawyer__label"><input type="checkbox"  class="find-lawyer__check" >Luật Hành chính (3)</label>
+                        <label class="find-lawyer__label"><input type="checkbox"  class="find-lawyer__check" checked>Luật Thương mại (3)</label>
+                        <label class="find-lawyer__label"><input type="checkbox" class="find-lawyer__check">Luật Quốc tế (6)</label>
+                        <label class="find-lawyer__label"><input type="checkbox" class="find-lawyer__check">Cố vấn pháp lý (4)</label>
+                        <label class="toggle-check find-lawyer__label"><input type="checkbox"  class="find-lawyer__check">Luật Nhà nước (4)</label>
+                        <label class="toggle-check find-lawyer__label"><input type="checkbox"  class="find-lawyer__check" checked>Luật Tài chính (5)</label>
+                    </div>
+            
+                    <h3 onclick="toggleDropdown('country-dropdown', this)" class="dropdown-header ">Quốc gia <i class="fas fa-chevron-down"></i></h3>
+                    <div id="country-dropdown" class="dropdown-content">
+                        <label class="find-lawyer__label"><input type="checkbox" class="find-lawyer__check" id="vietnamCheckbox" onclick="toggleCities(this)"> Việt Nam (24)</label>
+                        <div class="nested-cities">
+                            <label class="find-lawyer__label"><input type="checkbox" class="no-check find-lawyer__check"> Hà Nội (3)</label>
+                            <label class="find-lawyer__label"><input type="checkbox" class="no-check find-lawyer__check"> TP.HCM(3)</label>
+                            <label class="find-lawyer__label"><input type="checkbox" class="no-check find-lawyer__check">Hải Phòng (3)</label>
+                            <label class="find-lawyer__label"><input type="checkbox" class="no-check find-lawyer__check">Cần Thơ (6)</label>
+                            <label class="find-lawyer__label"><input type="checkbox" class="find-lawyer__check">Đà Nẵng (4)</label>
+                            <label class="find-lawyer__label"><input type="checkbox" class="no-check find-lawyer__check">Biên Hòa (3)</label>
+                            <label class="find-lawyer__label"><input type="checkbox" class="no-check find-lawyer__check">Hải Dương (3)</label>
+                            <label class="find-lawyer__label"><input type="checkbox" class="no-check find-lawyer__check">Huế (3)</label>
+                            <label class="find-lawyer__label"><input type="checkbox" class="no-check find-lawyer__check">Thuận An (6)</label>
+                            <label class="find-lawyer__label"><input type="checkbox" class="no-check find-lawyer__check">Thủ Đức (4)</label>
+                        </div>
+            
+                        <label class="find-lawyer__label"><input type="checkbox"  class="find-lawyer__check">Australia (3)</label>
+                        <label class="find-lawyer__label"><input type="checkbox" class="find-lawyer__check">Canada (3)</label>
+                        <label class="find-lawyer__label"><input type="checkbox" class="find-lawyer__check">France (3)</label>
+                        <label class="find-lawyer__label"><input type="checkbox" class="find-lawyer__check">Germany (6)</label>
+                        <label class="find-lawyer__label"><input type="checkbox" class="find-lawyer__check">India (4)</label>
+                    </div>
+                </div>
+
+
+                <div class="find-lawyer__content">
+                    <div class="find-lawyer-data">
+                        <div class="find-lawyer__subtitle">
+                            <h2 class="find-lawyer__heading">
+                                Tất cả Luật sư
+                            </h2>
+                            <p>
+                                Hiển thị <strong>1 - 10</strong> trong tổng số 256 Luật sư
+                            </p>
+                        </div>
+                        <div class="find-lawyer-list">
+                            <div class="find-lawyer__icon">
+                                <img src="./assets/images/find-lawyer-icon-1.svg" alt="">
+                            </div>
+                            <div class="find-lawyer__most ">
+                                <p class="find-lawyer__sortby">
+                                    <span>Sắp xếp theo:&nbsp;</span> Phù hợp nhất
+                                </p>
+                                <img src="./assets/images/arrow-bottom-1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="find-lawyer-main">
+                            <div class="job-item  overflow-hidden position-relative jobs_box jobs__active find-lawyer__article">
+                                <div class="content">
+                                    <div class="jobs__list">
+                                        <img src="./assets/images/jobs-1.png" alt="">
+                                        <button class="criminal ">Luật hình sự</button>
+                                    </div>
+                                    <div class="jobs__content">
+                                        <div class="jobs__elite">
+                                            <h4 class="jobs__name">Nguyễn Thế Mỹ</h4> <img src="./assets/images/Vietnam.png" alt=""> <br>
+                                        </div>
+                                        <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
+                                            <span class="text">Tp. Hồ Chí Minh</span>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
+                                            <span class="text">(+84)935 153 721</span>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-email.png" alt="">&nbsp;
+                                            <span class="text">themylawyer@gmail.com</span>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/images/border-1.png" alt="" class="jobs__img">
+                                    <div class="jobs__data">
+                                        <div class="job__icon">
+                                            <a href="https://www.facebook.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/facebook.svg" alt="">
+                                            </a>
+                                            <a href="https://www.youtube.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/youtube.svg" alt="">
+                                            </a>
+                                            <a href="https://www.linledln.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/in.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jobs__message">
+                                            <h5 class="jobs__send jobs__text">
+                                                Gửi tin nhắn
+                                            </h5>
+                                            <img src="./assets/images/arrow-1.svg" alt="" class="jobs__arrow-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="job-item  overflow-hidden position-relative jobs_box find-lawyer__article">
+                                <div class="content">
+                                    <div class="jobs__list">
+                                        <img src="./assets/images/jobs-2.png" alt="">
+                                        <button class="criminal ">Luật hình sự</button>
+                                        <button class="criminal marriage">Luật hôn nhân</button>
+                                        <article class="card__article">
+                                            <button class="jobs__subtitle criminal">
+                                                +2
+                                            </button>
+                                            <div class="card__tooltip">
+                                                <div class="card__content">
+                                                    <div class="card__data">
+                                                        <button class="card__button">Luật đất đai</button>
+                                                        <button class="card__button">Luật lao động</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <div class="">
+                                            <button class="criminal ">Luật hình sự</button>
+                                            <button class="criminal marriage">Luật hôn nhân</button>
+                                        </div>
+                                    </div>
+                                    <div class="jobs__content">
+                                        <div class="jobs__elite">
+                                            <h4 class="jobs__name">Buck Emilia</h4>
+                                            <img src="./assets/images/icons/đức.png" alt=""> <br>
+                                        </div>
+                                        <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
+                                            <span class="text">Tp. Hồ Chí Minh</span>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
+                                            <span class="text">(+84)935 153 721</span>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-email.png" alt="">&nbsp;
+                                            <span class="text">themylawyer@gmail.com</span>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/images/border-1.png" alt="" class="jobs__img">
+                                    <div class="jobs__data">
+                                        <div class="job__icon">
+                                            <a href="https://www.facebook.com/?locale=vi_VN">
+                                                <img src="./assets/images/facebook-1.png" alt="">
+                                            </a>
+                                            <a href="https://www.youtube.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/youtube.svg" alt="">
+                                            </a>
+                                            <a href="https://www.linledln.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/in.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jobs__message">
+                                            <h5 class="jobs__send">
+                                                Gửi tin nhắn
+                                            </h5>
+                                            <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="job-item  overflow-hidden position-relative jobs_box find-lawyer__article">
+                                <div class="content">
+                                    <div class="jobs__list">
+                                        <img src="./assets/images/jobs-3.png" alt="">
+                                        <button class="criminal ">Luật hình sự</button>
+                                    </div>
+                                    <div class="jobs__content">
+                                        <div class="jobs__elite">
+                                            <h4 class="jobs__name">Mabelle Rosalyn</h4> <img src="./assets/images/anh.png" alt=""> <br>
+                                        </div>
+                                        <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
+                                            <a class="text">Tp. Hồ Chí Minh</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
+                                            <a class="text">(+84)935 153 721</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-email.png" alt="">&nbsp;
+                                            <a class="text">themylawyer@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/images/border-1.png" alt="" class="jobs__img">
+                                    <div class="jobs__data">
+                                        <div class="job__icon">
+                                            <a href="https://www.facebook.com/?locale=vi_VN">
+                                                <img src="./assets/images/facebook-1.png" alt="">
+                                            </a>
+                                            <a href="https://www.youtube.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/youtube.svg" alt="">
+                                            </a>
+                                            <a href="https://www.linledln.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/in.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jobs__message">
+                                            <h5 class="jobs__send">
+                                                Gửi tin nhắn
+                                            </h5>
+                                            <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="job-item  overflow-hidden position-relative jobs_box find-lawyer__article">
+                                <div class="content">
+                                    <div class="jobs__list">
+                                        <img src="./assets/images/jobs-4.png" alt="">
+                                        <button class="criminal ">Luật hình sự</button>
+                                    </div>
+                                    <div class="jobs__content">
+                                        <div class="jobs__elite">
+                                            <h4 class="jobs__name">Hà Honour</h4> <img src="./assets/images/Vietnam.png" alt=""> <br>
+                                        </div>
+                                        <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
+                                            <a class="text">Tp. Hồ Chí Minh</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
+                                            <a class="text">(+84)935 153 721</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-email.png" alt="">&nbsp;
+                                            <a class="text">themylawyer@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/images/border-1.png" alt="" class="jobs__img">
+                                    <div class="jobs__data">
+                                        <div class="job__icon">
+                                            <a href="https://www.facebook.com/?locale=vi_VN">
+                                                <img src="./assets/images/facebook-1.png" alt="">
+                                            </a>
+                                            <a href="https://www.youtube.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/youtube.svg" alt="">
+                                            </a>
+                                            <a href="https://www.linledln.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/in.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jobs__message">
+                                            <h5 class="jobs__send">
+                                                Gửi tin nhắn
+                                            </h5>
+                                            <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="job-item  overflow-hidden position-relative jobs_box find-lawyer__article">
+                                <div class="content">
+                                    <div class="jobs__list">
+                                        <img src="./assets/images/jobs-5.png" alt="">
+                                        <button class="criminal ">Luật hình sự</button>
+                                        <button class="criminal marriage">Luật dân sự</button>
+                                    </div>
+                                    <div class="jobs__content">
+                                        <div class="jobs__elite">
+                                            <h4 class="jobs__name">Hoàng Văn Quốc Thiên</h4> <img src="./assets/images/Vietnam.png" alt=""> <br>
+                                        </div>
+                                        <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
+                                            <a class="text">Tp. Hồ Chí Minh</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
+                                            <a class="text">(+84)935 153 721</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-email.png" alt="">&nbsp;
+                                            <a class="text">themylawyer@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/images/border-1.png" alt="" class="jobs__img">
+                                    <div class="jobs__data">
+                                        <div class="job__icon">
+                                            <a href="https://www.facebook.com/?locale=vi_VN">
+                                                <img src="./assets/images/facebook-1.png" alt="">
+                                            </a>
+                                            <a href="https://www.youtube.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/youtube.svg" alt="">
+                                            </a>
+                                            <a href="https://www.linledln.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/in.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jobs__message">
+                                            <h5 class="jobs__send">
+                                                Gửi tin nhắn
+                                            </h5>
+                                            <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="job-item  overflow-hidden position-relative jobs_box find-lawyer__article">
+                                <div class="content">
+                                    <div class="jobs__list">
+                                        <img src="./assets/images/jobs-6.png" alt="">
+                                        <button class="criminal ">Luật hình sự</button>
+                                        <button class="criminal marriage">Luật dân sự</button>
+                                    </div>
+                                    <div class="jobs__content">
+                                        <div class="jobs__elite">
+                                            <h4 class="jobs__name">Nguyễn Văn Mai Hương</h4> <img src="./assets/images/Vietnam.png" alt=""> <br>
+                                        </div>
+                                        <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
+                                            <a class="text">Tp. Hồ Chí Minh</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
+                                            <a class="text">(+84)935 153 721</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-email.png" alt=""> &nbsp;
+                                            <a class="text">themylawyer@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/images/border-1.png" alt="" class="jobs__img">
+                                    <div class="jobs__data">
+                                        <div class="job__icon">
+                                            <a href="https://www.facebook.com/?locale=vi_VN">
+                                                <img src="./assets/images/facebook-1.png" alt="">
+                                            </a>
+                                            <a href="https://www.youtube.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/youtube.svg" alt="">
+                                            </a>
+                                            <a href="https://www.linledln.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/in.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jobs__message">
+                                            <h5 class="jobs__send">
+                                                Gửi tin nhắn
+                                            </h5>
+                                            <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="job-item  overflow-hidden position-relative jobs_box jobs__active find-lawyer__article">
+                                <div class="content">
+                                    <div class="jobs__list">
+                                        <img src="./assets/images/jobs-1.png" alt="">
+                                        <button class="criminal ">Luật hình sự</button>
+                                    </div>
+                                    <div class="jobs__content">
+                                        <div class="jobs__elite">
+                                            <h4 class="jobs__name">Nguyễn Thế Mỹ</h4> <img src="./assets/images/Vietnam.png" alt=""> <br>
+                                        </div>
+                                        <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
+                                            <span class="text">Tp. Hồ Chí Minh</span>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
+                                            <span class="text">(+84)935 153 721</span>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-email.png" alt="">&nbsp;
+                                            <span class="text">themylawyer@gmail.com</span>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/images/border-1.png" alt="" class="jobs__img">
+                                    <div class="jobs__data">
+                                        <div class="job__icon">
+                                            <a href="https://www.facebook.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/facebook.svg" alt="">
+                                            </a>
+                                            <a href="https://www.youtube.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/youtube.svg" alt="">
+                                            </a>
+                                            <a href="https://www.linledln.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/in.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jobs__message">
+                                            <h5 class="jobs__send jobs__text">
+                                                Gửi tin nhắn
+                                            </h5>
+                                            <img src="./assets/images/arrow-1.svg" alt="" class="jobs__arrow-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="job-item  overflow-hidden position-relative jobs_box find-lawyer__article">
+                                <div class="content">
+                                    <div class="jobs__list">
+                                        <img src="./assets/images/jobs-2.png" alt="">
+                                        <button class="criminal ">Luật hình sự</button>
+                                        <button class="criminal marriage">Luật hôn nhân</button>
+                                        <article class="card__article">
+                                            <button class="jobs__subtitle criminal">
+                                                +2
+                                            </button>
+                                            <div class="card__tooltip">
+                                                <div class="card__content">
+                                                    <div class="card__data">
+                                                        <button class="card__button">Luật đất đai</button>
+                                                        <button class="card__button">Luật lao động</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <div class="">
+                                            <button class="criminal ">Luật hình sự</button>
+                                            <button class="criminal marriage">Luật hôn nhân</button>
+                                        </div>
+                                    </div>
+                                    <div class="jobs__content">
+                                        <div class="jobs__elite">
+                                            <h4 class="jobs__name">Buck Emilia</h4>
+                                            <img src="./assets/images/icons/đức.png" alt=""> <br>
+                                        </div>
+                                        <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
+                                            <span class="text">Tp. Hồ Chí Minh</span>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
+                                            <span class="text">(+84)935 153 721</span>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-email.png" alt="">&nbsp;
+                                            <span class="text">themylawyer@gmail.com</span>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/images/border-1.png" alt="" class="jobs__img">
+                                    <div class="jobs__data">
+                                        <div class="job__icon">
+                                            <a href="https://www.facebook.com/?locale=vi_VN">
+                                                <img src="./assets/images/facebook-1.png" alt="">
+                                            </a>
+                                            <a href="https://www.youtube.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/youtube.svg" alt="">
+                                            </a>
+                                            <a href="https://www.linledln.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/in.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jobs__message">
+                                            <h5 class="jobs__send">
+                                                Gửi tin nhắn
+                                            </h5>
+                                            <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="job-item  overflow-hidden position-relative jobs_box find-lawyer__article">
+                                <div class="content">
+                                    <div class="jobs__list">
+                                        <img src="./assets/images/jobs-3.png" alt="">
+                                        <button class="criminal ">Luật hình sự</button>
+                                    </div>
+                                    <div class="jobs__content">
+                                        <div class="jobs__elite">
+                                            <h4 class="jobs__name">Mabelle Rosalyn</h4> <img src="./assets/images/anh.png" alt=""> <br>
+                                        </div>
+                                        <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
+                                            <a class="text">Tp. Hồ Chí Minh</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
+                                            <a class="text">(+84)935 153 721</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-email.png" alt="">&nbsp;
+                                            <a class="text">themylawyer@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/images/border-1.png" alt="" class="jobs__img">
+                                    <div class="jobs__data">
+                                        <div class="job__icon">
+                                            <a href="https://www.facebook.com/?locale=vi_VN">
+                                                <img src="./assets/images/facebook-1.png" alt="">
+                                            </a>
+                                            <a href="https://www.youtube.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/youtube.svg" alt="">
+                                            </a>
+                                            <a href="https://www.linledln.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/in.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jobs__message">
+                                            <h5 class="jobs__send">
+                                                Gửi tin nhắn
+                                            </h5>
+                                            <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="job-item  overflow-hidden position-relative jobs_box find-lawyer__article">
+                                <div class="content">
+                                    <div class="jobs__list">
+                                        <img src="./assets/images/jobs-4.png" alt="">
+                                        <button class="criminal ">Luật hình sự</button>
+                                    </div>
+                                    <div class="jobs__content">
+                                        <div class="jobs__elite">
+                                            <h4 class="jobs__name">Hà Honour</h4> <img src="./assets/images/Vietnam.png" alt=""> <br>
+                                        </div>
+                                        <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
+                                            <a class="text">Tp. Hồ Chí Minh</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
+                                            <a class="text">(+84)935 153 721</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-email.png" alt="">&nbsp;
+                                            <a class="text">themylawyer@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/images/border-1.png" alt="" class="jobs__img">
+                                    <div class="jobs__data">
+                                        <div class="job__icon">
+                                            <a href="https://www.facebook.com/?locale=vi_VN">
+                                                <img src="./assets/images/facebook-1.png" alt="">
+                                            </a>
+                                            <a href="https://www.youtube.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/youtube.svg" alt="">
+                                            </a>
+                                            <a href="https://www.linledln.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/in.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jobs__message">
+                                            <h5 class="jobs__send">
+                                                Gửi tin nhắn
+                                            </h5>
+                                            <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    <!-- <div class="row justify-content-center find-lawyer__content">
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-6 col-md-6 col-sm-6 col-lg-4 aos-init">
+                            <div class="job-item  overflow-hidden position-relative jobs_box jobs__active find-lawyer__article">
+                                <div class="content">
+                                    <div class="jobs__list">
+                                        <img src="./assets/images/jobs-1.png" alt="">
+                                        <button class="criminal ">Luật hình sự</button>
+                                    </div>
+                                    <div class="jobs__content">
+                                        <div class="jobs__elite">
+                                            <h4 class="jobs__name">Nguyễn Thế Mỹ</h4> <img src="./assets/images/Vietnam.png" alt=""> <br>
+                                        </div>
+                                        <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
+                                            <span class="text">Tp. Hồ Chí Minh</span>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
+                                            <span class="text">(+84)935 153 721</span>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-email.png" alt="">&nbsp;
+                                            <span class="text">themylawyer@gmail.com</span>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/images/border-1.png" alt="" class="jobs__img">
+                                    <div class="jobs__data">
+                                        <div class="job__icon">
+                                            <a href="https://www.facebook.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/facebook.svg" alt="">
+                                            </a>
+                                            <a href="https://www.youtube.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/youtube.svg" alt="">
+                                            </a>
+                                            <a href="https://www.linledln.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/in.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jobs__message">
+                                            <h5 class="jobs__send jobs__text">
+                                                Gửi tin nhắn
+                                            </h5>
+                                            <img src="./assets/images/arrow-1.svg" alt="" class="jobs__arrow-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-6 col-md-6 col-sm-6 col-lg-4 aos-init">
+                            <div class="job-item  overflow-hidden position-relative jobs_box find-lawyer__article">
+                                <div class="content">
+                                    <div class="jobs__list">
+                                        <img src="./assets/images/jobs-2.png" alt="">
+                                        <button class="criminal ">Luật hình sự</button>
+                                        <button class="criminal marriage">Luật hôn nhân</button>
+                                        <article class="card__article">
+                                            <button class="jobs__subtitle criminal">
+                                                +2
+                                            </button>
+                                            <div class="card__tooltip">
+                                                <div class="card__content">
+                                                    <div class="card__data">
+                                                        <button class="card__button">Luật đất đai</button>
+                                                        <button class="card__button">Luật lao động</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <div class="">
+                                            <button class="criminal ">Luật hình sự</button>
+                                            <button class="criminal marriage">Luật hôn nhân</button>
+                                        </div>
+                                    </div>
+                                    <div class="jobs__content">
+                                        <div class="jobs__elite">
+                                            <h4 class="jobs__name">Buck Emilia</h4>
+                                            <img src="./assets/images/icons/đức.png" alt=""> <br>
+                                        </div>
+                                        <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
+                                            <span class="text">Tp. Hồ Chí Minh</span>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
+                                            <span class="text">(+84)935 153 721</span>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-email.png" alt="">&nbsp;
+                                            <span class="text">themylawyer@gmail.com</span>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/images/border-1.png" alt="" class="jobs__img">
+                                    <div class="jobs__data">
+                                        <div class="job__icon">
+                                            <a href="https://www.facebook.com/?locale=vi_VN">
+                                                <img src="./assets/images/facebook-1.png" alt="">
+                                            </a>
+                                            <a href="https://www.youtube.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/youtube.svg" alt="">
+                                            </a>
+                                            <a href="https://www.linledln.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/in.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jobs__message">
+                                            <h5 class="jobs__send">
+                                                Gửi tin nhắn
+                                            </h5>
+                                            <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-6 col-md-6 col-sm-6 col-lg-4 aos-init">
+                            <div class="job-item  overflow-hidden position-relative jobs_box find-lawyer__article">
+                                <div class="content">
+                                    <div class="jobs__list">
+                                        <img src="./assets/images/jobs-3.png" alt="">
+                                        <button class="criminal ">Luật hình sự</button>
+                                    </div>
+                                    <div class="jobs__content">
+                                        <div class="jobs__elite">
+                                            <h4 class="jobs__name">Mabelle Rosalyn</h4> <img src="./assets/images/anh.png" alt=""> <br>
+                                        </div>
+                                        <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
+                                            <a class="text">Tp. Hồ Chí Minh</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
+                                            <a class="text">(+84)935 153 721</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-email.png" alt="">&nbsp;
+                                            <a class="text">themylawyer@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/images/border-1.png" alt="" class="jobs__img">
+                                    <div class="jobs__data">
+                                        <div class="job__icon">
+                                            <a href="https://www.facebook.com/?locale=vi_VN">
+                                                <img src="./assets/images/facebook-1.png" alt="">
+                                            </a>
+                                            <a href="https://www.youtube.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/youtube.svg" alt="">
+                                            </a>
+                                            <a href="https://www.linledln.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/in.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jobs__message">
+                                            <h5 class="jobs__send">
+                                                Gửi tin nhắn
+                                            </h5>
+                                            <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-6 col-md-6 col-sm-6 col-lg-4 aos-init">
+                            <div class="job-item  overflow-hidden position-relative jobs_box find-lawyer__article">
+                                <div class="content">
+                                    <div class="jobs__list">
+                                        <img src="./assets/images/jobs-4.png" alt="">
+                                        <button class="criminal ">Luật hình sự</button>
+                                    </div>
+                                    <div class="jobs__content">
+                                        <div class="jobs__elite">
+                                            <h4 class="jobs__name">Hà Honour</h4> <img src="./assets/images/Vietnam.png" alt=""> <br>
+                                        </div>
+                                        <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
+                                            <a class="text">Tp. Hồ Chí Minh</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
+                                            <a class="text">(+84)935 153 721</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-email.png" alt="">&nbsp;
+                                            <a class="text">themylawyer@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/images/border-1.png" alt="" class="jobs__img">
+                                    <div class="jobs__data">
+                                        <div class="job__icon">
+                                            <a href="https://www.facebook.com/?locale=vi_VN">
+                                                <img src="./assets/images/facebook-1.png" alt="">
+                                            </a>
+                                            <a href="https://www.youtube.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/youtube.svg" alt="">
+                                            </a>
+                                            <a href="https://www.linledln.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/in.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jobs__message">
+                                            <h5 class="jobs__send">
+                                                Gửi tin nhắn
+                                            </h5>
+                                            <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-6 col-md-6 col-sm-6 col-lg-4 aos-init">
+                            <div class="job-item  overflow-hidden position-relative jobs_box find-lawyer__article">
+                                <div class="content">
+                                    <div class="jobs__list">
+                                        <img src="./assets/images/jobs-5.png" alt="">
+                                        <button class="criminal ">Luật hình sự</button>
+                                        <button class="criminal marriage">Luật dân sự</button>
+                                    </div>
+                                    <div class="jobs__content">
+                                        <div class="jobs__elite">
+                                            <h4 class="jobs__name">Hoàng Văn Quốc Thiên</h4> <img src="./assets/images/Vietnam.png" alt=""> <br>
+                                        </div>
+                                        <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
+                                            <a class="text">Tp. Hồ Chí Minh</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
+                                            <a class="text">(+84)935 153 721</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-email.png" alt="">&nbsp;
+                                            <a class="text">themylawyer@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/images/border-1.png" alt="" class="jobs__img">
+                                    <div class="jobs__data">
+                                        <div class="job__icon">
+                                            <a href="https://www.facebook.com/?locale=vi_VN">
+                                                <img src="./assets/images/facebook-1.png" alt="">
+                                            </a>
+                                            <a href="https://www.youtube.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/youtube.svg" alt="">
+                                            </a>
+                                            <a href="https://www.linledln.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/in.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jobs__message">
+                                            <h5 class="jobs__send">
+                                                Gửi tin nhắn
+                                            </h5>
+                                            <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-6 col-md-6 col-sm-6 col-lg-4 aos-init">
+                            <div class="job-item  overflow-hidden position-relative jobs_box find-lawyer__article">
+                                <div class="content">
+                                    <div class="jobs__list">
+                                        <img src="./assets/images/jobs-6.png" alt="">
+                                        <button class="criminal ">Luật hình sự</button>
+                                        <button class="criminal marriage">Luật dân sự</button>
+                                    </div>
+                                    <div class="jobs__content">
+                                        <div class="jobs__elite">
+                                            <h4 class="jobs__name">Nguyễn Văn Mai Hương</h4> <img src="./assets/images/Vietnam.png" alt=""> <br>
+                                        </div>
+                                        <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
+                                            <a class="text">Tp. Hồ Chí Minh</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
+                                            <a class="text">(+84)935 153 721</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-email.png" alt=""> &nbsp;
+                                            <a class="text">themylawyer@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/images/border-1.png" alt="" class="jobs__img">
+                                    <div class="jobs__data">
+                                        <div class="job__icon">
+                                            <a href="https://www.facebook.com/?locale=vi_VN">
+                                                <img src="./assets/images/facebook-1.png" alt="">
+                                            </a>
+                                            <a href="https://www.youtube.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/youtube.svg" alt="">
+                                            </a>
+                                            <a href="https://www.linledln.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/in.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jobs__message">
+                                            <h5 class="jobs__send">
+                                                Gửi tin nhắn
+                                            </h5>
+                                            <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-6 col-md-6 col-sm-6 col-lg-4 aos-init">
+                            <div class="job-item  overflow-hidden position-relative jobs_box jobs__active find-lawyer__article">
+                                <div class="content">
+                                    <div class="jobs__list">
+                                        <img src="./assets/images/jobs-1.png" alt="">
+                                        <button class="criminal ">Luật hình sự</button>
+                                    </div>
+                                    <div class="jobs__content">
+                                        <div class="jobs__elite">
+                                            <h4 class="jobs__name">Nguyễn Thế Mỹ</h4> <img src="./assets/images/Vietnam.png" alt=""> <br>
+                                        </div>
+                                        <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
+                                            <span class="text">Tp. Hồ Chí Minh</span>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
+                                            <span class="text">(+84)935 153 721</span>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-email.png" alt="">&nbsp;
+                                            <span class="text">themylawyer@gmail.com</span>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/images/border-1.png" alt="" class="jobs__img">
+                                    <div class="jobs__data">
+                                        <div class="job__icon">
+                                            <a href="https://www.facebook.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/facebook.svg" alt="">
+                                            </a>
+                                            <a href="https://www.youtube.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/youtube.svg" alt="">
+                                            </a>
+                                            <a href="https://www.linledln.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/in.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jobs__message">
+                                            <h5 class="jobs__send jobs__text">
+                                                Gửi tin nhắn
+                                            </h5>
+                                            <img src="./assets/images/arrow-1.svg" alt="" class="jobs__arrow-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-6 col-md-6 col-sm-6 col-lg-4 aos-init">
+                            <div class="job-item  overflow-hidden position-relative jobs_box find-lawyer__article">
+                                <div class="content">
+                                    <div class="jobs__list">
+                                        <img src="./assets/images/jobs-2.png" alt="">
+                                        <button class="criminal ">Luật hình sự</button>
+                                        <button class="criminal marriage">Luật hôn nhân</button>
+                                        <article class="card__article">
+                                            <button class="jobs__subtitle criminal">
+                                                +2
+                                            </button>
+                                            <div class="card__tooltip">
+                                                <div class="card__content">
+                                                    <div class="card__data">
+                                                        <button class="card__button">Luật đất đai</button>
+                                                        <button class="card__button">Luật lao động</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <div class="">
+                                            <button class="criminal ">Luật hình sự</button>
+                                            <button class="criminal marriage">Luật hôn nhân</button>
+                                        </div>
+                                    </div>
+                                    <div class="jobs__content">
+                                        <div class="jobs__elite">
+                                            <h4 class="jobs__name">Buck Emilia</h4>
+                                            <img src="./assets/images/icons/đức.png" alt=""> <br>
+                                        </div>
+                                        <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
+                                            <span class="text">Tp. Hồ Chí Minh</span>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
+                                            <span class="text">(+84)935 153 721</span>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-email.png" alt="">&nbsp;
+                                            <span class="text">themylawyer@gmail.com</span>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/images/border-1.png" alt="" class="jobs__img">
+                                    <div class="jobs__data">
+                                        <div class="job__icon">
+                                            <a href="https://www.facebook.com/?locale=vi_VN">
+                                                <img src="./assets/images/facebook-1.png" alt="">
+                                            </a>
+                                            <a href="https://www.youtube.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/youtube.svg" alt="">
+                                            </a>
+                                            <a href="https://www.linledln.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/in.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jobs__message">
+                                            <h5 class="jobs__send">
+                                                Gửi tin nhắn
+                                            </h5>
+                                            <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-6 col-md-6 col-sm-6 col-lg-4 aos-init">
+                            <div class="job-item  overflow-hidden position-relative jobs_box find-lawyer__article">
+                                <div class="content">
+                                    <div class="jobs__list">
+                                        <img src="./assets/images/jobs-3.png" alt="">
+                                        <button class="criminal ">Luật hình sự</button>
+                                    </div>
+                                    <div class="jobs__content">
+                                        <div class="jobs__elite">
+                                            <h4 class="jobs__name">Mabelle Rosalyn</h4> <img src="./assets/images/anh.png" alt=""> <br>
+                                        </div>
+                                        <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
+                                            <a class="text">Tp. Hồ Chí Minh</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
+                                            <a class="text">(+84)935 153 721</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-email.png" alt="">&nbsp;
+                                            <a class="text">themylawyer@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/images/border-1.png" alt="" class="jobs__img">
+                                    <div class="jobs__data">
+                                        <div class="job__icon">
+                                            <a href="https://www.facebook.com/?locale=vi_VN">
+                                                <img src="./assets/images/facebook-1.png" alt="">
+                                            </a>
+                                            <a href="https://www.youtube.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/youtube.svg" alt="">
+                                            </a>
+                                            <a href="https://www.linledln.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/in.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jobs__message">
+                                            <h5 class="jobs__send">
+                                                Gửi tin nhắn
+                                            </h5>
+                                            <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos-bk="fade-in" data-aos-bk-duration="500" class="col-xl-6 col-md-6 col-sm-6 col-lg-4 aos-init">
+                            <div class="job-item  overflow-hidden position-relative jobs_box find-lawyer__article">
+                                <div class="content">
+                                    <div class="jobs__list">
+                                        <img src="./assets/images/jobs-4.png" alt="">
+                                        <button class="criminal ">Luật hình sự</button>
+                                    </div>
+                                    <div class="jobs__content">
+                                        <div class="jobs__elite">
+                                            <h4 class="jobs__name">Hà Honour</h4> <img src="./assets/images/Vietnam.png" alt=""> <br>
+                                        </div>
+                                        <span class="heading">Văn phòng luật sư Tinh Hoa Việt</span> <br>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/positioning-1.svg" alt="">&nbsp;
+                                            <a class="text">Tp. Hồ Chí Minh</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-phone.svg" alt="">&nbsp;
+                                            <a class="text">(+84)935 153 721</a>
+                                        </div>
+                                        <div class="jobs__city">
+                                            <img src="./assets/images/jobs-email.png" alt="">&nbsp;
+                                            <a class="text">themylawyer@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/images/border-1.png" alt="" class="jobs__img">
+                                    <div class="jobs__data">
+                                        <div class="job__icon">
+                                            <a href="https://www.facebook.com/?locale=vi_VN">
+                                                <img src="./assets/images/facebook-1.png" alt="">
+                                            </a>
+                                            <a href="https://www.youtube.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/youtube.svg" alt="">
+                                            </a>
+                                            <a href="https://www.linledln.com/?locale=vi_VN">
+                                                <img src="./assets/images/icons/in.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jobs__message">
+                                            <h5 class="jobs__send">
+                                                Gửi tin nhắn
+                                            </h5>
+                                            <img src="./assets/images/arrow-2.svg" alt="" class="jobs__arrow-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                
+            </div>
+        </div>
+
+        <nav aria-label="Page navigation example ">
+            <ul class="pagination pagination__container container d-flex justify-content-center">
+              <li class="page-item pagination__item"><a class="page-link" href="#"><i class="ri-arrow-left-s-line"></i> Back</a></li>
+              <li class="page-item pagination__item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item pagination__item"><a class="page-link  pagination__info" href="#">2</a></li>
+              <li class="page-item pagination__item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item pagination__item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item pagination__item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item pagination__item"><a class="page-link" href="#">Next <i class="ri-arrow-right-s-line"></i> </a></li>
+            </ul>
+          </nav>
+    </div>
+    
+   
 
     <section class="footer" id="footer">
         <div class="d-none">
