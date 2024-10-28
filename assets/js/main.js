@@ -128,10 +128,12 @@ let swiperFaith = new Swiper('.faith__swiper', {
 
 
 function toggleDropdown(dropdownId, header) {
-    const dropdown = document.getElementById(dropdownId);
+    const dropdown = document.querySelector( "." + dropdownId);
     const icon = header.querySelector('i');
 
     if (dropdown.style.display === "block") {
+        console.log("dropdown: ", dropdown);
+        
         dropdown.style.display = "none"; 
         icon.classList.remove('fa-chevron-up'); 
         icon.classList.add('fa-chevron-down');
@@ -160,3 +162,29 @@ function toggleCities(checkbox) {
         nestedCities.style.display = "none"; 
     }
 }
+
+let swiperArticle = new Swiper('.article-details__swiper', {
+    loop: true,
+    spaceBetween: 22,
+
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    // },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        
+        clickable: true,
+    },
+    breakpoints: {
+        650: {
+            slidesPerView: 2,
+            spaceBetween: 22,
+        }
+    }
+});
