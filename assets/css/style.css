@@ -7962,7 +7962,7 @@ p.qualification__text {
     padding-bottom: 5rem;
 }
 .article-details__swiper {
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 .swiper-pagination-bullet {
     opacity: 0.7;
@@ -8589,6 +8589,42 @@ a#ui-id-2 {
 .show-scroll {
     bottom: 5rem;
 }
+
+
+.modal{
+    position: fixed !important;
+    right: 1rem !important;
+    bottom: 3rem !important;
+    z-index: 10 !important; 
+    transition: .3s !important;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90px;
+}
+.modal:hover {
+    transform: translateY(-1rem);
+}
+.show-modal{
+    bottom: 7rem !important;
+}
+
+.modal__bg {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* width: 95%;
+    height: 90%; */
+}
+.modal__container{
+   
+
+}
+
 
 /* SINGLE-BLOG-POST */
 .single-blog-post {
@@ -10424,15 +10460,18 @@ a#ui-id-2 {
 .find-lawyer__check {
     width: 24px;
     height: 24px;
-    background: var(--primary-color00) !important;
-    border: 2px solid #d6ddeb !important;
+    /* background: var(--primary-color00) !important; */
+    /* border: 2px solid #d6ddeb !important; */
 }
 .find-lawyer__label {
     display: flex;
     align-items: center;
     font-size: 16px;
     color: #515b6f;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.1rem;
+    column-gap: 15px;
+    font-family: "DM", sans-serif;
+    font-weight: 400;
 }
 
 .dropdown-content {
@@ -10705,7 +10744,7 @@ h6.article__details-desc {
     margin-bottom: 0.8rem;
 }
 .article__details-content:last-child {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 
 .article-details__slide {
@@ -10715,7 +10754,39 @@ h6.article__details-desc {
     /* width: 762px; */
     position: relative;
 }
+.article-details-content {
+    padding: 1.1rem 0 1.1rem;
+    border-top: 1px solid #D1E7E5;
+    border-bottom: 1px solid #D1E7E5;
+    
+}
 
+.article-details__icon {
+    display: flex;
+    column-gap: 1.1rem;
+    justify-content: flex-end;
+}
+.article-details__icon span{
+    color: #00184B;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "DM", sans-serif;
+}
+.article-details__list {
+    padding-top: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .article-details__image{
+        padding-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .information__security{
+        display: none;
+    }
+}
 
 
 
@@ -10730,7 +10801,241 @@ h6.article__details-desc {
 }
 
 
+.article__index{
+    background: #f8f8f8;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 370px;
+}
 
+
+
+  .sb-checkbox {
+    display: inline-block;
+    font-size: 0;
+  }
+  
+  .sb-checkbox__input {
+    display: none;
+  }
+  
+  .sb-checkbox__input:checked + .sb-checkbox__label:after {
+    opacity: 1;
+  }
+  
+  .sb-checkbox__label {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .sb-checkbox__label:before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+  }
+  
+  .sb-checkbox__label:after {
+    content: "done";
+    font-family: "Material Icons";
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    display: block;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    opacity: 0;
+    transition: 0.2s opacity;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+  
+  .sb-checkbox__label--green:before {
+    border: 2px solid #D6DDEB;
+  }
+  
+  .sb-checkbox__label--green:after {
+    background-color: #00C6C1;
+    color: #fff;
+    border: none !important;
+  }
+  
+ .article-details__category,
+ .article-details__news{
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 2rem;
+ } 
+ .article-details-data {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+.article-details__problem,
+.main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.article-details__identify img{
+    margin: 10px 0 10px;
+}
+.article-details__identify {
+    margin-bottom: 10px;
+}
+.article-details__identify:last-child{
+    margin-bottom: 0px;
+}
+.article-details-problem-1{
+    padding-left: 10px;
+}
+.article-details-problem-2{
+    padding-left: 13px;
+
+}
+.article-details-problem-3{
+    padding-left: 17px;
+}
+.article__legal {
+    display: flex;
+    justify-content: space-between;
+}
+.article-details-image{
+    width: 74px;
+    height: 74px;
+}
+.article-details__criminal{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-details__heading{
+    margin-top: 1.5rem;
+}
+.article-details-subtitle{
+    margin-bottom: 40px;
+}
+.article-details__content{
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+@media screen and (max-width: 1023.98px) {
+    .article-details-none{
+        display: none;
+    }
+   
+    .article-details__perform{
+        display: none;
+    }
+    .article-details__category, .article-details__news {
+        background-color: #f8f8f8;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+    .detail__legal{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 380.98px) {
+    section.article-details {
+        padding: 30px 0 50px;
+    }
+    .detal-conenet {
+        padding: 7rem 0 3rem;
+        background-color: #f8f8f8;
+    }
+    .lawyer__brick {
+        padding-bottom: 15px;
+    }
+    h6.article__details-desc {
+        margin-top: 1rem;
+        margin-bottom: 0.8rem;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .swiper-button-prev, .swiper-button-next {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .article-details-comment .blog__swiper-day{
+        display: flex;
+        flex-direction: column;
+        align-items: inherit;
+    }
+    .article-details__image {
+        margin-top: 1.5rem;
+    }
+}
+@media screen and (min-width: 390px) {
+    
+    .section.article__news .lawyer__criminal {
+        width: 370px;
+    }
+    .article-details-comment strong {
+        width: 230px;
+    }
+}
+@media screen and (min-width: 370px) {
+    section.article-details {
+        padding: 30px 0 50px;
+    }
+    .article-details-comment strong {
+        width: 216px;
+    }
+    .detal-conenet {
+        padding: 7rem 0 3rem;
+        background-color: #f8f8f8;
+    }
+   
+   
+}
+@media screen and (min-width: 420px) {
+    .article-details__category, .article-details__news {
+       width: 370px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    section.article-details {
+        padding: 40px 0 70px;
+    }
+}
+
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar{
+    width: 0.6rem;
+    background-color: #e3e2e9;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:#cfced4;
+    border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #abaab3;
+}
 
 
 

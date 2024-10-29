@@ -27,6 +27,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- ============ SWIPER ============ -->
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
@@ -124,80 +125,203 @@
                 <div class="filter__content" >
                     <h3 onclick="toggleDropdown('law-dropdown', this)" class="dropdown-header">Chuyên ngành <i class="fas fa-chevron-down"></i></h3>
                     <div  class="dropdown-content law-dropdown">
-                        <label class="find-lawyer__label">
-                            <input type="checkbox" class="find-lawyer__check">Luật Hình sự (24)
-                        </label>
-                        <label  class="find-lawyer__label">
-                            <input type="checkbox"  class="find-lawyer__check">Luật Dân sự (3)
-                        </label>
-                        <label class="toggle-check find-lawyer__label">
-                            <input type="checkbox"  class="find-lawyer__check" >Luật Hành chính (3)
-                        </label>
-                        <label class="find-lawyer__label">
-                            <input type="checkbox"  class="find-lawyer__check" checked>Luật Thương mại (3)
-                        </label>
-                        <label class="find-lawyer__label">
-                            <input type="checkbox" class="find-lawyer__check">Luật Quốc tế (6)
-                        </label>
-                        <label class="find-lawyer__label">
-                            <input type="checkbox" class="find-lawyer__check">Cố vấn pháp lý (4)
-                        </label>
-                        <label class="toggle-check find-lawyer__label">
-                            <input type="checkbox"  class="find-lawyer__check">Luật Nhà nước (4)
-                        </label>
-                        <label class="toggle-check find-lawyer__label">
-                            <input type="checkbox"  class="find-lawyer__check" checked>Luật Tài chính (5)
-                        </label>
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check26" name="check26">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check26"></label>
+                            </div>
+                            <span>Luật Hình sự (24)</span>
+                        </div>
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check27" name="check27">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check27"></label>
+                            </div>
+                            <span>Luật Dân sự (3)</span>
+                        </div>
+
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check28" name="check28">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check28"></label>
+                            </div>
+                            <span>Luật Hành chính (3)</span>
+                        </div>
+
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check29" name="check29" checked>
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check29"></label>
+                            </div>
+                            <span>Luật Thương mại (3)</span>
+                        </div>
+
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check30" name="check30">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check30"></label>
+                            </div>
+                            <span>Luật Quốc tế (6)</span>
+                        </div>
+
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check31" name="check31">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check31"></label>
+                            </div>
+                            <span>Cố vấn pháp lý (4)</span>
+                        </div>
+
+                        <div class="toggle-check find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check32" name="check32">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check32"></label>
+                            </div>
+                            <span>Luật Nhà nước (4)</span>
+                        </div>
+
+                        <div class="toggle-check find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check33" name="check33" checked>
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check33"></label>
+                            </div>
+                            <span>Luật Tài chính (5)</span>
+                        </div>
                     </div>
                     <h3 onclick="toggleDropdown('country-dropdown', this)" class="dropdown-header ">Quốc gia <i class="fas fa-chevron-down"></i></h3>
                     <div  class="dropdown-content country-dropdown">
-                        <label class="find-lawyer__label"><input type="checkbox" class="find-lawyer__check" id="vietnamCheckbox" onclick="toggleCities(this)"> Việt Nam (24)</label>
-                        <div class="nested-cities">
-                            <label class="find-lawyer__label">
-                                <input type="checkbox" class="no-check find-lawyer__check"> Hà Nội (3)
-                            </label>
-                            <label class="find-lawyer__label">
-                                <input type="checkbox" class="no-check find-lawyer__check"> TP.HCM(3)
-                            </label>
-                            <label class="find-lawyer__label">
-                                <input type="checkbox" class="no-check find-lawyer__check">Hải Phòng (3)
-                            </label>
-                            <label class="find-lawyer__label">
-                                <input type="checkbox" class="no-check find-lawyer__check">Cần Thơ (6)
-                            </label>
-                            <label class="find-lawyer__label">
-                                <input type="checkbox" class="find-lawyer__check">Đà Nẵng (4)</label>
-                            <label class="find-lawyer__label">
-                                <input type="checkbox" class="no-check find-lawyer__check">Biên Hòa (3)
-                            </label>
-                            <label class="find-lawyer__label">
-                                <input type="checkbox" class="no-check find-lawyer__check">Hải Dương (3)
-                            </label>
-                            <label class="find-lawyer__label">
-                                <input type="checkbox" class="no-check find-lawyer__check">Huế (3)
-                            </label>
-                            <label class="find-lawyer__label">
-                                <input type="checkbox" class="no-check find-lawyer__check">Thuận An (6)
-                            </label>
-                            <label class="find-lawyer__label">
-                                <input type="checkbox" class="no-check find-lawyer__check">Thủ Đức (4)
-                            </label>
+                        <!-- <label class="find-lawyer__label"><input type="checkbox" class="find-lawyer__check" id="vietnamCheckbox" onclick="toggleCities(this)"> Việt Nam (24)</label> -->
+
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check34" name="check34"  id="vietnamCheckbox" onclick="toggleCities(this)">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check34"></label>
+                            </div>
+                            <span>Việt Nam (24)</span>
                         </div>
-                        <label class="find-lawyer__label">
-                            <input type="checkbox"  class="find-lawyer__check">Australia (3)
-                        </label>
-                        <label class="find-lawyer__label">
-                            <input type="checkbox" class="find-lawyer__check">Canada (3)
-                        </label>
-                        <label class="find-lawyer__label">
-                            <input type="checkbox" class="find-lawyer__check">France (3)
-                        </label>
-                        <label class="find-lawyer__label">
-                            <input type="checkbox" class="find-lawyer__check">Germany (6)
-                        </label>
-                        <label class="find-lawyer__label">
-                            <input type="checkbox" class="find-lawyer__check">India (4)
-                        </label>
+
+                        <div class="nested-cities">
+                            <div class="find-lawyer__label">
+                                <div class="sb-checkbox">
+                                    <input type="checkbox" class="no-check sb-checkbox__input find-lawyer__check" id="check35" name="check35">
+                                    <label class="sb-checkbox__label sb-checkbox__label--green" for="check35"></label>
+                                </div>
+                                <span>Hà Nội (3)</span>
+                            </div>
+                            <div class="find-lawyer__label">
+                                <div class="sb-checkbox">
+                                    <input type="checkbox" class="no-check sb-checkbox__input find-lawyer__check" id="check35" name="check35">
+                                    <label class="sb-checkbox__label sb-checkbox__label--green" for="check35"></label>
+                                </div>
+                                <span> TP.HCM(3)</span>
+                            </div>
+
+                            <div class="find-lawyer__label">
+                                <div class="sb-checkbox">
+                                    <input type="checkbox" class="no-check sb-checkbox__input find-lawyer__check" id="check35" name="check35">
+                                    <label class="sb-checkbox__label sb-checkbox__label--green" for="check35"></label>
+                                </div>
+                                <span>Hải Phòng (3)</span>
+                            </div>
+
+                            <div class="find-lawyer__label">
+                                <div class="sb-checkbox">
+                                    <input type="checkbox" class="no-check sb-checkbox__input find-lawyer__check" id="check35" name="check35">
+                                    <label class="sb-checkbox__label sb-checkbox__label--green" for="check35"></label>
+                                </div>
+                                <span>Cần Thơ (6)</span>
+                            </div>
+
+                            <div class="find-lawyer__label">
+                                <div class="sb-checkbox">
+                                    <input type="checkbox" class="no-check sb-checkbox__input find-lawyer__check" id="check35" name="check35">
+                                    <label class="sb-checkbox__label sb-checkbox__label--green" for="check35"></label>
+                                </div>
+                                <span>Đà Nẵng (4)</span>
+                            </div>
+
+                            <div class="find-lawyer__label">
+                                <div class="sb-checkbox">
+                                    <input type="checkbox" class="no-check sb-checkbox__input find-lawyer__check" id="check35" name="check35">
+                                    <label class="sb-checkbox__label sb-checkbox__label--green" for="check35"></label>
+                                </div>
+                                <span>Biên Hòa (3)</span>
+                            </div>
+
+                            <div class="find-lawyer__label">
+                                <div class="sb-checkbox">
+                                    <input type="checkbox" class="no-check sb-checkbox__input find-lawyer__check" id="check35" name="check35">
+                                    <label class="sb-checkbox__label sb-checkbox__label--green" for="check35"></label>
+                                </div>
+                                <span>Hải Dương (3)</span>
+                            </div>
+
+                            <div class="find-lawyer__label">
+                                <div class="sb-checkbox">
+                                    <input type="checkbox" class="no-check sb-checkbox__input find-lawyer__check" id="check35" name="check35">
+                                    <label class="sb-checkbox__label sb-checkbox__label--green" for="check35"></label>
+                                </div>
+                                <span>Huế (3)</span>
+                            </div>
+
+                            <div class="find-lawyer__label">
+                                <div class="sb-checkbox">
+                                    <input type="checkbox" class="no-check sb-checkbox__input find-lawyer__check" id="check35" name="check35">
+                                    <label class="sb-checkbox__label sb-checkbox__label--green" for="check35"></label>
+                                </div>
+                                <span>Thuận An (6)</span>
+                            </div>
+
+                            <div class="find-lawyer__label">
+                                <div class="sb-checkbox">
+                                    <input type="checkbox" class="no-check sb-checkbox__input find-lawyer__check" id="check35" name="check35">
+                                    <label class="sb-checkbox__label sb-checkbox__label--green" for="check35"></label>
+                                </div>
+                                <span>Thủ Đức (4)</span>
+                            </div>
+                           
+                        </div>
+
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check35" name="check35">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check35"></label>
+                            </div>
+                            <span>Australia (3)</span>
+                        </div>
+
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check35" name="check35">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check35"></label>
+                            </div>
+                            <span>Canada (3)</span>
+                        </div>
+
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check35" name="check35">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check35"></label>
+                            </div>
+                            <span>France (3)</span>
+                        </div>
+
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check35" name="check35">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check35"></label>
+                            </div>
+                            <span>Germany (6)</span>
+                        </div>
+
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check35" name="check35">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check35"></label>
+                            </div>
+                            <span>India (4)</span>
+                        </div>
+                      
                     </div>
                 </div>
 
@@ -315,89 +439,203 @@
                 <div class="filter-container">
                     <h3 onclick="toggleDropdown('body-law-dropdown', this)" class="dropdown-header">Chuyên ngành <i class="fas fa-chevron-down"></i></h3>
                     <div class="dropdown-content body-law-dropdown">
-                        <label class="find-lawyer__label">
-                            <input type="checkbox" class="find-lawyer__check">Luật Hình sự (24)
-                        </label>
-                        <label  class="find-lawyer__label">
-                            <input type="checkbox"  class="find-lawyer__check">Luật Dân sự (3)
-                        </label>
-                        <label class="toggle-check find-lawyer__label">
-                            <input type="checkbox"  class="find-lawyer__check" >Luật Hành chính (3)
-                        </label>
-                        <label class="find-lawyer__label">
-                            <input type="checkbox"  class="find-lawyer__check" checked>Luật Thương mại (3)
-                        </label>
-                        <label class="find-lawyer__label">
-                            <input type="checkbox" class="find-lawyer__check">Luật Quốc tế (6)
-                        </label>
-                        <label class="find-lawyer__label">
-                            <input type="checkbox" class="find-lawyer__check">Cố vấn pháp lý (4)
-                        </label>
-                        <label class="toggle-check find-lawyer__label">
-                            <input type="checkbox"  class="find-lawyer__check">Luật Nhà nước (4)
-                        </label>
-                        <label class="toggle-check find-lawyer__label">
-                            <input type="checkbox"  class="find-lawyer__check" checked>Luật Tài chính (5)
-                        </label>
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check1" name="check1">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check1"></label>
+                            </div>
+                            <span>Luật Hình sự (24)</span>
+                        </div>
+                        
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check2" name="check2">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check2"></label>
+                            </div>
+                            <span>Luật Dân sự (3)</span>
+                        </div>
+
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check3" name="check3">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check3"></label>
+                            </div>
+                            <span>Luật Hành chính (3)</span>
+                        </div>
+
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check4" name="check4" checked>
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check4"></label>
+                            </div>
+                            <span>Luật Thương mại (3)</span>
+                        </div>
+
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check5" name="check5">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check5"></label>
+                            </div>
+                            <span>Luật Quốc tế (6)</span>
+                        </div>
+
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check6" name="check6">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check6"></label>
+                            </div>
+                            <span>Cố vấn pháp lý (4)</span>
+                        </div>
+
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check7" name="check7">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check7"></label>
+                            </div>
+                            <span>Luật Nhà nước (4)</span>
+                        </div>
+
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check8" name="check8" checked>
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check8"></label>
+                            </div>
+                            <span>Luật Tài chính (5)</span>
+                        </div>
+
                     </div>
             
                     <h3 onclick="toggleDropdown('body-country-dropdown', this)" class="dropdown-header ">Quốc gia 
                         <i class="fas fa-chevron-down"></i></h3>
                     <div  class="dropdown-content body-country-dropdown">
-                        <label class="find-lawyer__label">
-                            <input type="checkbox" class="find-lawyer__check" id="vietnamCheckbox" onclick="toggleCities(this)">
-                             Việt Nam (24)</label>
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="no-check sb-checkbox__input find-lawyer__check" id="check9" name="check9"  id="vietnamCheckbox" onclick="toggleCities(this)">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check9"></label>
+                            </div>
+                            <span>Việt Nam (24)</span>
+                        </div>
+
                         <div class="nested-cities">
-                            <label class="find-lawyer__label">
-                                <input type="checkbox" class="no-check find-lawyer__check"> Hà Nội (3)
-                            </label>
-                            <label class="find-lawyer__label">
-                                <input type="checkbox" class="no-check find-lawyer__check"> TP.HCM(3)
-                            </label>
-                            <label class="find-lawyer__label">
-                                <input type="checkbox" class="no-check find-lawyer__check">Hải Phòng (3)
-                            </label>
-                            <label class="find-lawyer__label">
-                                <input type="checkbox" class="no-check find-lawyer__check">Cần Thơ (6)
-                            </label>
-                            <label class="find-lawyer__label">
-                                <input type="checkbox" class="find-lawyer__check">Đà Nẵng (4)
-                            </label>
-                            <label class="find-lawyer__label">
-                                <input type="checkbox" class="no-check find-lawyer__check">Biên Hòa (3)
-                            </label>
-                            <label class="find-lawyer__label">
-                                <input type="checkbox" class="no-check find-lawyer__check">Hải Dương (3)
-                            </label>
-                            <label class="find-lawyer__label">
-                                <input type="checkbox" class="no-check find-lawyer__check">Huế (3)
-                            </label>
-                            <label class="find-lawyer__label">
-                                <input type="checkbox" class="no-check find-lawyer__check">Thuận An (6)
-                            </label>
-                            <label class="find-lawyer__label">
-                                <input type="checkbox" class="no-check find-lawyer__check">Thủ Đức (4)
-                            </label>
+                            <div class="find-lawyer__label">
+                                <div class="sb-checkbox">
+                                    <input type="checkbox" class="no-check sb-checkbox__input find-lawyer__check" id="check10" name="check10">
+                                    <label class="sb-checkbox__label sb-checkbox__label--green" for="check10"></label>
+                                </div>
+                                <span>Hà Nội (3)</span>
+                            </div>
+
+                            <div class="find-lawyer__label">
+                                <div class="sb-checkbox">
+                                    <input type="checkbox" class="no-check sb-checkbox__input find-lawyer__check" id="check11" name="check11">
+                                    <label class="sb-checkbox__label sb-checkbox__label--green" for="check11"></label>
+                                </div>
+                                <span>TP.HCM(3)</span>
+                            </div>
+
+                            <div class="find-lawyer__label">
+                                <div class="sb-checkbox">
+                                    <input type="checkbox" class="no-check sb-checkbox__input find-lawyer__check" id="check12" name="check12">
+                                    <label class="sb-checkbox__label sb-checkbox__label--green" for="check12"></label>
+                                </div>
+                                <span>Hải Phòng (3)</span>
+                            </div>
+
+                            <div class="find-lawyer__label">
+                                <div class="sb-checkbox">
+                                    <input type="checkbox" class="no-check sb-checkbox__input find-lawyer__check" id="check13" name="check13">
+                                    <label class="sb-checkbox__label sb-checkbox__label--green" for="check13"></label>
+                                </div>
+                                <span>Cần Thơ (6)</span>
+                            </div>
+
+                            <div class="find-lawyer__label">
+                                <div class="sb-checkbox">
+                                    <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check14" name="check14">
+                                    <label class="sb-checkbox__label sb-checkbox__label--green" for="check14"></label>
+                                </div>
+                                <span>Đà Nẵng (4)</span>
+                            </div>
+
+                            <div class="find-lawyer__label">
+                                <div class="sb-checkbox">
+                                    <input type="checkbox" class="no-check sb-checkbox__input find-lawyer__check" id="check16" name="check16">
+                                    <label class="sb-checkbox__label sb-checkbox__label--green" for="check16"></label>
+                                </div>
+                                <span>Biên Hòa (3)</span>
+                            </div>
+
+                            <div class="find-lawyer__label">
+                                <div class="sb-checkbox">
+                                    <input type="checkbox" class="no-check sb-checkbox__input find-lawyer__check" id="check17" name="check17">
+                                    <label class="sb-checkbox__label sb-checkbox__label--green" for="check17"></label>
+                                </div>
+                                <span>Hải Dương (3)</span>
+                            </div>
+
+                            <div class="find-lawyer__label">
+                                <div class="sb-checkbox">
+                                    <input type="checkbox" class="no-check sb-checkbox__input find-lawyer__check" id="check18" name="check18">
+                                    <label class="sb-checkbox__label sb-checkbox__label--green" for="check18"></label>
+                                </div>
+                                <span>Huế (3)</span>
+                            </div>
+
+                            <div class="find-lawyer__label">
+                                <div class="sb-checkbox">
+                                    <input type="checkbox" class="no-check sb-checkbox__input find-lawyer__check" id="check19" name="check19">
+                                    <label class="sb-checkbox__label sb-checkbox__label--green" for="check19"></label>
+                                </div>
+                                <span>Thuận An (6)</span>
+                            </div>
+
+                            <div class="find-lawyer__label">
+                                <div class="sb-checkbox">
+                                    <input type="checkbox" class="no-check sb-checkbox__input find-lawyer__check" id="check20" name="check20">
+                                    <label class="sb-checkbox__label sb-checkbox__label--green" for="check20"></label>
+                                </div>
+                                <span>Thủ Đức (4)</span>
+                            </div>
                         </div>
             
-                        <label class="find-lawyer__label">
-                            <input type="checkbox"  class="find-lawyer__check">Australia (3)
-                        </label>
-                        <label class="find-lawyer__label">
-                            <input type="checkbox" class="find-lawyer__check">Canada (3)
-                        </label>
-                        <label class="find-lawyer__label">
-                            <input type="checkbox" class="find-lawyer__check">France (3)
-                        </label>
-                        <label class="find-lawyer__label">
-                            <input type="checkbox" class="find-lawyer__check">Germany (6)
-                        </label>
-                        <label class="find-lawyer__label">
-                            <input type="checkbox" class="find-lawyer__check">India (4)
-                        </label>
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check21" name="check21">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check21"></label>
+                            </div>
+                            <span>Australia (3)</span>
+                        </div>
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check22" name="check22">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check22"></label>
+                            </div>
+                            <span>Canada (3)</span>
+                        </div>
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check23" name="check23">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check23"></label>
+                            </div>
+                            <span>France (3)</span>
+                        </div>
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check24" name="check24">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check24"></label>
+                            </div>
+                            <span>Germany (6)</span>
+                        </div>
+                        <div class="find-lawyer__label">
+                            <div class="sb-checkbox">
+                                <input type="checkbox" class="sb-checkbox__input find-lawyer__check" id="check25" name="check25">
+                                <label class="sb-checkbox__label sb-checkbox__label--green" for="check25"></label>
+                            </div>
+                            <span>India (4)</span>
+                        </div>
                     </div>
                 </div>
-
+              
 
                 <div class="find-lawyer__content">
                     <div class="find-lawyer-data">

@@ -241,18 +241,10 @@ ul{
     margin: 0 auto;
     border: none;
 }
-/* .w-146{
-    width: 146px !important;
-    background-color: #00C6C1 !important;
-    padding: 15px;
-    border-radius: 6px;
-    color: #fff;
-    column-gap: 10px;
-    justify-content: space-between;
-    align-items: center;
-    border: none;
-} */
 
+.bg-f8{
+    background-color: #f8f8f8;
+}
 @media screen and (max-width: 374.98px) {
     .w-154{
         margin: 0 auto 40px;
